@@ -1,0 +1,123 @@
+{% from '_brand.html' import logo %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VerifAI · Evidence-grounded biomedical answers</title>
+  <meta name="description" content="VerifAI answers clinical and biomedical questions from curated sources, cites every claim and verifies each answer against its evidence.">
+  <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='img/verifai-mark.svg') }}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/theme.css') }}" rel="stylesheet">
+  <style>html { scroll-behavior: smooth; } body { margin: 0; }</style>
+</head>
+<body class="lp">
+
+<nav class="lp-nav">
+  <div class="inner">
+    <a href="{{ url_for('auth.home') }}" style="text-decoration:none;">{{ logo(32) }}</a>
+    <div class="lp-links">
+      <a href="#how" class="hide-sm">How it works</a>
+      <a href="#audience" class="hide-sm">Who it's for</a>
+      <a href="#evidence" class="hide-sm">Evidence</a>
+      <a href="{{ url_for('auth.login') }}">Sign in</a>
+      <a href="{{ url_for('auth.register') }}" class="vf-btn" style="color:#fff;">Request access</a>
+    </div>
+  </div>
+</nav>
+
+<header class="lp-hero">
+  <div class="vf-hero-canvas" data-vf-particles="light"></div>
+  <div class="lp-wrap">
+    <span class="vf-chip vf-chip-brand"><i class="fas fa-shield-halved"></i> Verified, cited, measured</span>
+    <h1>Biomedical answers <span>you can check</span>, not just trust.</h1>
+    <p class="lead" style="font-weight:600;color:var(--ink-700);min-height:28px;">Ask about <span data-vf-typed='["type 2 diabetes", "high blood pressure", "the HbA1c test", "how statins work", "malaria", "BRCA1 and breast cancer"]'></span></p>
+    <p class="lead">VerifAI answers clinical questions from curated medical sources, cites the passage behind every claim, and verifies each answer before you read it, so you can see exactly where it came from.</p>
+    <div class="lp-cta">
+      <a href="{{ url_for('auth.register') }}" class="vf-btn">Request access <i class="fas fa-arrow-right"></i></a>
+      <a href="{{ url_for('auth.login') }}" class="vf-btn-ghost">Sign in</a>
+    </div>
+
+    <div class="lp-proof">
+      <div class="vf-card"><b>{{ kb_topics }}</b><span>curated clinical topics, each covering five aspects</span></div>
+      {% if bench %}
+      <div class="vf-card"><b>{{ '%.0f'|format(bench.verifai.recall_at_5 * 100) }}%</b><span>of {{ bench.questions }} benchmark questions find the correct source in the top 5</span></div>
+      <div class="vf-card"><b>{{ '%.1f'|format(bench.baseline.latency_p50_ms / bench.verifai.latency_p50_ms) }}×</b><span>faster retrieval than keyword-search baseline (median)</span></div>
+      <div class="vf-card"><b>{{ bench.scope_guard.out_scope_rejected }}/{{ bench.scope_guard.out_scope_total }}</b><span>off-topic questions politely declined in testing</span></div>
+      {% else %}
+      <div class="vf-card"><b>Every</b><span>grounded answer lists the exact passages it used</span></div>
+      <div class="vf-card"><b>5-step</b><span>pipeline: understand, scope, retrieve, answer, verify</span></div>
+      <div class="vf-card"><b>Live</b><span>benchmark against a keyword-search baseline</span></div>
+      {% endif %}
+    </div>
+  </div>
+</header>
+
+<section class="lp-section" id="how">
+  <div class="lp-wrap">
+    <div class="vf-eyebrow">How it works</div>
+    <h2>From question to verified answer in five steps</h2>
+    <p class="lead">Every answer goes through the same transparent pipeline, and every step is visible in its answer report.</p>
+    <div class="vf-grid lp-steps lp-steps-5 mt-4">
+      <div class="vf-card lp-step"><h3>Understand</h3><p>Recognises greetings, new questions and follow-ups like "how is it treated?".</p></div>
+      <div class="vf-card lp-step"><h3>Check scope</h3><p>Confirms the question is clinical; anything else is declined with an explanation.</p></div>
+      <div class="vf-card lp-step"><h3>Retrieve</h3><p>Finds passages on the exact topic from the knowledge base and uploaded datasets.</p></div>
+      <div class="vf-card lp-step"><h3>Answer</h3><p>Writes a broad, plain-language answer only from those passages, with citations.</p></div>
+      <div class="vf-card lp-step"><h3>Verify</h3><p>Checks each sentence against the sources and reports how much is supported.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="lp-section" id="audience" style="background:var(--slate-50);">
+  <div class="lp-wrap">
+    <div class="vf-eyebrow">Who it's for</div>
+    <h2>Built for people who need to know the source</h2>
+    <div class="vf-grid vf-grid-3 mt-4">
+      <div class="vf-card lp-feature"><i class="fas fa-user-doctor"></i><h3>Clinicians</h3><p>Quick, cited overviews of conditions, medicines and lab tests, with the passage behind every statement one click away.</p></div>
+      <div class="vf-card lp-feature"><i class="fas fa-graduation-cap"></i><h3>Medical students</h3><p>Breadth-first answers that cover causes, symptoms, diagnosis, treatment and outlook, plus follow-up questions in context.</p></div>
+      <div class="vf-card lp-feature"><i class="fas fa-flask"></i><h3>Research &amp; health-information teams</h3><p>Upload your own literature, benchmark retrieval quality, and review measured reports for every answer.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="lp-section" id="evidence">
+  <div class="lp-wrap">
+    <div class="vf-eyebrow">Why VerifAI</div>
+    <h2>A search engine returns passages. VerifAI returns answers you can verify.</h2>
+    <div class="vf-card mt-4">
+      <table class="vf-table">
+        <thead><tr><th style="width:40%">Capability</th><th>Keyword search (baseline)</th><th>VerifAI</th></tr></thead>
+        <tbody>
+          <tr><td class="vf-metric-name">Answer format</td><td>Single raw passage</td><td><i class="fas fa-check" style="color:var(--ok)"></i> Structured, plain-language answer</td></tr>
+          <tr><td class="vf-metric-name">Source citations</td><td>None</td><td><i class="fas fa-check" style="color:var(--ok)"></i> Inline, per sentence</td></tr>
+          <tr><td class="vf-metric-name">Answer verification</td><td>None</td><td><i class="fas fa-check" style="color:var(--ok)"></i> Supported-sentence check and status</td></tr>
+          <tr><td class="vf-metric-name">Follow-up questions</td><td>No memory</td><td><i class="fas fa-check" style="color:var(--ok)"></i> Conversation context preserved</td></tr>
+          <tr><td class="vf-metric-name">Off-topic questions</td><td>Returns closest match anyway</td><td><i class="fas fa-check" style="color:var(--ok)"></i> Recognised and declined politely</td></tr>
+          <tr><td class="vf-metric-name">Transparency</td><td>—</td><td><i class="fas fa-check" style="color:var(--ok)"></i> Measured report for every answer, live benchmark</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="lp-section lp-dark">
+  <div class="lp-wrap d-flex justify-content-between align-items-center flex-wrap gap-4">
+    <div>
+      <h2>Coverage across {{ kb_groups|length }} clinical areas</h2>
+      <p class="lead mb-3">{{ kb_groups|join(' · ') }}</p>
+    </div>
+    <a href="{{ url_for('auth.register') }}" class="vf-btn">Request access <i class="fas fa-arrow-right"></i></a>
+  </div>
+</section>
+
+<footer class="lp-footer">
+  <div class="lp-wrap d-flex justify-content-between flex-wrap gap-3 align-items-center">
+    {{ logo(24) }}
+    <span>For information and research. Not a substitute for professional medical advice.</span>
+  </div>
+</footer>
+{% include '_visual_libs.html' %}
+</body>
+</html>

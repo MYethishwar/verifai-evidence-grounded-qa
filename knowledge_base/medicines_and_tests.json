@@ -1,0 +1,293 @@
+{
+  "group": "Medicines & lab tests",
+  "topics": [
+    {
+      "id": "antibiotics",
+      "title": "Antibiotics",
+      "category": "Medicines",
+      "type": "drug",
+      "aliases": ["penicillin", "amoxicillin", "antibacterial", "azithromycin", "ciprofloxacin", "doxycycline"],
+      "summary": "Antibiotics are medicines that treat infections caused by bacteria, either by killing the bacteria or by stopping them from multiplying. They do not work against viruses such as those that cause colds and flu.",
+      "sections": [
+        {"label": "How it works", "text": "Antibiotics either kill bacteria or stop them from growing and multiplying. Different classes of antibiotics target different bacterial structures or processes, such as the cell wall or protein production. Antibiotics have no effect on viruses."},
+        {"label": "Common uses", "text": "Antibiotics are used to treat bacterial infections such as urinary tract infections, bacterial pneumonia, strep throat, skin infections and some forms of meningitis. The choice of antibiotic depends on the likely bacteria and the site of infection."},
+        {"label": "Common side effects", "text": "Common side effects of antibiotics include nausea, diarrhoea, stomach upset and skin rashes. Antibiotics can also upset the normal balance of microbes and lead to thrush. Some people have allergic reactions, which can occasionally be serious and need urgent care."},
+        {"label": "Precautions & interactions", "text": "Tell your prescriber about any past allergy, such as to penicillin, before taking antibiotics. Some antibiotics interact with other medicines. Antibiotics should be taken exactly as directed, and you should not start, stop or change them without your prescriber's advice."},
+        {"label": "Key facts", "text": "Using antibiotics when they are not needed, or not as directed, contributes to antibiotic resistance, where bacteria stop responding to treatment. Antibiotics are not helpful for most colds and flu, and leftover antibiotics should not be shared or saved."}
+      ],
+      "sample_questions": ["How do antibiotics work against bacteria?", "Why don't antibiotics work for colds and flu?", "What are the common side effects of antibiotics?"]
+    },
+    {
+      "id": "statins",
+      "title": "Statins",
+      "category": "Medicines",
+      "type": "drug",
+      "aliases": ["atorvastatin", "rosuvastatin", "simvastatin", "pravastatin", "cholesterol-lowering drugs", "hmg-coa reductase inhibitors"],
+      "summary": "Statins are medicines that lower blood cholesterol, especially LDL ('bad') cholesterol, and reduce the risk of heart attack and stroke in people at higher cardiovascular risk. They are among the most widely prescribed medicines worldwide.",
+      "sections": [
+        {"label": "How it works", "text": "Statins block an enzyme in the liver (HMG-CoA reductase) that helps make cholesterol. With less cholesterol made, the liver removes more LDL cholesterol from the blood, so statins lower LDL levels in the bloodstream."},
+        {"label": "Common uses", "text": "Statins are used to lower high cholesterol and to prevent heart attacks and strokes in people who have heart disease, diabetes or other risk factors. They are usually taken long term as part of a wider plan including diet and exercise."},
+        {"label": "Common side effects", "text": "Common side effects of statins include muscle aches, headache, nausea and digestive upset. Rarely, statins cause serious muscle damage or liver problems. Anyone with unexplained severe muscle pain, weakness or dark urine while taking statins should seek medical advice promptly."},
+        {"label": "Precautions & interactions", "text": "Statins are not recommended in pregnancy and are usually avoided when breastfeeding. Some medicines, and grapefruit juice in large amounts, can interact with certain statins. Do not start, stop or change statins without your prescriber's advice."},
+        {"label": "Key facts", "text": "Statins work best when taken consistently, and cholesterol often returns to its previous level if they are stopped. Liver tests or cholesterol checks may be arranged by the prescriber to monitor statins. Lifestyle measures still matter alongside statins."}
+      ],
+      "sample_questions": ["How do statins lower cholesterol?", "What are the common side effects of statins?", "Why do people take statins for a long time?"]
+    },
+    {
+      "id": "metformin",
+      "title": "Metformin",
+      "category": "Medicines",
+      "type": "drug",
+      "aliases": ["glucophage", "biguanide", "diabetes tablet", "type 2 diabetes medicine"],
+      "summary": "Metformin is an oral medicine and usually the first-line drug for type 2 diabetes. It lowers blood glucose mainly by reducing the amount of glucose the liver releases and by helping the body respond better to insulin.",
+      "sections": [
+        {"label": "How it works", "text": "Metformin reduces the amount of glucose made by the liver and improves how muscle and other tissues respond to insulin (insulin sensitivity). Metformin does not usually cause low blood sugar when used on its own because it does not force the pancreas to release more insulin."},
+        {"label": "Common uses", "text": "Metformin is mainly used to treat type 2 diabetes and is often the first medicine prescribed. It is also sometimes used in other situations, such as polycystic ovary syndrome, under specialist guidance."},
+        {"label": "Common side effects", "text": "Common side effects of metformin are digestive, including nausea, diarrhoea, stomach pain and a metallic taste. These often improve over time. A rare but serious side effect of metformin is lactic acidosis, a build-up of lactic acid in the blood."},
+        {"label": "Precautions & interactions", "text": "Metformin needs caution in people with reduced kidney function, serious liver disease or heavy alcohol use, and may be paused around some contrast-dye scans or during severe illness. Do not start, stop or change metformin without your prescriber's advice."},
+        {"label": "Key facts", "text": "Metformin has been used for decades and is generally associated with little weight gain. Long-term metformin use can lower vitamin B12 levels in some people, so the prescriber may check it. Metformin works alongside healthy eating and physical activity."}
+      ],
+      "sample_questions": ["How does metformin lower blood sugar?", "What are the common side effects of metformin?", "Why is metformin usually the first medicine for type 2 diabetes?"]
+    },
+    {
+      "id": "insulin-therapy",
+      "title": "Insulin Therapy",
+      "category": "Medicines",
+      "type": "drug",
+      "aliases": ["insulin", "insulin injection", "insulin pen", "insulin pump", "basal insulin", "rapid-acting insulin"],
+      "summary": "Insulin therapy replaces or supplements the body's own insulin, the hormone that lets cells take up glucose from the blood. It is essential for type 1 diabetes and is used in some people with type 2 diabetes.",
+      "sections": [
+        {"label": "How it works", "text": "Insulin therapy supplies the hormone insulin, which allows glucose to move from the blood into cells and lowers blood sugar. Different insulin types act at different speeds and for different lengths of time, such as rapid-acting and long-acting insulins."},
+        {"label": "Common uses", "text": "Insulin therapy is required for people with type 1 diabetes and is used in some people with type 2 diabetes or gestational diabetes when other treatments are not enough. It is usually given by injection or an insulin pump."},
+        {"label": "Common side effects", "text": "The most important side effect of insulin therapy is hypoglycaemia (low blood sugar), which can cause shakiness, sweating, hunger and confusion. Other effects include weight gain and skin changes or lumps at injection sites if sites are not rotated."},
+        {"label": "Precautions & interactions", "text": "Insulin therapy needs blood glucose monitoring and a plan for low sugar, including carrying fast-acting sugar. Alcohol, exercise, illness and some other medicines can change insulin needs. Never stop or change insulin therapy without your prescriber's advice, especially in type 1 diabetes."},
+        {"label": "Key facts", "text": "Insulin therapy is usually injected because insulin taken as a tablet would be broken down in the digestive system. Insulin should be stored as directed, and injection sites should be rotated. Teams often provide education on using insulin therapy safely."}
+      ],
+      "sample_questions": ["How does insulin therapy lower blood sugar?", "What is the main side effect of insulin therapy?", "Why can't insulin therapy be taken as a tablet?"]
+    },
+    {
+      "id": "ace-inhibitors-and-arbs",
+      "title": "ACE Inhibitors & ARBs",
+      "category": "Medicines",
+      "type": "drug",
+      "aliases": ["ace inhibitor", "arb", "lisinopril", "ramipril", "enalapril", "losartan", "valsartan", "angiotensin receptor blocker"],
+      "summary": "ACE inhibitors and ARBs (angiotensin receptor blockers) are two related groups of medicines that relax blood vessels and lower blood pressure. They also protect the heart and kidneys in some conditions.",
+      "sections": [
+        {"label": "How it works", "text": "ACE inhibitors block the enzyme that produces angiotensin II, while ARBs block angiotensin II from acting on its receptors. Either way, ACE inhibitors and ARBs let blood vessels relax, which lowers blood pressure and reduces strain on the heart."},
+        {"label": "Common uses", "text": "ACE inhibitors and ARBs are used for high blood pressure, heart failure, after a heart attack, and to protect the kidneys in people with diabetes and kidney disease. ARBs are often chosen if an ACE inhibitor causes a cough."},
+        {"label": "Common side effects", "text": "A persistent dry cough is a well-known side effect of ACE inhibitors and is less common with ARBs. Both groups can cause dizziness, raised blood potassium and changes in kidney function. Rarely, swelling of the face or lips (angioedema) needs urgent care."},
+        {"label": "Precautions & interactions", "text": "ACE inhibitors and ARBs should not be used in pregnancy. Potassium supplements, some diuretics and NSAID painkillers can interact with them. Blood tests are often used to monitor kidneys and potassium. Do not start, stop or change them without your prescriber's advice."},
+        {"label": "Key facts", "text": "ACE inhibitors and ARBs are usually not combined with each other without specialist advice. Dehydration from vomiting or diarrhoea can strain the kidneys, so prescribers may give guidance on pausing ACE inhibitors and ARBs during illness."}
+      ],
+      "sample_questions": ["How do ACE inhibitors and ARBs lower blood pressure?", "Why do ACE inhibitors cause a dry cough but ARBs usually do not?", "Who should avoid ACE inhibitors and ARBs?"]
+    },
+    {
+      "id": "beta-blockers",
+      "title": "Beta-Blockers",
+      "category": "Medicines",
+      "type": "drug",
+      "aliases": ["beta blocker", "metoprolol", "atenolol", "bisoprolol", "propranolol", "carvedilol"],
+      "summary": "Beta-blockers are medicines that block the effects of adrenaline on the heart and blood vessels, slowing the heart rate and lowering blood pressure. They are used for several heart conditions and some other problems.",
+      "sections": [
+        {"label": "How it works", "text": "Beta-blockers block beta receptors, the sites where adrenaline and noradrenaline act. This slows the heart rate, reduces the force of heartbeats and lowers blood pressure, so beta-blockers reduce the heart's workload and oxygen demand."},
+        {"label": "Common uses", "text": "Beta-blockers are used for angina, abnormal heart rhythms, heart failure, after a heart attack and sometimes high blood pressure. Some beta-blockers are also used for migraine prevention and to ease physical symptoms of anxiety."},
+        {"label": "Common side effects", "text": "Common side effects of beta-blockers include tiredness, cold hands and feet, a slow heartbeat, dizziness and sleep disturbance. Beta-blockers can sometimes mask the warning signs of low blood sugar in people using insulin or similar diabetes medicines."},
+        {"label": "Precautions & interactions", "text": "Beta-blockers can worsen asthma and are usually avoided in people with asthma or certain heart rhythm problems. Some other heart medicines interact with them. Do not stop beta-blockers suddenly; always follow your prescriber's advice before starting, stopping or changing them."},
+        {"label": "Key facts", "text": "Beta-blockers do not cure heart disease but help control symptoms and protect the heart. Their names often end in -olol. Stopping beta-blockers abruptly can cause a rebound rise in heart rate and chest pain, so any change should be planned."}
+      ],
+      "sample_questions": ["How do beta-blockers slow the heart rate?", "Why should beta-blockers not be stopped suddenly?", "What conditions are beta-blockers used to treat?"]
+    },
+    {
+      "id": "painkillers-nsaids-and-paracetamol",
+      "title": "Painkillers: NSAIDs & Paracetamol",
+      "category": "Medicines",
+      "type": "drug",
+      "aliases": ["ibuprofen", "acetaminophen", "naproxen", "aspirin", "diclofenac", "analgesics", "tylenol", "nsaid"],
+      "summary": "Paracetamol (acetaminophen) and NSAIDs such as ibuprofen are common over-the-counter painkillers. Paracetamol eases pain and fever, while NSAIDs (non-steroidal anti-inflammatory drugs) also reduce inflammation.",
+      "sections": [
+        {"label": "How it works", "text": "NSAIDs block enzymes called cyclooxygenases (COX), reducing the chemicals that cause pain, fever and inflammation. Paracetamol also reduces pain and fever, but its exact action is not fully understood and it has little anti-inflammatory effect."},
+        {"label": "Common uses", "text": "These painkillers are used for headache, toothache, period pain, muscle and joint pain, and fever. NSAIDs are especially useful when inflammation is involved, such as in sprains or arthritis, whereas paracetamol is often used for general pain and fever."},
+        {"label": "Common side effects", "text": "NSAIDs can cause stomach irritation, indigestion and ulcers, and can affect the kidneys and raise blood pressure. Paracetamol has few side effects at normal use, but taking too much paracetamol can cause serious, potentially fatal liver damage."},
+        {"label": "Precautions & interactions", "text": "NSAIDs are often unsuitable for people with stomach ulcers, kidney disease, heart disease or asthma triggered by them, and in late pregnancy. Check that other products do not also contain paracetamol. Ask a prescriber or pharmacist before starting, stopping or combining these painkillers."},
+        {"label": "Key facts", "text": "Taking more paracetamol than recommended is dangerous, and an overdose needs urgent medical attention even if you feel well. NSAIDs are usually taken with food to protect the stomach. Painkillers should be used at the lowest effective amount for the shortest time."}
+      ],
+      "sample_questions": ["What is the difference between NSAIDs and paracetamol?", "Why can too much paracetamol damage the liver?", "What are the stomach risks of taking NSAIDs?"]
+    },
+    {
+      "id": "ssri-antidepressants",
+      "title": "SSRI Antidepressants",
+      "category": "Medicines",
+      "type": "drug",
+      "aliases": ["sertraline", "fluoxetine", "citalopram", "escitalopram", "paroxetine", "prozac", "selective serotonin reuptake inhibitors"],
+      "summary": "SSRIs (selective serotonin reuptake inhibitors) are a widely used class of antidepressants. They raise the availability of serotonin, a chemical messenger in the brain, and are used for depression and anxiety disorders.",
+      "sections": [
+        {"label": "How it works", "text": "SSRI antidepressants block the reabsorption (reuptake) of serotonin by nerve cells, leaving more serotonin available between them. This is thought to help improve mood and reduce anxiety over time, although the full mechanism is not completely understood."},
+        {"label": "Common uses", "text": "SSRI antidepressants are used for depression, generalised anxiety disorder, panic disorder, obsessive-compulsive disorder, social anxiety and some other conditions. They are often a first choice because they are generally better tolerated than older antidepressants."},
+        {"label": "Common side effects", "text": "Common side effects of SSRI antidepressants include nausea, headache, sleep changes, restlessness and sexual problems. Many side effects ease after the first weeks. Some people feel more anxious or have worsened mood early on and should contact their prescriber."},
+        {"label": "Precautions & interactions", "text": "SSRI antidepressants can interact with other serotonin-raising medicines, some painkillers and blood thinners, risking serotonin syndrome or bleeding. Do not start, stop or change SSRI antidepressants without your prescriber's advice, as stopping suddenly can cause withdrawal-type symptoms."},
+        {"label": "Key facts", "text": "SSRI antidepressants usually take several weeks to show their full benefit, and they are not addictive in the way some other drugs are. Younger people starting SSRI antidepressants should be monitored for changes in mood or suicidal thoughts."}
+      ],
+      "sample_questions": ["How do SSRI antidepressants work?", "How long do SSRI antidepressants take to start working?", "Why should SSRI antidepressants not be stopped suddenly?"]
+    },
+    {
+      "id": "corticosteroids",
+      "title": "Corticosteroids",
+      "category": "Medicines",
+      "type": "drug",
+      "aliases": ["prednisone", "prednisolone", "dexamethasone", "hydrocortisone", "steroids", "steroid tablets", "steroid cream"],
+      "summary": "Corticosteroids are medicines similar to the hormones made by the adrenal glands. They strongly reduce inflammation and calm the immune system, and are given as tablets, inhalers, creams, eye drops or injections.",
+      "sections": [
+        {"label": "How it works", "text": "Corticosteroids imitate cortisol, a natural hormone, and switch off many inflammatory and immune pathways in the body. This reduces swelling, redness and allergic or autoimmune activity in the affected tissue."},
+        {"label": "Common uses", "text": "Corticosteroids are used for asthma and COPD flare-ups, allergic reactions, eczema, inflammatory bowel disease, rheumatoid arthritis and other autoimmune conditions. They can be given by mouth, inhaled, applied to the skin or injected."},
+        {"label": "Common side effects", "text": "Short courses of corticosteroids can cause increased appetite, mood changes, trouble sleeping and raised blood sugar. Longer or higher use of corticosteroids can cause weight gain, thinning bones, thinning skin, raised blood pressure and increased risk of infection."},
+        {"label": "Precautions & interactions", "text": "Corticosteroids can raise blood sugar in people with diabetes and can increase infection risk. After longer use the body's own hormone production is suppressed, so do not stop corticosteroids suddenly; always follow your prescriber's advice on starting, stopping or changing them."},
+        {"label": "Key facts", "text": "Corticosteroids are different from the anabolic steroids used for muscle building. Inhaled and topical corticosteroids act mostly locally and carry fewer whole-body effects than tablets. People on long-term corticosteroids may be advised to carry a steroid card."}
+      ],
+      "sample_questions": ["How do corticosteroids reduce inflammation?", "Why must corticosteroids not be stopped suddenly after long use?", "What are the side effects of long-term corticosteroids?"]
+    },
+    {
+      "id": "antihistamines",
+      "title": "Antihistamines",
+      "category": "Medicines",
+      "type": "drug",
+      "aliases": ["cetirizine", "loratadine", "fexofenadine", "chlorphenamine", "diphenhydramine", "allergy tablets", "hay fever medicine"],
+      "summary": "Antihistamines are medicines that block the action of histamine, a chemical released during allergic reactions. They relieve symptoms such as sneezing, itching, runny nose and hives.",
+      "sections": [
+        {"label": "How it works", "text": "Antihistamines block histamine from attaching to its H1 receptors on cells. Histamine is released during an allergic reaction and causes itching, sneezing, watery eyes and swelling, so antihistamines reduce these symptoms."},
+        {"label": "Common uses", "text": "Antihistamines are used for hay fever (allergic rhinitis), hives (urticaria), itchy skin, insect bites and some mild allergic reactions. Some older antihistamines are also used for travel sickness or short-term help with sleep."},
+        {"label": "Common side effects", "text": "Older (first-generation) antihistamines often cause drowsiness, dry mouth and blurred vision. Newer (second-generation) antihistamines are less sedating but can still cause headache, dry mouth or some tiredness in a few people."},
+        {"label": "Precautions & interactions", "text": "Drowsy antihistamines can impair driving and increase the effect of alcohol and sedatives. Antihistamines need extra care in older adults, in pregnancy, and in people with glaucoma or prostate problems. Check with your prescriber or pharmacist before starting, stopping or combining antihistamines."},
+        {"label": "Key facts", "text": "Antihistamines do not treat a severe allergic reaction (anaphylaxis); that needs emergency adrenaline and urgent medical care. Antihistamines work best for preventing or easing symptoms, and many are sold over the counter."}
+      ],
+      "sample_questions": ["How do antihistamines relieve allergy symptoms?", "Why do some antihistamines make you drowsy?", "Can antihistamines treat a severe allergic reaction?"]
+    },
+    {
+      "id": "complete-blood-count",
+      "title": "Complete Blood Count (CBC)",
+      "category": "Lab tests",
+      "type": "test",
+      "aliases": ["cbc", "full blood count", "fbc", "blood count", "hemogram", "haemoglobin test"],
+      "summary": "A complete blood count (CBC) is a common blood test that measures the amount and types of cells in the blood, including red cells, white cells and platelets. It gives a broad picture of general health.",
+      "sections": [
+        {"label": "What it measures", "text": "A complete blood count measures red blood cells, haemoglobin, haematocrit, white blood cells (with their types) and platelets. The CBC also includes indices describing the size and haemoglobin content of red cells."},
+        {"label": "Why it is ordered", "text": "A complete blood count is ordered as part of routine checks and to look into tiredness, infection, bruising, bleeding or unexplained weight loss. It is also used to detect anaemia, monitor treatments and follow blood disorders."},
+        {"label": "How it is done", "text": "A complete blood count uses a small blood sample, usually drawn from a vein in the arm with a needle. No special preparation is normally needed, and the sample is analysed by an automated machine in the laboratory."},
+        {"label": "Understanding results", "text": "Reference ranges for a complete blood count vary by laboratory, age and sex. Low red cells or haemoglobin suggest anaemia, high white cells often suggest infection or inflammation, and low platelets can raise bleeding risk. A clinician interprets CBC results with symptoms."},
+        {"label": "Key facts", "text": "A complete blood count is one of the most commonly ordered blood tests. An abnormal CBC result does not give a diagnosis by itself and often leads to further tests. Results can be affected by hydration, medicines and recent illness."}
+      ],
+      "sample_questions": ["What does a complete blood count measure?", "What does a low haemoglobin on a complete blood count mean?", "Do I need to fast before a complete blood count?"]
+    },
+    {
+      "id": "hba1c-test",
+      "title": "HbA1c Test",
+      "category": "Lab tests",
+      "type": "test",
+      "aliases": ["a1c", "glycated hemoglobin", "glycosylated haemoglobin", "hemoglobin a1c", "average blood sugar test"],
+      "summary": "The HbA1c test measures the percentage of haemoglobin in red blood cells that has glucose attached. It reflects average blood sugar over the past two to three months and is used to diagnose and monitor diabetes.",
+      "sections": [
+        {"label": "What it measures", "text": "The HbA1c test measures how much glucose has attached to haemoglobin in red blood cells. Because red cells live for about three months, HbA1c shows average blood glucose control over roughly the past two to three months."},
+        {"label": "Why it is ordered", "text": "The HbA1c test is ordered to diagnose diabetes and prediabetes and to monitor how well diabetes treatment is working. People with diabetes usually have an HbA1c test at regular intervals set by their care team."},
+        {"label": "How it is done", "text": "The HbA1c test uses a blood sample from a vein or a finger-prick, depending on the setting. Fasting is not normally needed for an HbA1c test, which is convenient compared with some other glucose tests."},
+        {"label": "Understanding results", "text": "Higher HbA1c results mean higher average blood sugar. A widely used diagnostic threshold for diabetes is an HbA1c of 48 mmol/mol (6.5%) or above, confirmed as advised. Targets for people with diabetes are individualised, and ranges can vary by laboratory."},
+        {"label": "Key facts", "text": "The HbA1c test can be unreliable in conditions affecting red blood cells, such as anaemia, some haemoglobin variants, recent blood loss or transfusion. HbA1c does not show day-to-day swings in blood sugar, so home glucose checks remain useful."}
+      ],
+      "sample_questions": ["What does the HbA1c test measure?", "Do I need to fast for an HbA1c test?", "What HbA1c level is used to diagnose diabetes?"]
+    },
+    {
+      "id": "lipid-panel",
+      "title": "Lipid Panel (Cholesterol Test)",
+      "category": "Lab tests",
+      "type": "test",
+      "aliases": ["cholesterol test", "lipid profile", "lipid test", "ldl test", "hdl cholesterol", "triglycerides test"],
+      "summary": "A lipid panel is a blood test that measures cholesterol and triglycerides. It helps estimate the risk of heart disease and stroke and guides decisions about lifestyle changes and cholesterol-lowering treatment.",
+      "sections": [
+        {"label": "What it measures", "text": "A lipid panel measures total cholesterol, LDL ('bad') cholesterol, HDL ('good') cholesterol and triglycerides. Some laboratories calculate other values, such as non-HDL cholesterol, from the lipid panel results."},
+        {"label": "Why it is ordered", "text": "A lipid panel is ordered to screen for high cholesterol, assess cardiovascular risk, and monitor the effect of diet, exercise or cholesterol-lowering medicines. It is often recommended for adults at intervals or earlier if there is a family history."},
+        {"label": "How it is done", "text": "A lipid panel uses a blood sample taken from a vein. Some laboratories ask for fasting before a lipid panel, particularly when triglycerides need to be measured accurately, but non-fasting tests are increasingly accepted. Follow the instructions you are given."},
+        {"label": "Understanding results", "text": "Ranges for a lipid panel vary by laboratory and by a person's overall risk. In general, higher LDL cholesterol and triglycerides and lower HDL cholesterol are linked with higher cardiovascular risk. A clinician interprets the lipid panel alongside other risk factors."},
+        {"label": "Key facts", "text": "High cholesterol usually causes no symptoms, so a lipid panel is the main way to detect it. Results can change with diet, weight, alcohol, medicines and some medical conditions, and a lipid panel may be repeated to confirm a finding."}
+      ],
+      "sample_questions": ["What does a lipid panel measure?", "Do I have to fast before a lipid panel?", "What do high LDL results on a lipid panel mean?"]
+    },
+    {
+      "id": "kidney-function-tests",
+      "title": "Kidney Function Tests",
+      "category": "Lab tests",
+      "type": "test",
+      "aliases": ["egfr", "creatinine", "serum creatinine", "urea test", "bun", "renal function test", "gfr"],
+      "summary": "Kidney function tests are blood and urine tests that show how well the kidneys filter waste. They typically include creatinine, urea and the estimated glomerular filtration rate (eGFR), often with a urine protein check.",
+      "sections": [
+        {"label": "What it measures", "text": "Kidney function tests measure waste products in the blood, mainly creatinine and urea, and use creatinine to calculate the eGFR, an estimate of how well the kidneys filter blood. Urine tests for protein or albumin are often added."},
+        {"label": "Why it is ordered", "text": "Kidney function tests are ordered to detect and monitor chronic kidney disease, to check people with diabetes or high blood pressure, and to guide safe use of medicines that the kidneys clear from the body."},
+        {"label": "How it is done", "text": "Kidney function tests use a blood sample from a vein and often a urine sample. Preparation is usually minimal, though you may be asked to avoid eating a large amount of cooked meat or to stay well hydrated before testing."},
+        {"label": "Understanding results", "text": "Higher creatinine or urea and a lower eGFR generally suggest that the kidneys are not filtering as well. Ranges vary by laboratory, age and sex. Kidney function tests are often repeated, since dehydration or illness can temporarily change results."},
+        {"label": "Key facts", "text": "Early chronic kidney disease often causes no symptoms, so kidney function tests are important for detection. Muscle mass, diet and some medicines can affect creatinine, so kidney function tests are read alongside the person's overall health."}
+      ],
+      "sample_questions": ["What do kidney function tests measure?", "What does a low eGFR mean in kidney function tests?", "Why are kidney function tests important for people with diabetes?"]
+    },
+    {
+      "id": "liver-function-tests",
+      "title": "Liver Function Tests",
+      "category": "Lab tests",
+      "type": "test",
+      "aliases": ["lft", "liver panel", "alt test", "ast test", "bilirubin test", "liver enzymes", "alkaline phosphatase"],
+      "summary": "Liver function tests are a group of blood tests that measure liver enzymes, bilirubin and proteins. They help detect liver injury or disease and monitor liver health, including during treatment with certain medicines.",
+      "sections": [
+        {"label": "What it measures", "text": "Liver function tests measure enzymes such as ALT, AST and alkaline phosphatase, along with bilirubin and proteins like albumin. Some reflect liver cell injury, while others reflect bile flow or how well the liver makes proteins."},
+        {"label": "Why it is ordered", "text": "Liver function tests are ordered to look into jaundice, abdominal pain or fatigue, to screen people at risk of liver disease, and to monitor medicines or alcohol use that can affect the liver."},
+        {"label": "How it is done", "text": "Liver function tests use a blood sample drawn from a vein. Fasting is not always required but may be requested, and your clinician may ask you to avoid alcohol or temporarily review certain medicines before liver function tests."},
+        {"label": "Understanding results", "text": "Raised ALT and AST generally suggest liver cell injury, while a raised alkaline phosphatase or bilirubin may point to bile flow problems. Reference ranges for liver function tests vary by laboratory, and results need clinical interpretation."},
+        {"label": "Key facts", "text": "Mildly abnormal liver function tests are common and can be caused by fatty liver, alcohol, viral hepatitis, medicines or temporary illness. They are usually repeated or followed by other tests, since liver function tests alone do not give a diagnosis."}
+      ],
+      "sample_questions": ["What do liver function tests measure?", "What do high ALT and AST results mean in liver function tests?", "Can medicines change liver function test results?"]
+    },
+    {
+      "id": "troponin-test",
+      "title": "Troponin Test",
+      "category": "Lab tests",
+      "type": "test",
+      "aliases": ["troponin", "cardiac troponin", "high-sensitivity troponin", "hs-troponin", "heart attack blood test"],
+      "summary": "The troponin test is a blood test that detects troponin, a protein released into the blood when heart muscle is damaged. It is a key test for diagnosing a heart attack.",
+      "sections": [
+        {"label": "What it measures", "text": "The troponin test measures cardiac troponin (types I or T), proteins found in heart muscle cells. When heart muscle is injured, troponin leaks into the bloodstream, so higher levels in the blood indicate heart muscle damage."},
+        {"label": "Why it is ordered", "text": "The troponin test is ordered when someone has chest pain or other symptoms that could mean a heart attack. It is used together with an electrocardiogram (ECG) and a clinical assessment in emergency care."},
+        {"label": "How it is done", "text": "The troponin test uses a blood sample taken from a vein, often repeated after a few hours to see whether levels are rising or falling. No fasting or special preparation is needed in an emergency."},
+        {"label": "Understanding results", "text": "A raised troponin level, especially one that rises or falls over time, suggests heart muscle injury, commonly from a heart attack. Cut-off values vary by laboratory and assay. A normal troponin test must be interpreted along with symptoms and timing."},
+        {"label": "Key facts", "text": "High troponin does not always mean a heart attack, as it can also rise with conditions such as myocarditis, heart failure, kidney disease, severe infection or a blood clot in the lungs. Modern high-sensitivity troponin tests can detect very small changes."}
+      ],
+      "sample_questions": ["What does the troponin test measure?", "Does a high troponin test always mean a heart attack?", "Why is the troponin test repeated after a few hours?"]
+    },
+    {
+      "id": "thyroid-function-tests",
+      "title": "Thyroid Function Tests",
+      "category": "Lab tests",
+      "type": "test",
+      "aliases": ["tsh", "thyroid blood test", "thyroid panel", "free t4", "thyroxine test", "thyroid stimulating hormone"],
+      "summary": "Thyroid function tests are blood tests that check how well the thyroid gland is working. They usually measure thyroid-stimulating hormone (TSH) and often thyroid hormones such as free T4.",
+      "sections": [
+        {"label": "What it measures", "text": "Thyroid function tests usually measure TSH, made by the pituitary gland to signal the thyroid, and free T4, a main thyroid hormone. Free T3 and thyroid antibodies may also be included in thyroid function tests."},
+        {"label": "Why it is ordered", "text": "Thyroid function tests are ordered for symptoms such as fatigue, weight change, palpitations, feeling too hot or cold, or a swelling in the neck. They are also used to monitor treatment of an underactive or overactive thyroid."},
+        {"label": "How it is done", "text": "Thyroid function tests use a blood sample drawn from a vein. Fasting is usually not required. Tell the clinician about medicines or supplements, since some, such as biotin or thyroid treatment timing, can affect thyroid function test results."},
+        {"label": "Understanding results", "text": "A high TSH with low free T4 generally suggests an underactive thyroid (hypothyroidism), while a low TSH with high free T4 suggests an overactive thyroid (hyperthyroidism). Ranges for thyroid function tests vary by laboratory."},
+        {"label": "Key facts", "text": "TSH is often the first test used because it is very sensitive to thyroid problems. Illness, pregnancy and some medicines can change thyroid function tests, so abnormal results are sometimes repeated before conclusions are drawn."}
+      ],
+      "sample_questions": ["What do thyroid function tests measure?", "What does a high TSH on thyroid function tests mean?", "Do I need to fast for thyroid function tests?"]
+    },
+    {
+      "id": "urinalysis",
+      "title": "Urinalysis",
+      "category": "Lab tests",
+      "type": "test",
+      "aliases": ["urine test", "urine analysis", "urine dipstick", "urine culture", "midstream urine sample"],
+      "summary": "Urinalysis is a test of a urine sample that checks its appearance, chemical makeup and microscopic contents. It helps detect urinary infections, kidney problems, diabetes and other conditions.",
+      "sections": [
+        {"label": "What it measures", "text": "Urinalysis assesses the appearance of urine, uses a dipstick to check substances such as glucose, protein, blood, ketones and signs of infection, and may include microscopy to look for cells, crystals or bacteria."},
+        {"label": "Why it is ordered", "text": "Urinalysis is ordered to investigate urinary symptoms such as burning or frequent urination, back pain or blood in the urine. It is also part of routine health checks, pregnancy care and monitoring of kidney disease and diabetes."},
+        {"label": "How it is done", "text": "Urinalysis needs a urine sample, often a midstream sample, where the first part of the stream is passed into the toilet and the middle part is collected in a clean container. The sample should reach the laboratory promptly."},
+        {"label": "Understanding results", "text": "Findings such as white cells or nitrites may suggest a urinary tract infection, while protein or blood can point to kidney or urinary tract problems and glucose or ketones to diabetes. Urinalysis results are interpreted with symptoms, and ranges vary by laboratory."},
+        {"label": "Key facts", "text": "A poorly collected sample can give misleading urinalysis results, and dehydration, certain foods, medicines and menstrual blood can alter findings. If infection is suspected, a urine culture may follow urinalysis to identify the bacteria."}
+      ],
+      "sample_questions": ["What does urinalysis check for?", "How do I give a midstream sample for urinalysis?", "What does protein or blood in a urinalysis mean?"]
+    }
+  ]
+}

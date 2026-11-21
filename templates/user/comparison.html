@@ -1,0 +1,162 @@
+{% extends 'base.html' %}
+{% block title %}Answer report{% endblock %}
+{% block section %}Ask VerifAI{% endblock %}
+{% block page_title %}Answer report{% endblock %}
+{% block content %}
+{% set er = session.existing_result %}
+{% set pr = session.proposed_result %}
+{% set vs = pr.verification_status if pr else 'Insufficient Evidence' %}
+{% macro status_badge(s) -%}
+  <span class="vf-badge {% if s == 'Verified' %}vf-badge-ok{% elif s == 'Partially Verified' %}vf-badge-warn{% elif s == 'General Knowledge' %}vf-badge-info{% else %}vf-badge-muted{% endif %}">
+    <i class="fas {% if s == 'Verified' %}fa-circle-check{% elif s == 'Partially Verified' %}fa-circle-half-stroke{% elif s == 'General Knowledge' %}fa-book-open{% else %}fa-circle-minus{% endif %}"></i> {{ s }}
+  </span>
+{%- endmacro %}
+{% macro pct(v) %}{{ '%.0f'|format((v or 0) * 100) }}%{% endmacro %}
+
+<div class="page-header">
+  <div class="vf-eyebrow">Question · {{ session.created_at.strftime('%d %b %Y, %H:%M') }}</div>
+  <h1 style="max-width:900px;">{{ session.question }}</h1>
+  <div class="d-flex gap-2 flex-wrap mt-3">
+    {{ status_badge(vs) }}
+    {% if report and report.subjects %}<span class="vf-chip"><i class="fas fa-crosshairs"></i> Topic: {{ report.subjects|join(', ') }}</span>{% endif %}
+    {% if report and report.model %}<span class="vf-chip"><i class="fas fa-microchip"></i> {{ report.model }}</span>{% endif %}
+  </div>
+  <div class="d-flex gap-2 flex-wrap mt-3">
+    <a href="{{ url_for('user.question') }}" class="vf-btn"><i class="fas fa-comments"></i> Continue conversation</a>
+    <a href="{{ url_for('user.proposed_result', session_id=session.id) }}" class="vf-btn-ghost"><i class="fas fa-shield-halved"></i> Evidence &amp; verification</a>
+    <a href="{{ url_for('user.feedback', session_id=session.id) }}" class="vf-btn-ghost"><i class="fas fa-star"></i> Rate this answer</a>
+  </div>
+</div>
+
+{% if report %}
+{% set B, V = report.baseline, report.verifai %}
+<div class="vf-grid vf-grid-4 mb-4">
+  <div class="vf-card vf-kpi">
+    <div class="vf-kpi-label">Evidence support <i class="fas fa-circle-info vf-help" data-bs-toggle="tooltip" title="Share of answer sentences whose content is found in the retrieved evidence."></i></div>
+    <div class="vf-kpi-value">{{ pct(V.evidence_support) }}</div>
+    <div class="vf-kpi-foot">{{ V.supported_sentences }} of {{ V.answer_sentences }} answer sentences backed by sources</div>
+  </div>
+  <div class="vf-card vf-kpi">
+    <div class="vf-kpi-label">Question coverage <i class="fas fa-circle-info vf-help" data-bs-toggle="tooltip" title="Share of the question's key terms that the answer addresses."></i></div>
+    <div class="vf-kpi-value">{{ pct(V.question_coverage) }}</div>
+    <div class="vf-kpi-foot">Baseline {{ pct(B.question_coverage) }}</div>
+  </div>
+  <div class="vf-card vf-kpi">
+    <div class="vf-kpi-label">Clinical breadth <i class="fas fa-circle-info vf-help" data-bs-toggle="tooltip" title="How many of six clinical aspects the answer covers: definition, causes, symptoms, diagnosis, treatment, prevention."></i></div>
+    <div class="vf-kpi-value">{{ V.aspects|length }}<small>/ {{ aspects|length }}</small></div>
+    <div class="vf-kpi-foot">Baseline {{ B.aspects|length }} / {{ aspects|length }}</div>
+  </div>
+  <div class="vf-card vf-kpi">
+    <div class="vf-kpi-label">Retrieval latency</div>
+    <div class="vf-kpi-value">{{ '%.2f'|format(V.latency_ms) }}<small>ms</small></div>
+    <div class="vf-kpi-foot">Baseline {{ '%.2f'|format(B.latency_ms) }} ms{% if V.latency_ms > 0 and B.latency_ms > V.latency_ms %} · <span class="vf-delta-up">{{ '%.1f'|format(B.latency_ms / V.latency_ms) }}× faster</span>{% endif %}</div>
+  </div>
+</div>
+{% endif %}
+
+<div class="vf-grid vf-grid-2 mb-4" style="align-items:start;">
+  <div class="vf-card">
+    <div class="vf-card-head">
+      <h3><i class="fas fa-magnifying-glass" style="color:var(--slate-500)"></i> Baseline · keyword search</h3>
+      <span class="vf-sub">Returns the best-matching passage as-is</span>
+    </div>
+    <div class="vf-card-pad">
+      {% if er and er.answer and (not report or report.baseline.passages_retrieved) %}
+        {% set docs = er.retrieved_docs|from_json %}
+        {% if docs %}<div class="vf-small vf-muted mb-2">Top passage · {{ docs[0] }}</div>{% endif %}
+        <div style="font-size:14px;color:var(--ink-700);">{{ er.answer }}</div>
+      {% else %}
+        <div class="vf-empty" style="padding:20px;"><i class="fas fa-file-circle-question"></i>No matching passage found in the index.</div>
+      {% endif %}
+    </div>
+  </div>
+  <div class="vf-card" style="border-color:var(--brand-100);">
+    <div class="vf-card-head">
+      <h3><i class="fas fa-shield-halved"></i> VerifAI · evidence-grounded answer</h3>
+      {{ status_badge(vs) }}
+    </div>
+    <div class="vf-card-pad chat-text" style="font-size:14px;color:var(--ink-700);">
+      {{ (pr.answer if pr else '')|md }}
+      {% if report %}
+      <div class="d-flex gap-2 flex-wrap mt-3">
+        {% for a in aspects %}
+          <span class="vf-chip {% if a in report.verifai.aspects %}vf-chip-ok{% endif %}">{% if a in report.verifai.aspects %}<i class="fas fa-check"></i>{% endif %} {{ a }}</span>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% if report %}
+{% macro mrow(name, definition, bv, vv, kind='pct', lower_better=False, baseline_na=False) -%}
+  {% if lower_better %}{% set win = 'verifai' if vv < bv * 0.98 else ('baseline' if bv < vv * 0.98 else 'tie') %}
+  {% else %}{% set win = 'verifai' if vv > bv + 0.0049 else ('baseline' if bv > vv + 0.0049 else 'tie') %}{% endif %}
+  <tr>
+    <td><div class="vf-metric-name">{{ name }}</div><div class="vf-metric-def">{{ definition }}</div></td>
+    {% for v in (bv, vv) %}
+    <td style="width:170px;">
+      {% if loop.first and baseline_na %}<span class="vf-muted" style="font-weight:500;">n/a · verbatim quote</span>{% else %}
+      {% if kind == 'pct' %}<div class="vf-num">{{ pct(v) }}</div><div class="vf-bar {% if loop.first %}base{% endif %} mt-1"><span style="width:{{ (v or 0) * 100 }}%"></span></div>
+      {% elif kind == 'ms' %}<div class="vf-num">{{ '%.2f'|format(v) }} ms</div>
+      {% elif kind == 'num3' %}<div class="vf-num">{{ '%.3f'|format(v) }}</div>
+      {% else %}<div class="vf-num">{{ v }}</div>{% endif %}
+      {% endif %}
+    </td>
+    {% endfor %}
+    <td style="width:110px;">
+      {% if baseline_na %}<span class="vf-muted vf-small">VerifAI only</span>
+      {% elif win == 'verifai' %}<span class="vf-win vf-win-verifai"><i class="fas fa-arrow-up"></i> VerifAI</span>
+      {% elif win == 'baseline' %}<span class="vf-win vf-win-baseline">Baseline</span>
+      {% else %}<span class="vf-win vf-win-tie">Tie</span>{% endif %}
+    </td>
+  </tr>
+{%- endmacro %}
+<div class="vf-card mb-4">
+  <div class="vf-card-head">
+    <h3><i class="fas fa-table-list"></i> Measured for this question</h3>
+    <span class="vf-sub">Top {{ report.k }} passages per system · {{ report.relevant_in_index }} relevant passages in the index</span>
+  </div>
+  <div class="table-responsive">
+  <table class="vf-table">
+    <thead><tr><th>Metric</th><th>Baseline · TF-IDF</th><th>VerifAI · BM25 + LLM</th><th>Better</th></tr></thead>
+    <tbody>
+      <tr><td colspan="4" class="vf-small" style="background:var(--slate-50);font-weight:600;color:var(--slate-600);">Answer quality</td></tr>
+      {{ mrow('Evidence support', "Answer sentences whose content words are mostly (at least 50%) found in that system's retrieved passages.", B.evidence_support, V.evidence_support, baseline_na=True) }}
+      {{ mrow('Question coverage', 'Key terms of the question (' ~ (report.key_terms|join(', ')) ~ ') that the answer addresses.', B.question_coverage, V.question_coverage) }}
+      {{ mrow('Clinical breadth', 'Clinical aspects covered out of six: definition, causes, symptoms, diagnosis, treatment, prevention.', B.aspect_breadth, V.aspect_breadth) }}
+      {{ mrow('Citations', 'Distinct sources cited inline in the answer, e.g. [1]. The baseline never cites.', B.citations, V.citations, 'int') }}
+      <tr><td colspan="4" class="vf-small" style="background:var(--slate-50);font-weight:600;color:var(--slate-600);">Retrieval quality <span style="font-weight:500">· a passage counts as relevant when it names the question's topic and at least half of its key terms</span></td></tr>
+      {{ mrow('Precision@' ~ report.k, 'Share of the retrieved passages that are relevant.', B.precision_at_k, V.precision_at_k) }}
+      {{ mrow('Recall@' ~ report.k, 'Relevant passages retrieved, out of the most that could fit in the top ' ~ report.k ~ '.', B.recall_at_k, V.recall_at_k) }}
+      {{ mrow('MRR', 'How early the first relevant passage appears (1 = first position).', B.mrr, V.mrr, 'num3') }}
+      {{ mrow('nDCG@' ~ report.k, 'Ranking quality, rewarding relevant passages placed higher.', B.ndcg_at_k, V.ndcg_at_k, 'num3') }}
+      {{ mrow('Retrieval latency', 'Time to search the full index for this question. Lower is better.', B.latency_ms, V.latency_ms, 'ms', True) }}
+    </tbody>
+  </table>
+  </div>
+</div>
+{% else %}
+<div class="vf-callout neutral mb-4"><i class="fas fa-circle-info"></i><div>This answer was produced before measured answer reports were introduced. Ask the question again to see its full measurements.</div></div>
+{% endif %}
+
+{% if pr and pr.evidences %}
+<div class="vf-card mb-4">
+  <div class="vf-card-head"><h3><i class="fas fa-book-medical"></i> Sources used by VerifAI</h3><span class="vf-sub">Numbers match the citations in the answer</span></div>
+  <ul class="vf-list">
+    {% for e in pr.evidences %}
+    <li style="align-items:flex-start;">
+      <span class="vf-chip vf-chip-brand" style="min-width:30px;justify-content:center;">{{ loop.index }}</span>
+      <div>
+        <div style="font-weight:600;">{% if e.source_url and (e.source_url.startswith('http') or e.source_url.startswith('/')) %}<a href="{{ e.source_url }}" {% if e.source_url.startswith('http') %}target="_blank" rel="noopener"{% endif %}>{{ e.source_title }}</a>{% else %}{{ e.source_title }}{% endif %}</div>
+        <div class="vf-small vf-muted mb-1">{{ e.source_journal }}{% if e.source_year %} · {{ e.source_year }}{% endif %}</div>
+        <div class="vf-small" style="color:var(--ink-700);">{{ e.passage_text }}</div>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% elif vs == 'General Knowledge' %}
+<div class="vf-callout mb-4"><i class="fas fa-book-open"></i><div>No indexed source covers this question, so VerifAI answered from general medical knowledge and labelled the answer that way. No citations are shown because none exist.</div></div>
+{% endif %}
+{% endblock %}

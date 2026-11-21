@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% block title %}User Management{% endblock %}
+{% block page_title %}User Management{% endblock %}
+{% block content %}
+<div class="page-header">
+  <h1><i class="fas fa-users text-pink me-2"></i>User Management</h1>
+  <p>Manage user accounts and activation status for VerifAI access.</p>
+</div>
+
+<!-- Summary Badges -->
+<div class="d-flex gap-3 mb-4 flex-wrap">
+  <div class="stat-card" style="flex:0;min-width:160px;padding:16px;">
+    <div class="stat-value" style="font-size:24px;">{{ users|length }}</div>
+    <div class="stat-label">Total Users</div>
+  </div>
+  <div class="stat-card green" style="flex:0;min-width:160px;padding:16px;">
+    <div class="stat-value" style="font-size:24px;">{{ users|selectattr('status','eq','active')|list|length }}</div>
+    <div class="stat-label">Active</div>
+  </div>
+  <div class="stat-card orange" style="flex:0;min-width:160px;padding:16px;">
+    <div class="stat-value" style="font-size:24px;">{{ users|selectattr('status','eq','pending')|list|length }}</div>
+    <div class="stat-label">Pending</div>
+  </div>
+</div>
+
+<div class="content-card">
+  <div class="card-header">
+    <h5><i class="fas fa-list"></i> All Registered Users</h5>
+  </div>
+  <div class="card-body p-0">
+    <div class="table-container">
+      <table class="data-table">
+        <thead>
+          <tr><th>#</th><th>Name</th><th>Username</th><th>Email</th><th>Mobile</th><th>Status</th><th>Registered</th><th>Actions</th></tr>
+        </thead>
+        <tbody>
+          {% for u in users %}
+          <tr {% if u.status == 'pending' %}style="background:rgba(255,152,0,0.04);"{% endif %}>
+            <td>{{ u.id }}</td>
+            <td><strong>{{ u.name }}</strong></td>
+            <td><code>{{ u.username }}</code></td>
+            <td>{{ u.email }}</td>
+            <td>{{ u.mobile }}</td>
+            <td><span class="badge-{{ u.status }}">{{ u.status|title }}</span></td>
+            <td style="font-size:12px;">{{ u.created_at.strftime('%d %b %Y') }}</td>
+            <td>
+              <div class="d-flex gap-2 flex-wrap">
+                {% if u.status != 'active' %}
+                <a href="{{ url_for('admin.activate_user', uid=u.id) }}" class="btn-pink btn-sm-pink" title="Activate">
+                  <i class="fas fa-check"></i> Activate
+                </a>
+                {% endif %}
+                {% if u.status == 'active' %}
+                <a href="{{ url_for('admin.deactivate_user', uid=u.id) }}" class="btn-pink-outline btn-sm-pink" style="color:#FF9800;border-color:#FF9800;" title="Deactivate">
+                  <i class="fas fa-ban"></i> Deactivate
+                </a>
+                {% endif %}
+                <a href="{{ url_for('admin.delete_user', uid=u.id) }}" class="btn-pink-outline btn-sm-pink" style="color:#F44336;border-color:#F44336;" title="Delete" onclick="return confirm('Delete user {{ u.username }}?');">
+                  <i class="fas fa-trash"></i>
+                </a>
+              </div>
+            </td>
+          </tr>
+          {% else %}
+          <tr><td colspan="8" class="text-center" style="padding:32px;color:var(--text-muted);">No users registered yet.</td></tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+{% endblock %}

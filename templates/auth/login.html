@@ -1,0 +1,22 @@
+{% extends 'auth/_auth_layout.html' %}
+{% block title %}Sign in{% endblock %}
+{% block card %}
+<h1>Sign in</h1>
+<p class="vf-sub">Welcome back. Sign in to continue to your workspace.</p>
+<form method="POST" action="{{ url_for('auth.login') }}" novalidate>
+  <div class="mb-3">
+    <label class="form-label" for="username">Username</label>
+    <div class="vf-input-icon"><i class="fas fa-user"></i>
+      <input type="text" id="username" name="username" class="form-control" autocomplete="username" required autofocus>
+    </div>
+  </div>
+  <div class="mb-4">
+    <label class="form-label" for="password">Password</label>
+    <div class="vf-input-icon"><i class="fas fa-lock"></i>
+      <input type="password" id="password" name="password" class="form-control" autocomplete="current-password" required>
+    </div>
+  </div>
+  <button type="submit" class="vf-btn w-100" style="padding:11px !important;">Sign in</button>
+</form>
+<p class="vf-small vf-muted text-center mt-4 mb-0">New to VerifAI? <a href="{{ url_for('auth.register') }}">Request access</a></p>
+{% endblock %}

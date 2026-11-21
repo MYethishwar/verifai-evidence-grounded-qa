@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+{% block title %}Overview{% endblock %}
+{% block section %}Workspace{% endblock %}
+{% block page_title %}Overview{% endblock %}
+{% block content %}
+{% set first = current_user|first_name %}
+<section class="vf-hero">
+  <div class="vf-hero-canvas" data-vf-particles="dark"></div>
+  <div class="vf-hero-body">
+    <div class="vf-eyebrow">Workspace · evidence-grounded answers</div>
+    <h1>Welcome back, {{ first }}</h1>
+    <p class="vf-hero-typed">Try asking: <b><span data-vf-typed='{{ hero_questions|tojson|forceescape }}'></span></b></p>
+    <form method="GET" action="{{ url_for('user.question') }}" class="vf-hero-search">
+      <input type="text" name="q" placeholder="Ask a clinical question…" aria-label="Ask a clinical question">
+      <button type="submit" class="vf-btn"><i class="fas fa-arrow-right"></i> Ask</button>
+    </form>
+  </div>
+  <div class="vf-hero-float" data-vf-float>
+    {% for t in hero_topics %}
+    <a class="vf-float-chip" href="{{ url_for('user.question', q=t.question) }}" title="{{ t.question }}"><i class="fas fa-circle-nodes"></i>{{ t.title }}</a>
+    {% endfor %}
+  </div>
+</section>
+
+<div class="vf-grid vf-grid-4 mb-4">
+  <div class="vf-card vf-kpi">
+    <div class="vf-kpi-label"><i class="fas fa-circle-question"></i> Questions asked</div>
+    <div class="vf-kpi-value"><span data-vf-count="{{ total_questions }}">{{ total_questions }}</span></div>
+    <div class="vf-kpi-foot">all time</div>
+  </div>
+  <div class="vf-card vf-kpi">
+    <div class="vf-kpi-label"><i class="fas fa-link"></i> Grounded in sources <i class="fas fa-circle-info vf-help" data-bs-toggle="tooltip" title="Answers verified or partially verified against cited evidence."></i></div>
+    <div class="vf-kpi-value">{% if stats.grounded_rate is not none %}<span data-vf-count="{{ '%.0f'|format(stats.grounded_rate * 100) }}">{{ '%.0f'|format(stats.grounded_rate * 100) }}</span><small>%</small>{% else %}—{% endif %}</div>
+    <div class="vf-kpi-foot">of your answers cite evidence</div>
+  </div>
+  <div class="vf-card vf-kpi">
+    <div class="vf-kpi-label"><i class="fas fa-circle-check"></i> Fully verified</div>
+    <div class="vf-kpi-value">{% if stats.verified_rate is not none %}<span data-vf-count="{{ '%.0f'|format(stats.verified_rate * 100) }}">{{ '%.0f'|format(stats.verified_rate * 100) }}</span><small>%</small>{% else %}—{% endif %}</div>
+    <div class="vf-kpi-foot">{{ verified_answers }} answers</div>
+  </div>
+  <div class="vf-card vf-kpi">
+    <div class="vf-kpi-label"><i class="fas fa-bolt"></i> Median search time</div>
+    <div class="vf-kpi-value">{% if stats.median_latency_ms is not none %}{{ '%.2f'|format(stats.median_latency_ms) }}<small>ms</small>{% else %}—{% endif %}</div>
+    <div class="vf-kpi-foot">{% if stats.measured %}over {{ stats.measured }} measured questions{% else %}measured from your next question{% endif %}</div>
+  </div>
+</div>
+
+<div class="vf-grid vf-grid-main">
+  <div class="vf-card">
+    <div class="vf-card-head">
+      <h3><i class="fas fa-clock-rotate-left"></i> Recent questions</h3>
+      <a href="{{ url_for('user.question') }}" class="vf-small">Open conversation</a>
+    </div>
+    {% if sessions %}
+    <ul class="vf-list">
+      {% for s in sessions %}
+      {% set st = s.proposed_result.verification_status if s.proposed_result else 'Processing' %}
+      <li>
+        <div style="flex:1;min-width:0;">
+          <a href="{{ url_for('user.comparison', session_id=s.id) }}" style="display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{{ s.question }}</a>
+          <div class="vf-small vf-muted">{{ s.created_at.strftime('%d %b %Y, %H:%M') }}</div>
+        </div>
+        <span class="vf-badge {% if st == 'Verified' %}vf-badge-ok{% elif st == 'Partially Verified' %}vf-badge-warn{% elif st == 'General Knowledge' %}vf-badge-info{% else %}vf-badge-muted{% endif %}">{{ st }}</span>
+        <a href="{{ url_for('user.comparison', session_id=s.id) }}" class="btn-sm-pink">Report</a>
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <div class="vf-empty"><i class="fas fa-comments"></i>No questions yet. Ask your first one to see a verified, cited answer.</div>
+    {% endif %}
+  </div>
+
+  <div class="d-flex flex-column gap-3">
+    <div class="vf-card">
+      <div class="vf-card-head"><h3><i class="fas fa-lightbulb"></i> Try a question</h3></div>
+      <div class="vf-card-pad" style="padding-top:8px;">
+        {% for title, q in starters %}
+        <a class="kb-q" href="{{ url_for('user.question') }}?q={{ q|urlencode }}"><i class="fas fa-arrow-right"></i>{{ q }}</a>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="vf-card vf-card-pad">
+      <div class="d-flex align-items-center gap-2 mb-2"><i class="fas fa-book-medical" style="color:var(--brand)"></i><b>Knowledge base</b></div>
+      <div class="vf-muted vf-small mb-3">{{ stats.kb_topics }} curated topics across {{ stats.kb_groups }} clinical areas, from conditions to medicines and lab tests.</div>
+      <a href="{{ url_for('user.knowledge_base_page') }}" class="vf-btn-ghost w-100">Browse topics</a>
+    </div>
+    <div class="vf-card vf-card-pad">
+      <div class="d-flex align-items-center gap-2 mb-2"><i class="fas fa-flask-vial" style="color:var(--teal)"></i><b>How well does it work?</b></div>
+      <div class="vf-muted vf-small mb-3">See the measured benchmark against the keyword-search baseline.</div>
+      <a href="{{ url_for('user.benchmark_page') }}" class="vf-btn-ghost w-100">View benchmark</a>
+    </div>
+  </div>
+</div>
+{% endblock %}

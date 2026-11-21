@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block title %}Preprocessing{% endblock %}
+{% block page_title %}Data Preprocessing{% endblock %}
+{% block content %}
+<div class="page-header">
+  <h1><i class="fas fa-cogs text-pink me-2"></i>Biomedical Data Preprocessing</h1>
+  <p>Clean and normalize uploaded biomedical documents, then segment into searchable passages.</p>
+</div>
+<div class="row g-4">
+  <div class="col-lg-5">
+    <div class="content-card">
+      <div class="card-header"><h5><i class="fas fa-play-circle"></i> Run Preprocessing</h5></div>
+      <div class="card-body">
+        <form method="POST">
+          <div class="form-group">
+            <label class="form-label">Select Dataset</label>
+            <select name="dataset_id" class="form-select" required>
+              <option value="">-- Choose a dataset --</option>
+              {% for d in datasets %}
+              <option value="{{ d.id }}">{{ d.name }} ({{ d.records_count }} records)</option>
+              {% endfor %}
+            </select>
+          </div>
+          <div class="alert-pink"><i class="fas fa-info-circle"></i> Preprocessing removes HTML, URLs, duplicates, normalizes text, and segments documents into passages of ~120 words.</div>
+          <button type="submit" class="btn-pink w-100 justify-content-center" style="padding:12px;"><i class="fas fa-cogs"></i> Run Preprocessing</button>
+        </form>
+        {% if result %}
+        <div class="content-card mt-3" style="border-left:4px solid #4CAF50;">
+          <div class="card-body">
+            <h6 style="color:#2E7D32;"><i class="fas fa-check-circle"></i> Preprocessing Complete</h6>
+            <p style="font-size:13px;">Documents processed: <strong>{{ result.get('processed', 0) }}</strong></p>
+            <p style="font-size:13px;">Passages created: <strong>{{ result.get('total_passages', 0) }}</strong></p>
+          </div>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-7">
+    <div class="content-card">
+      <div class="card-header"><h5><i class="fas fa-list-check"></i> Preprocessing Pipeline</h5></div>
+      <div class="card-body">
+        {% set steps = [('HTML & URL Removal', 'Remove HTML tags and normalize URLs', 'fas fa-code'), ('Duplicate Removal', 'Remove duplicate records and passages', 'fas fa-copy'), ('Text Normalization', 'Lowercase, remove special characters', 'fas fa-font'), ('Sentence Segmentation', 'Split text into meaningful sentences', 'fas fa-align-left'), ('Passage Segmentation', 'Divide documents into 120-word passages', 'fas fa-paragraph'), ('Keyword Extraction', 'Extract top keywords per document', 'fas fa-tag'), ('Metadata Extraction', 'Preserve title, authors, journal, PMID', 'fas fa-info-circle')] %}
+        {% for name, desc, icon in steps %}
+        <div class="d-flex align-items-start gap-3 mb-3 p-3" style="background:linear-gradient(135deg,#F8FAFC,#F1F5F9);border-radius:10px;">
+          <div style="width:36px;height:36px;background:linear-gradient(135deg,#EFF6FF,#BFDBFE);border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--pink-primary);flex-shrink:0;"><i class="{{ icon }}"></i></div>
+          <div>
+            <div style="font-weight:700;font-size:13.5px;">{{ name }}</div>
+            <div style="font-size:12.5px;color:var(--text-muted);">{{ desc }}</div>
+          </div>
+          <div style="margin-left:auto;"><i class="fas fa-check-circle" style="color:#4CAF50;"></i></div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

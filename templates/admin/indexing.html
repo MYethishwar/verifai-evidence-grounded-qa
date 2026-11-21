@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block title %}Indexing{% endblock %}
+{% block page_title %}Biomedical Indexing{% endblock %}
+{% block content %}
+<div class="page-header">
+  <h1><i class="fas fa-search text-pink me-2"></i>Biomedical Indexing</h1>
+  <p>Build the searchable TF-IDF and BM25 index from preprocessed biomedical passages.</p>
+</div>
+<div class="row g-4 mb-4">
+  <div class="col-md-3"><div class="stat-card"><div class="stat-icon pink-icon"><i class="fas fa-paragraph"></i></div><div class="stat-value">{{ index_stats.total_passages }}</div><div class="stat-label">Total Passages</div></div></div>
+  <div class="col-md-3"><div class="stat-card blue"><div class="stat-icon blue-icon"><i class="fas fa-file-medical"></i></div><div class="stat-value">{{ index_stats.total_documents }}</div><div class="stat-label">Documents</div></div></div>
+  <div class="col-md-3"><div class="stat-card green"><div class="stat-icon green-icon"><i class="fas fa-database"></i></div><div class="stat-value">{{ index_stats.total_datasets }}</div><div class="stat-label">Datasets</div></div></div>
+  <div class="col-md-3"><div class="stat-card {% if index_stats.index_built %}green{% else %}orange{% endif %}"><div class="stat-icon {% if index_stats.index_built %}green-icon{% else %}orange-icon{% endif %}"><i class="fas fa-{% if index_stats.index_built %}check-circle{% else %}exclamation-circle{% endif %}"></i></div><div class="stat-value" style="font-size:18px;">{{ 'Built' if index_stats.index_built else 'Not Built' }}</div><div class="stat-label">Index Status</div></div></div>
+</div>
+<div class="row g-4">
+  <div class="col-lg-5">
+    <div class="content-card">
+      <div class="card-header"><h5><i class="fas fa-play-circle"></i> Build Search Index</h5></div>
+      <div class="card-body">
+        {% if not index_stats.index_built %}
+        <div class="alert-pink mb-3"><i class="fas fa-exclamation-triangle"></i> Index not built. Run preprocessing first, then build the index.</div>
+        {% else %}
+        <div class="flash-message flash-success mb-3"><i class="fas fa-check-circle"></i> Index is built and ready for search!</div>
+        {% endif %}
+        <form method="POST">
+          <p style="font-size:13.5px;color:var(--text-muted);margin-bottom:16px;">Building the index loads all {{ index_stats.total_passages }} passages into the TF-IDF and BM25 retrieval engines. This enables fast biomedical question answering.</p>
+          <button type="submit" class="btn-pink w-100 justify-content-center" style="padding:12px;"><i class="fas fa-bolt"></i> Build / Rebuild Index</button>
+        </form>
+        {% if result %}
+        <div class="flash-message flash-success mt-3"><i class="fas fa-check-circle"></i> Indexed {{ result.indexed_passages }} passages successfully.</div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-7">
+    <div class="content-card">
+      <div class="card-header"><h5><i class="fas fa-info-circle"></i> Indexing Pipeline</h5></div>
+      <div class="card-body">
+        {% for step, desc in [('Load Passages', 'Load all preprocessed passages from SQLite database'), ('TF-IDF Vectorization', 'Fit TF-IDF vectorizer on all passage texts (5,000 features, unigrams+bigrams)'), ('BM25 Fitting', 'Fit BM25 retriever with k1=1.5, b=0.75 on tokenized passages'), ('Index Storage', 'Store in-memory index ready for real-time queries'), ('Metadata Linking', 'Link each passage to its source document, title, journal, year')] %}
+        <div class="step-item done mb-2">
+          <div class="step-num done"><i class="fas fa-check"></i></div>
+          <div>
+            <div style="font-weight:700;font-size:13px;">{{ step }}</div>
+            <div style="font-size:12px;color:var(--text-muted);">{{ desc }}</div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,373 @@
+{
+  "group": "Brain, mental health & infections",
+  "topics": [
+    {
+      "id": "alzheimers-disease",
+      "title": "Alzheimer's Disease & Dementia",
+      "category": "Neurology",
+      "type": "condition",
+      "aliases": ["dementia", "alzheimer", "alzheimers", "memory loss", "cognitive decline", "senile dementia"],
+      "summary": "Alzheimer's disease is the most common cause of dementia, a group of conditions in which memory, thinking and daily functioning gradually decline. Other causes of dementia include vascular dementia, Lewy body dementia and frontotemporal dementia.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Alzheimer's disease involves the build-up of abnormal proteins (amyloid and tau) that damage and kill brain cells. Age is the strongest risk factor, along with family history, genes, head injury, and heart and blood vessel disease."},
+        {"label": "Symptoms", "text": "Alzheimer's disease and other dementias typically begin with trouble remembering recent events, then progress to confusion, difficulty with language and planning, mood and personality changes, and eventually need for help with everyday care."},
+        {"label": "Diagnosis", "text": "Dementia, including Alzheimer's disease, is diagnosed by a doctor using history from the person and family, memory and thinking tests, blood tests to exclude other causes, and brain scans. Some specialist tests can look for Alzheimer's-related proteins."},
+        {"label": "Treatment", "text": "There is no cure for Alzheimer's disease, but some medicines can ease symptoms for a time. Support, structured routines, treatment of other health problems and care for family carers are central to managing dementia."},
+        {"label": "Prevention & outlook", "text": "Alzheimer's disease is progressive, but its pace varies between people. Staying physically and mentally active, not smoking, limiting alcohol, and controlling blood pressure, diabetes and hearing loss may lower the risk of dementia."}
+      ],
+      "sample_questions": ["What are the early signs of Alzheimer's disease?", "What is the difference between dementia and Alzheimer's disease?", "Can Alzheimer's disease be prevented or slowed down?"]
+    },
+    {
+      "id": "parkinsons-disease",
+      "title": "Parkinson's Disease",
+      "category": "Neurology",
+      "type": "condition",
+      "aliases": ["parkinson", "parkinsons", "parkinson's", "tremor disorder", "pd", "parkinsonism"],
+      "summary": "Parkinson's disease is a long-term progressive disorder of the nervous system that mainly affects movement. It develops when nerve cells in a part of the brain that produces dopamine gradually die.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Parkinson's disease results from loss of dopamine-producing brain cells, and the exact cause is usually unknown. Risk rises with age, and genes and some environmental exposures may play a part. It is somewhat more common in men."},
+        {"label": "Symptoms", "text": "Parkinson's disease causes tremor at rest, slow movement (bradykinesia), muscle stiffness and balance problems. Non-movement symptoms such as constipation, poor sleep, low mood, reduced sense of smell and memory changes are also common."},
+        {"label": "Diagnosis", "text": "Parkinson's disease is diagnosed mainly by a specialist doctor from symptoms and a neurological examination, as no single blood test confirms it. Scans or other tests may be used to rule out other conditions."},
+        {"label": "Treatment", "text": "Parkinson's disease cannot be cured, but medicines that replace or mimic dopamine can control symptoms well for many years. Physiotherapy, speech therapy and exercise help, and surgery such as deep brain stimulation is an option for some people."},
+        {"label": "Prevention & outlook", "text": "There is no proven way to prevent Parkinson's disease. It progresses slowly over many years, and with good treatment and support many people live for a long time with a good quality of life. Regular exercise is widely encouraged."}
+      ],
+      "sample_questions": ["What are the first symptoms of Parkinson's disease?", "How is Parkinson's disease diagnosed?", "Is there a cure for Parkinson's disease?"]
+    },
+    {
+      "id": "epilepsy",
+      "title": "Epilepsy",
+      "category": "Neurology",
+      "type": "condition",
+      "aliases": ["seizures", "seizure disorder", "fits", "convulsions", "epileptic", "epileptic seizure"],
+      "summary": "Epilepsy is a long-term neurological condition in which abnormal bursts of electrical activity in the brain cause repeated seizures. Seizures can range from brief lapses of awareness to convulsions with loss of consciousness.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Epilepsy can result from brain injury, stroke, infection, brain tumours, developmental conditions or inherited factors, but in many people no cause is found. Epilepsy can begin at any age, most often in childhood or older adulthood."},
+        {"label": "Symptoms", "text": "The main symptom of epilepsy is recurrent seizures, which may involve shaking, stiffening, staring, odd sensations, confusion or collapse. Symptoms depend on which part of the brain is affected and whether the seizure spreads."},
+        {"label": "Diagnosis", "text": "Epilepsy is diagnosed from a detailed description of the seizures, often from a witness, together with an electroencephalogram (EEG) recording brain activity and a brain scan such as MRI. Blood tests may help exclude other causes."},
+        {"label": "Treatment", "text": "Epilepsy is usually treated with anti-seizure medicines, which control seizures in most people. Surgery, nerve stimulation or special diets may help when medicines are not enough. Call emergency services if a seizure lasts more than five minutes."},
+        {"label": "Prevention & outlook", "text": "Many people with epilepsy become seizure-free with treatment and live full lives. Taking medicines regularly, sleeping well, avoiding known triggers and following local rules on driving and safety reduce risks. Preventing head injury can lower the chance of some epilepsy."}
+      ],
+      "sample_questions": ["What causes epilepsy?", "What should I do if someone has an epileptic seizure?", "Can epilepsy be cured or controlled with medication?"]
+    },
+    {
+      "id": "migraine",
+      "title": "Migraine",
+      "category": "Neurology",
+      "type": "condition",
+      "aliases": ["migraines", "migraine headache", "aura", "severe headache", "sick headache"],
+      "summary": "Migraine is a common neurological condition that causes recurring, often severe headaches, typically with nausea and sensitivity to light and sound. Some people also experience warning symptoms called aura before the headache.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Migraine is linked to changes in brain activity and nerve signalling, and it often runs in families. Common triggers include stress, poor or irregular sleep, skipped meals, hormonal changes, certain foods or drinks, and strong sensory stimuli."},
+        {"label": "Symptoms", "text": "A migraine usually causes a throbbing headache, often on one side, with nausea, vomiting, and sensitivity to light and sound. Aura can involve flashing lights, blind spots or tingling, and attacks may last from hours to days."},
+        {"label": "Diagnosis", "text": "Migraine is diagnosed mainly from the pattern of symptoms and a doctor's examination. Scans are not usually needed unless the headaches are unusual, sudden and severe, or accompanied by other neurological signs. A headache diary can help."},
+        {"label": "Treatment", "text": "Migraine attacks are treated with pain relief and specific migraine medicines taken early, plus rest in a quiet dark room. For frequent attacks, preventive medicines and avoiding triggers may help. Seek urgent care for a sudden, worst-ever headache or weakness."},
+        {"label": "Prevention & outlook", "text": "Migraine cannot be cured, but attacks can often be reduced by regular sleep, meals and exercise, stress management and trigger avoidance. For many people migraine becomes less frequent with age, and it is not usually dangerous."}
+      ],
+      "sample_questions": ["What triggers a migraine?", "What is the difference between a migraine and a normal headache?", "How is migraine treated and prevented?"]
+    },
+    {
+      "id": "multiple-sclerosis",
+      "title": "Multiple Sclerosis",
+      "category": "Neurology",
+      "type": "condition",
+      "aliases": ["ms", "disseminated sclerosis", "demyelinating disease", "relapsing remitting", "myelin"],
+      "summary": "Multiple sclerosis is a long-term condition in which the immune system attacks the protective covering (myelin) of nerves in the brain and spinal cord, disrupting messages between the brain and body.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "The exact cause of multiple sclerosis is unknown, but it is an immune-mediated condition. Risk is higher in young adults, women, people with a family history, those with low vitamin D, past Epstein-Barr virus infection, and smokers."},
+        {"label": "Symptoms", "text": "Multiple sclerosis can cause fatigue, vision problems, numbness or tingling, weakness, balance and walking difficulty, bladder problems and thinking changes. Symptoms often come in relapses followed by recovery, though some people have steady progression."},
+        {"label": "Diagnosis", "text": "Multiple sclerosis is diagnosed by a specialist using symptoms, a neurological exam and MRI scans showing areas of nerve damage. Tests of spinal fluid and nerve signals may help, and other conditions must be ruled out."},
+        {"label": "Treatment", "text": "Multiple sclerosis cannot be cured, but disease-modifying treatments can reduce relapses and slow progression. Steroids help treat relapses, and physiotherapy, rehabilitation and medicines for specific symptoms improve daily life."},
+        {"label": "Prevention & outlook", "text": "There is no known way to prevent multiple sclerosis. Outlook varies widely, and modern treatment has improved it. Not smoking, staying active and keeping a healthy lifestyle support wellbeing in people living with multiple sclerosis."}
+      ],
+      "sample_questions": ["What are the early signs of multiple sclerosis?", "What causes multiple sclerosis?", "Can multiple sclerosis be treated or slowed?"]
+    },
+    {
+      "id": "depression",
+      "title": "Depression",
+      "category": "Mental health",
+      "type": "condition",
+      "aliases": ["major depression", "depressive", "depressive disorder", "mdd", "clinical depression", "low mood"],
+      "summary": "Depression is a common and treatable mental health condition marked by persistent low mood or loss of interest in activities, lasting weeks or longer and affecting daily life, work and relationships.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Depression has no single cause. It can arise from a mix of genetic, biological, psychological and life factors, such as stressful or traumatic events, loss, long-term illness, loneliness or a family history of depression."},
+        {"label": "Symptoms", "text": "Depression can cause persistent sadness, loss of interest or pleasure, tiredness, changes in sleep or appetite, poor concentration, feelings of worthlessness or guilt, and sometimes thoughts of self-harm. Anyone with such thoughts should contact emergency services or a crisis line right away."},
+        {"label": "Diagnosis", "text": "Depression is diagnosed by a doctor or mental health professional through a conversation about symptoms, their length and impact, often with a questionnaire. Blood tests may check for physical conditions that can mimic depression."},
+        {"label": "Treatment", "text": "Depression is treatable with talking therapies such as cognitive behavioural therapy, antidepressant medicines, or both, along with support, exercise and good sleep. Most people improve with treatment, and seeking help early is encouraged."},
+        {"label": "Prevention & outlook", "text": "Depression can recur, but many people recover fully and learn ways to stay well. Staying connected with others, being active, sleeping well and getting early help for low mood can lower the risk of depression returning."}
+      ],
+      "sample_questions": ["What are the symptoms of depression?", "How is depression treated?", "Is depression a real medical condition or just sadness?"]
+    },
+    {
+      "id": "anxiety-disorders",
+      "title": "Anxiety Disorders",
+      "category": "Mental health",
+      "type": "condition",
+      "aliases": ["anxiety", "gad", "generalised anxiety", "panic disorder", "panic attacks", "phobia", "social anxiety"],
+      "summary": "Anxiety disorders are a group of mental health conditions involving excessive, persistent fear or worry that is out of proportion to the situation and interferes with daily life. They include generalised anxiety, panic disorder, phobias and social anxiety.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Anxiety disorders arise from a combination of genetics, brain chemistry, personality and life experiences. Stressful or traumatic events, a family history of anxiety, long-term illness, and caffeine or substance use can raise the risk."},
+        {"label": "Symptoms", "text": "Anxiety disorders can cause constant worry, restlessness, irritability, trouble sleeping and concentrating, and physical signs such as a racing heart, sweating, trembling and breathlessness. Panic attacks bring sudden intense fear with these symptoms."},
+        {"label": "Diagnosis", "text": "Anxiety disorders are diagnosed by a doctor or mental health professional after discussing symptoms, how long they last and how they affect life. Physical causes such as thyroid problems may be checked to exclude other explanations."},
+        {"label": "Treatment", "text": "Anxiety disorders respond well to talking therapies such as cognitive behavioural therapy, and sometimes to medicines such as certain antidepressants. Relaxation techniques, regular exercise and reducing caffeine and alcohol can also help."},
+        {"label": "Prevention & outlook", "text": "Anxiety disorders are common and treatable, and many people improve substantially with help. Learning coping skills, managing stress, staying active and seeking support early may reduce how severe anxiety becomes or how often it returns."}
+      ],
+      "sample_questions": ["What are the symptoms of anxiety disorders?", "What is the difference between normal worry and an anxiety disorder?", "How are anxiety disorders treated?"]
+    },
+    {
+      "id": "bipolar-disorder",
+      "title": "Bipolar Disorder",
+      "category": "Mental health",
+      "type": "condition",
+      "aliases": ["bipolar", "manic depression", "manic-depressive", "mania", "hypomania", "bipolar i", "bipolar ii"],
+      "summary": "Bipolar disorder is a mental health condition causing marked shifts in mood, energy and activity, with episodes of elevated mood (mania or hypomania) and episodes of low mood. It is treatable and manageable long term.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Bipolar disorder is strongly influenced by genetics and brain function, and it often runs in families. Stressful life events, sleep disruption and substance use can trigger episodes. It commonly first appears in late teens or early adulthood."},
+        {"label": "Symptoms", "text": "Bipolar disorder involves highs, with raised mood, little need for sleep, racing thoughts and risky behaviour, and lows with sadness and low energy. Anyone with thoughts of self-harm should contact emergency services or a crisis line right away."},
+        {"label": "Diagnosis", "text": "Bipolar disorder is diagnosed by a mental health specialist from the history of mood episodes, often with input from family. It can be mistaken for depression alone, so a past history of high mood is carefully asked about."},
+        {"label": "Treatment", "text": "Bipolar disorder is usually treated with mood-stabilising medicines, sometimes with other medicines, together with talking therapy and education about the condition. Regular routines, good sleep and early recognition of warning signs help prevent episodes."},
+        {"label": "Prevention & outlook", "text": "Bipolar disorder is a lifelong condition, but with ongoing treatment and support many people live stable, fulfilling lives. Taking treatment consistently, keeping regular sleep and avoiding alcohol and drugs reduce the chance of relapse."}
+      ],
+      "sample_questions": ["What are the signs of bipolar disorder?", "How is bipolar disorder different from depression?", "Can people with bipolar disorder live a normal life?"]
+    },
+    {
+      "id": "schizophrenia",
+      "title": "Schizophrenia",
+      "category": "Mental health",
+      "type": "condition",
+      "aliases": ["psychosis", "psychotic disorder", "schizophrenic", "hallucinations", "delusions"],
+      "summary": "Schizophrenia is a long-term mental health condition that affects how a person thinks, feels and perceives reality. It can involve hallucinations, delusions and disorganised thinking, and it is treatable with ongoing support.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Schizophrenia is thought to result from a mix of genetic vulnerability and environmental factors, including differences in brain development. Family history, complications around birth, heavy cannabis use and severe stress may increase risk. It is not caused by poor parenting."},
+        {"label": "Symptoms", "text": "Schizophrenia can cause hallucinations such as hearing voices, false fixed beliefs (delusions), confused speech and thinking, and reduced motivation, emotion and social withdrawal. Symptoms usually begin in late adolescence or early adulthood."},
+        {"label": "Diagnosis", "text": "Schizophrenia is diagnosed by a psychiatrist based on symptoms, their duration and impact on functioning. Tests and sometimes scans help rule out other causes such as substance use or physical illness."},
+        {"label": "Treatment", "text": "Schizophrenia is treated with antipsychotic medicines together with talking therapy, family support, and help with housing, work and social life. Early treatment improves outcomes, and many people achieve good recovery with continuing care."},
+        {"label": "Prevention & outlook", "text": "Schizophrenia cannot yet be reliably prevented, but early help after first symptoms improves the outlook. With steady treatment and support, many people manage symptoms and live independently. Avoiding recreational drugs lowers the risk of relapse."}
+      ],
+      "sample_questions": ["What are the symptoms of schizophrenia?", "What causes schizophrenia?", "Can schizophrenia be treated?"]
+    },
+    {
+      "id": "adhd",
+      "title": "ADHD (Attention Deficit Hyperactivity Disorder)",
+      "category": "Mental health",
+      "type": "condition",
+      "aliases": ["attention deficit hyperactivity disorder", "attention deficit disorder", "add", "hyperactivity", "inattention"],
+      "summary": "ADHD is a neurodevelopmental condition marked by ongoing patterns of inattention, hyperactivity and impulsivity that are greater than expected for age and interfere with daily life. It affects children and adults.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "ADHD is strongly influenced by genetics and differences in brain development, and it often runs in families. Premature birth, low birth weight and some exposures in pregnancy may add risk. It is not caused by bad parenting or too much sugar."},
+        {"label": "Symptoms", "text": "ADHD can cause difficulty paying attention, being easily distracted, forgetfulness, restlessness, constant movement, talking a lot and acting without thinking. Symptoms start in childhood and may continue into adulthood, often looking different with age."},
+        {"label": "Diagnosis", "text": "ADHD is diagnosed by a specialist after a detailed assessment of symptoms in more than one setting, such as home and school or work, and their effect on life. There is no single test for ADHD."},
+        {"label": "Treatment", "text": "ADHD is managed with a combination of approaches, including behavioural strategies, parent and teacher support, education, and for many people medicines that help attention and impulse control. Organisation skills and routines are also useful."},
+        {"label": "Prevention & outlook", "text": "ADHD cannot be prevented, but early recognition and support improve school, work and relationships. Many people with ADHD thrive with the right strategies and treatment, and some symptoms lessen with age."}
+      ],
+      "sample_questions": ["What are the signs of ADHD in children?", "Can adults have ADHD?", "How is ADHD diagnosed and treated?"]
+    },
+    {
+      "id": "autism-spectrum-disorder",
+      "title": "Autism Spectrum Disorder",
+      "category": "Mental health",
+      "type": "condition",
+      "aliases": ["autism", "asd", "autistic", "asperger", "aspergers", "neurodivergent", "spectrum condition"],
+      "summary": "Autism spectrum disorder is a lifelong neurodevelopmental difference affecting how a person communicates, interacts socially and experiences the world, often with focused interests and repetitive behaviours. It varies widely between individuals.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Autism spectrum disorder arises mainly from genetic factors affecting early brain development, often running in families. Some pregnancy and birth factors may contribute. Vaccines do not cause autism spectrum disorder, a point firmly established by research."},
+        {"label": "Symptoms", "text": "Autism spectrum disorder can involve differences in social communication, such as eye contact and understanding unspoken cues, plus repetitive actions, strong routines, intense interests and unusual sensitivity to sounds, lights or textures. Signs often appear in early childhood."},
+        {"label": "Diagnosis", "text": "Autism spectrum disorder is diagnosed by specialists, such as paediatricians, psychologists or psychiatrists, through observation, developmental history and structured assessments. There is no blood test, and diagnosis can occur in childhood or later in adult life."},
+        {"label": "Treatment", "text": "Autism spectrum disorder is not an illness to be cured, but support can help, including communication and social skills therapy, educational adjustments, behavioural support and treatment of related conditions such as anxiety or sleep problems."},
+        {"label": "Prevention & outlook", "text": "Autism spectrum disorder cannot be prevented. With early understanding, tailored support and accepting environments, autistic people can develop strengths and lead fulfilling lives, though the level of support needed differs greatly between individuals."}
+      ],
+      "sample_questions": ["What are the early signs of autism spectrum disorder?", "Do vaccines cause autism spectrum disorder?", "How is autism spectrum disorder diagnosed?"]
+    },
+    {
+      "id": "insomnia",
+      "title": "Insomnia",
+      "category": "Mental health",
+      "type": "condition",
+      "aliases": ["sleeplessness", "trouble sleeping", "sleep disorder", "difficulty sleeping", "poor sleep", "chronic insomnia"],
+      "summary": "Insomnia is a common sleep disorder in which a person has trouble falling asleep, staying asleep or waking too early, despite having the chance to sleep, leading to daytime tiredness and difficulty functioning.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Insomnia can be triggered by stress, anxiety, depression, irregular schedules, caffeine, alcohol, noise, certain medicines, pain or other health conditions. Risk rises with age, and short-term insomnia can become long-lasting through habits and worry about sleep."},
+        {"label": "Symptoms", "text": "Insomnia causes difficulty getting to sleep, waking during the night, waking too early, and unrefreshing sleep. It often leads to daytime tiredness, low mood, irritability, poor concentration and a higher risk of accidents."},
+        {"label": "Diagnosis", "text": "Insomnia is diagnosed mainly from a description of sleep problems and their effect on daytime life, often with a sleep diary. Doctors check for medicines, health conditions or other sleep disorders, such as sleep apnoea, that may be responsible."},
+        {"label": "Treatment", "text": "Insomnia is best treated first with cognitive behavioural therapy for insomnia and good sleep habits, such as regular times and a calm bedroom. Medicines may sometimes help for short periods but are generally not the first choice."},
+        {"label": "Prevention & outlook", "text": "Insomnia often improves with treatment, and prevention focuses on regular sleep times, daytime activity, limiting caffeine, alcohol and screens before bed, and managing stress. Persistent insomnia lasting weeks is worth discussing with a doctor."}
+      ],
+      "sample_questions": ["What causes insomnia?", "How can I treat insomnia without medication?", "When should I see a doctor about insomnia?"]
+    },
+    {
+      "id": "covid-19",
+      "title": "COVID-19",
+      "category": "Infectious disease",
+      "type": "condition",
+      "aliases": ["covid", "coronavirus", "sars-cov-2", "covid19", "corona", "long covid", "novel coronavirus"],
+      "summary": "COVID-19 is an infectious respiratory illness caused by the SARS-CoV-2 coronavirus, first identified in late 2019. It ranges from no symptoms to severe pneumonia and can occasionally cause long-lasting effects.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "COVID-19 is caused by the SARS-CoV-2 virus and spreads mainly through tiny respiratory droplets and aerosols from infected people. Older age, weakened immunity, obesity and long-term conditions such as heart or lung disease raise the risk of severe COVID-19."},
+        {"label": "Symptoms", "text": "COVID-19 symptoms include fever, cough, sore throat, tiredness, aches, headache and loss of taste or smell. Some people have no symptoms, while others develop shortness of breath; seek urgent care for breathing difficulty or chest pain."},
+        {"label": "Diagnosis", "text": "COVID-19 is diagnosed with a test of a nose or throat sample, either a rapid antigen test or a more sensitive laboratory PCR test. Testing helps confirm infection and guide isolation and treatment."},
+        {"label": "Treatment", "text": "Most people with COVID-19 recover at home with rest, fluids and medicines for fever and pain. Antiviral treatments may be offered to people at higher risk, and severe COVID-19 may need hospital care and oxygen."},
+        {"label": "Prevention & outlook", "text": "COVID-19 is prevented by staying up to date with vaccination, good ventilation, hand hygiene, and staying home when unwell. Most people recover fully, though some develop long COVID with symptoms lasting weeks or months."}
+      ],
+      "sample_questions": ["What are the symptoms of COVID-19?", "How is COVID-19 spread?", "How can I protect myself from COVID-19?"]
+    },
+    {
+      "id": "influenza",
+      "title": "Influenza (Flu)",
+      "category": "Infectious disease",
+      "type": "condition",
+      "aliases": ["flu", "the flu", "seasonal flu", "influenza a", "influenza b", "grippe"],
+      "summary": "Influenza is a contagious respiratory illness caused by influenza viruses. It occurs in seasonal outbreaks, usually causes sudden fever, aches and cough, and can be serious in older adults, young children and people with other illnesses.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Influenza is caused by influenza viruses, mainly types A and B, which spread through coughs, sneezes and contaminated surfaces. Influenza is more serious in older adults, pregnant women, young children and people with chronic conditions or weak immunity."},
+        {"label": "Symptoms", "text": "Influenza typically begins suddenly with fever, chills, muscle aches, headache, tiredness, dry cough and sore throat. It is usually more severe than a cold. Seek urgent care for breathing difficulty, chest pain, confusion or persistent high fever."},
+        {"label": "Diagnosis", "text": "Influenza is often diagnosed from symptoms during flu season. A swab of the nose or throat can confirm influenza with a rapid or laboratory test, which is mostly used in hospital or for people at higher risk."},
+        {"label": "Treatment", "text": "Influenza in healthy people usually improves with rest, fluids and medicines to ease fever and aches. Antiviral medicines can be given, especially to high-risk people or those seriously ill, and work best when started early."},
+        {"label": "Prevention & outlook", "text": "Influenza is best prevented by yearly vaccination, which is updated to match circulating viruses. Hand washing, covering coughs and staying home when sick also help. Most people recover within one to two weeks, though complications such as pneumonia can occur."}
+      ],
+      "sample_questions": ["What is the difference between influenza and a cold?", "How long does influenza last?", "Who should get the influenza vaccine?"]
+    },
+    {
+      "id": "common-cold",
+      "title": "Common Cold",
+      "category": "Infectious disease",
+      "type": "condition",
+      "aliases": ["cold", "colds", "rhinovirus", "head cold", "upper respiratory infection", "runny nose"],
+      "summary": "The common cold is a mild, very frequent viral infection of the nose and throat. It causes a runny or blocked nose, sneezing and sore throat, and usually clears up on its own within about a week to ten days.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "The common cold is caused by many different viruses, most often rhinoviruses. It spreads through droplets from coughs and sneezes and by touching contaminated surfaces. Young children, crowded settings and weakened immunity make the common cold more likely."},
+        {"label": "Symptoms", "text": "The common cold causes a runny or stuffy nose, sneezing, sore throat, mild cough and sometimes a low fever or mild headache. Symptoms usually peak in two to three days and fade within about ten days."},
+        {"label": "Diagnosis", "text": "The common cold is diagnosed from its typical symptoms, and tests are not normally needed. A doctor may check if symptoms suggest another illness, such as influenza, a bacterial infection or allergy."},
+        {"label": "Treatment", "text": "There is no cure for the common cold, and antibiotics do not work because it is caused by viruses. Rest, fluids and simple remedies for pain, fever and congestion ease symptoms while the body recovers."},
+        {"label": "Prevention & outlook", "text": "The common cold is best prevented by regular hand washing, avoiding touching the face and keeping away from people who are sick. Recovery is almost always complete; see a doctor if symptoms last more than a couple of weeks or breathing becomes difficult."}
+      ],
+      "sample_questions": ["What causes the common cold?", "Do antibiotics help the common cold?", "How long does a common cold usually last?"]
+    },
+    {
+      "id": "hiv-aids",
+      "title": "HIV/AIDS",
+      "category": "Infectious disease",
+      "type": "condition",
+      "aliases": ["hiv", "aids", "human immunodeficiency virus", "acquired immunodeficiency syndrome", "hiv infection", "antiretroviral"],
+      "summary": "HIV is a virus that attacks the immune system's CD4 cells, weakening the body's defences. Without treatment it can progress to AIDS, the late stage of infection, but modern treatment allows people to live long, healthy lives.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "HIV spreads through unprotected sex, sharing needles, transmission from mother to baby during pregnancy, birth or breastfeeding, and rarely through infected blood. HIV does not spread through hugging, shared food, or everyday contact."},
+        {"label": "Symptoms", "text": "HIV may cause a flu-like illness with fever, rash and swollen glands soon after infection, then often few symptoms for years. Untreated HIV weakens immunity, leading to AIDS with severe infections, weight loss and certain cancers."},
+        {"label": "Diagnosis", "text": "HIV is diagnosed with blood or saliva tests that detect antibodies, antigens or the virus itself. Testing is quick, widely available and confidential, and regular testing is advised for people at higher risk of HIV."},
+        {"label": "Treatment", "text": "HIV is treated with antiretroviral therapy, a combination of medicines taken daily that reduces the virus to very low levels. HIV cannot yet be cured, but effective treatment protects health and stops sexual transmission to others."},
+        {"label": "Prevention & outlook", "text": "HIV can be prevented with condoms, never sharing needles, testing, and preventive medicines such as pre-exposure prophylaxis (PrEP) and post-exposure prophylaxis (PEP). With early diagnosis and ongoing treatment, people with HIV can expect near-normal life expectancy."}
+      ],
+      "sample_questions": ["How is HIV spread and how is it not spread?", "What is the difference between HIV and AIDS?", "Can people with HIV live a normal life with treatment?"]
+    },
+    {
+      "id": "malaria",
+      "title": "Malaria",
+      "category": "Infectious disease",
+      "type": "condition",
+      "aliases": ["plasmodium", "malarial fever", "anopheles", "plasmodium falciparum", "mosquito-borne fever"],
+      "summary": "Malaria is a life-threatening disease caused by Plasmodium parasites, spread to people by the bite of infected female Anopheles mosquitoes. It is mainly found in tropical and subtropical regions but is preventable and curable.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Malaria is caused by Plasmodium parasites transmitted by infected Anopheles mosquitoes. Travelling to or living in areas where malaria occurs is the main risk, and young children, pregnant women and people with low immunity are most vulnerable to severe malaria."},
+        {"label": "Symptoms", "text": "Malaria typically causes fever, chills, sweating, headache, muscle aches and vomiting, usually starting one to several weeks after a bite. Severe malaria can cause confusion, seizures, anaemia and organ failure and needs emergency care."},
+        {"label": "Diagnosis", "text": "Malaria is diagnosed with a blood test, either examining a blood smear under a microscope or using a rapid diagnostic test. Anyone with fever after travel to a malaria area should be tested promptly."},
+        {"label": "Treatment", "text": "Malaria is treated with antimalarial medicines, chosen according to the parasite species, severity and local drug resistance. Prompt treatment usually leads to full cure, while severe malaria requires hospital care and medicines given by injection."},
+        {"label": "Prevention & outlook", "text": "Malaria is prevented by avoiding mosquito bites with bed nets, repellent and covering clothing, and by preventive medicines for travellers. Vaccines now exist for children in affected regions. Early treatment gives an excellent outlook."}
+      ],
+      "sample_questions": ["How is malaria spread?", "What are the symptoms of malaria?", "How can I prevent malaria when travelling?"]
+    },
+    {
+      "id": "dengue",
+      "title": "Dengue",
+      "category": "Infectious disease",
+      "type": "condition",
+      "aliases": ["dengue fever", "breakbone fever", "aedes", "dengue virus", "severe dengue", "dengue haemorrhagic fever"],
+      "summary": "Dengue is a mosquito-borne viral infection common in tropical and subtropical regions. It causes high fever and body pain and usually resolves on its own, but a minority of cases become severe and need urgent care.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Dengue is caused by dengue viruses, of which there are four types, spread by the bite of infected Aedes mosquitoes. Living in or travelling to warm, humid areas with dengue raises risk, and a second infection with a different type increases the chance of severe dengue."},
+        {"label": "Symptoms", "text": "Dengue typically causes sudden high fever, severe headache, pain behind the eyes, muscle and joint pain, nausea and rash. Seek urgent care if severe abdominal pain, persistent vomiting, bleeding or extreme drowsiness develops as the fever falls."},
+        {"label": "Diagnosis", "text": "Dengue is diagnosed with blood tests that detect the virus or the body's antibody response, combined with symptoms and recent travel or exposure. Blood counts help monitor for falling platelets and other warning signs."},
+        {"label": "Treatment", "text": "There is no specific antiviral treatment for dengue. Care focuses on rest, plenty of fluids and fever and pain relief, with medical monitoring. Severe dengue needs hospital care with fluid support, and some pain medicines that raise bleeding risk are avoided."},
+        {"label": "Prevention & outlook", "text": "Dengue is prevented mainly by avoiding mosquito bites and removing standing water where mosquitoes breed. Vaccines exist in some countries for selected groups. Most people recover in about one to two weeks, and early care greatly improves outcomes in severe dengue."}
+      ],
+      "sample_questions": ["What are the warning signs of severe dengue?", "How is dengue spread?", "Is there a treatment or vaccine for dengue?"]
+    },
+    {
+      "id": "measles",
+      "title": "Measles",
+      "category": "Infectious disease",
+      "type": "condition",
+      "aliases": ["rubeola", "morbilli", "measles virus", "mmr", "red measles"],
+      "summary": "Measles is a highly contagious viral illness causing fever, cough and a characteristic rash. It can lead to serious complications, especially in young children, but it is largely preventable with vaccination.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Measles is caused by the measles virus, which spreads very easily through the air when an infected person coughs or sneezes. People who are unvaccinated, young children, pregnant women and those with weakened immunity are most at risk of measles."},
+        {"label": "Symptoms", "text": "Measles begins with fever, runny nose, red eyes and cough, followed a few days later by a red blotchy rash that spreads from the face downward. Small white spots inside the mouth may appear. Complications include ear infection, pneumonia and brain inflammation."},
+        {"label": "Diagnosis", "text": "Measles is suspected from the typical symptoms and rash, and confirmed with a laboratory test of blood, throat swab or urine. Cases are reported to public health authorities so contacts can be protected."},
+        {"label": "Treatment", "text": "There is no specific antiviral treatment for measles. Care includes rest, fluids and fever relief, and treating complications such as pneumonia. Vitamin A is recommended by the World Health Organization for children with measles in some settings."},
+        {"label": "Prevention & outlook", "text": "Measles is prevented by two doses of the measles-containing vaccine, usually the MMR vaccine, which is safe and highly effective. Most people recover in a couple of weeks, but measles can be fatal, particularly in undernourished young children."}
+      ],
+      "sample_questions": ["What does a measles rash look like?", "How contagious is measles?", "How can measles be prevented?"]
+    },
+    {
+      "id": "chickenpox-and-shingles",
+      "title": "Chickenpox & Shingles",
+      "category": "Infectious disease",
+      "type": "condition",
+      "aliases": ["chickenpox", "shingles", "varicella", "herpes zoster", "zoster", "varicella-zoster virus", "chicken pox"],
+      "summary": "Chickenpox and shingles are both caused by the varicella-zoster virus. Chickenpox is an itchy blistering rash illness, usually in childhood, while shingles is a painful rash that appears when the dormant virus reactivates later in life.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Chickenpox and shingles are caused by the varicella-zoster virus. Chickenpox spreads easily through the air and by contact with blisters. After recovery the virus stays dormant in nerves, and shingles can occur with older age or weakened immunity."},
+        {"label": "Symptoms", "text": "Chickenpox causes fever and an itchy rash of fluid-filled blisters that crust over. Shingles causes burning pain followed by a band of blisters on one side of the body, sometimes leaving lasting nerve pain."},
+        {"label": "Diagnosis", "text": "Chickenpox and shingles are usually diagnosed by a doctor from the typical appearance and pattern of the rash. Laboratory tests on a swab from a blister can confirm the diagnosis if it is uncertain."},
+        {"label": "Treatment", "text": "Chickenpox is usually managed with rest, fluids, soothing lotions and fever relief. Shingles may be treated with antiviral medicines started early and with pain relief. People at higher risk may need antivirals for chickenpox too."},
+        {"label": "Prevention & outlook", "text": "Chickenpox is prevented by the varicella vaccine, and a separate shingles vaccine is offered to older adults in many countries. Most people recover fully from chickenpox and shingles, though shingles can cause long-lasting nerve pain."}
+      ],
+      "sample_questions": ["Can you get shingles if you have had chickenpox?", "How is chickenpox spread?", "Is there a vaccine for shingles and chickenpox?"]
+    },
+    {
+      "id": "typhoid-fever",
+      "title": "Typhoid Fever",
+      "category": "Infectious disease",
+      "type": "condition",
+      "aliases": ["typhoid", "enteric fever", "salmonella typhi", "salmonella", "paratyphoid"],
+      "summary": "Typhoid fever is a bacterial infection caused by Salmonella Typhi, spread through contaminated food and water. It causes prolonged fever and abdominal symptoms and is treatable with antibiotics.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Typhoid fever is caused by the bacterium Salmonella Typhi, spread by food or water contaminated with the faeces of an infected person. It is most common where sanitation and clean water are limited, and travellers to such areas are at risk."},
+        {"label": "Symptoms", "text": "Typhoid fever causes a high fever that rises gradually, with headache, weakness, stomach pain, and constipation or diarrhoea. Some people develop a rash. Untreated typhoid fever can lead to serious complications such as intestinal bleeding or perforation."},
+        {"label": "Diagnosis", "text": "Typhoid fever is diagnosed by finding the bacteria in a blood culture, or sometimes in stool or bone marrow samples. Doctors consider recent travel to affected areas when assessing prolonged fever."},
+        {"label": "Treatment", "text": "Typhoid fever is treated with antibiotics, along with fluids and rest. Resistance of the bacteria to some antibiotics is a growing problem, so the choice depends on local patterns and test results. Severe typhoid fever may need hospital care."},
+        {"label": "Prevention & outlook", "text": "Typhoid fever is prevented by vaccination, safe drinking water, good sanitation, careful food hygiene and hand washing. With prompt antibiotic treatment most people recover fully, though some can carry the bacteria without symptoms."}
+      ],
+      "sample_questions": ["How is typhoid fever spread?", "What are the symptoms of typhoid fever?", "Is there a vaccine to prevent typhoid fever?"]
+    },
+    {
+      "id": "sepsis",
+      "title": "Sepsis",
+      "category": "Infectious disease",
+      "type": "condition",
+      "aliases": ["septicaemia", "septicemia", "blood poisoning", "septic shock", "systemic infection"],
+      "summary": "Sepsis is a life-threatening medical emergency in which the body's response to an infection injures its own tissues and organs. Fast recognition and treatment greatly improve the chances of survival.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Sepsis is triggered by an infection, most often of the lungs, urinary tract, skin or abdomen, caused by bacteria and sometimes viruses or fungi. Babies, older adults, pregnant women, and people with weak immunity or long-term conditions are at higher risk of sepsis."},
+        {"label": "Symptoms", "text": "Sepsis can cause fever or low temperature, fast heart rate and breathing, confusion, extreme weakness, very low urine output, clammy or mottled skin and low blood pressure. Sepsis is an emergency, so call emergency services immediately if suspected."},
+        {"label": "Diagnosis", "text": "Sepsis is diagnosed by clinical assessment of vital signs and organ function, supported by blood tests including cultures, lactate and kidney and liver tests. Doctors also look for the source of infection with other tests and scans."},
+        {"label": "Treatment", "text": "Sepsis needs urgent hospital treatment with antibiotics given as early as possible, intravenous fluids and oxygen. Severe sepsis may need intensive care, medicines to support blood pressure and organ support, and the source of infection may need removal."},
+        {"label": "Prevention & outlook", "text": "Sepsis is reduced by preventing infection through vaccination, good hygiene, wound care and prompt treatment of infections. Many people recover from sepsis, but others have lasting effects such as fatigue, and severe sepsis can be fatal."}
+      ],
+      "sample_questions": ["What are the warning signs of sepsis?", "What causes sepsis?", "How is sepsis treated in hospital?"]
+    },
+    {
+      "id": "antibiotic-resistance",
+      "title": "Antibiotic Resistance",
+      "category": "Public health",
+      "type": "condition",
+      "aliases": ["amr", "antimicrobial resistance", "superbugs", "drug-resistant bacteria", "mrsa", "resistant infections"],
+      "summary": "Antibiotic resistance occurs when bacteria change so that antibiotics no longer kill them or stop their growth. It makes infections harder to treat and is a major global public health threat.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Antibiotic resistance develops when bacteria are exposed to antibiotics, and it is accelerated by overuse and misuse, such as taking antibiotics for viral illnesses, not finishing prescribed courses, and heavy use in farming. Poor hygiene helps resistant bacteria spread."},
+        {"label": "Symptoms", "text": "Antibiotic resistance does not cause its own symptoms. Instead, resistant infections show up as illnesses that fail to improve or worsen despite usual antibiotic treatment, with longer illness, more complications and a higher chance of hospital stays."},
+        {"label": "Diagnosis", "text": "Antibiotic resistance is detected in the laboratory by growing bacteria from samples such as blood, urine or wounds and testing which antibiotics work against them (susceptibility testing). Results help doctors choose effective treatment."},
+        {"label": "Treatment", "text": "Antibiotic-resistant infections are treated with other antibiotics that still work, often stronger, more toxic or given by injection, guided by laboratory results. Some resistant infections have very few options left, which is why new treatments are needed."},
+        {"label": "Prevention & outlook", "text": "Antibiotic resistance is slowed by using antibiotics only when prescribed and as directed, never sharing them, vaccination, hand washing and infection control in hospitals. Antibiotic resistance is a growing global threat, so coordinated action is needed."}
+      ],
+      "sample_questions": ["What causes antibiotic resistance?", "How can I help prevent antibiotic resistance?", "Why do antibiotics not work against viral infections like colds?"]
+    }
+  ]
+}

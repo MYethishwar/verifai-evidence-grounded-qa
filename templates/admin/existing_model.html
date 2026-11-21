@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% from 'admin/_measured.html' import chart, charts_script %}
+{% block title %}Baseline model{% endblock %}
+{% block page_title %}Baseline model{% endblock %}
+{% block content %}
+<div class="page-header">
+  <h1><i class="fas fa-brain text-pink me-2"></i>Existing Biomedical Search Model</h1>
+  <p>Traditional TF-IDF cosine similarity approach for biomedical question answering.</p>
+</div>
+<div class="row g-4 mb-4">
+  <div class="col-md-4"><div class="stat-card blue"><div class="stat-icon blue-icon"><i class="fas fa-list"></i></div><div class="stat-value">{{ stats.total_results }}</div><div class="stat-label">Total Results</div></div></div>
+  <div class="col-md-4"><div class="stat-card"><div class="stat-icon pink-icon"><i class="fas fa-percent"></i></div><div class="stat-value">{{ '%.3f'|format(stats.avg_relevance) }}</div><div class="stat-label">Avg Relevance Score</div></div></div>
+  <div class="col-md-4"><div class="stat-card green"><div class="stat-icon green-icon"><i class="fas fa-stopwatch"></i></div><div class="stat-value">{{ '%.3f'|format(stats.avg_response_time) }}s</div><div class="stat-label">Avg Response Time</div></div></div>
+</div>
+<div class="row g-4 mb-4">
+  <div class="col-12">
+    <div class="content-card">
+      <div class="card-header"><h5><i class="fas fa-info-circle"></i> Method: {{ stats.method }}</h5></div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-6">
+            <h6 style="color:var(--pink-primary);font-weight:700;">Algorithm Overview</h6>
+            <p style="font-size:13.5px;color:var(--text-muted);line-height:1.8;">The existing model uses TF-IDF (Term Frequency-Inverse Document Frequency) vectorization followed by cosine similarity scoring. It retrieves the top-K most similar passages to the user's query based on word overlap and frequency.</p>
+          </div>
+          <div class="col-md-6">
+            <h6 style="color:var(--pink-primary);font-weight:700;">Characteristics</h6>
+            <ul style="font-size:13px;color:var(--text-muted);line-height:2;">
+              <li>Keyword-based retrieval</li>
+              <li>Fast response time (~0.1s)</li>
+              <li>No semantic understanding</li>
+              <li>No evidence verification</li>
+              <li>Lower precision on complex queries</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="vf-grid vf-grid-2 mb-4">
+  {{ chart('mTrend', 'Coverage and breadth per question', 'fa-chart-line', 150) }}
+  {{ chart('mLatency', 'Retrieval latency per question', 'fa-stopwatch', 150) }}
+</div>
+
+<div class="content-card">
+  <div class="card-header"><h5><i class="fas fa-history"></i> Recent Baseline model Results</h5></div>
+  <div class="card-body p-0">
+    <table class="data-table">
+      <thead><tr><th>#</th><th>Answer (Preview)</th><th>Relevance Score</th><th>Response Time</th><th>Date</th></tr></thead>
+      <tbody>
+        {% for r in results %}
+        <tr>
+          <td>{{ r.id }}</td>
+          <td style="max-width:400px;">{{ r.answer[:100] if r.answer else 'N/A' }}{% if r.answer and r.answer|length > 100 %}...{% endif %}</td>
+          <td><strong>{{ '%.4f'|format(r.relevance_score) }}</strong></td>
+          <td>{{ '%.4f'|format(r.response_time) }}s</td>
+          <td style="font-size:12px;">{{ r.created_at.strftime('%Y-%m-%d') }}</td>
+        </tr>
+        {% else %}
+        <tr><td colspan="5" class="text-center" style="padding:24px;color:var(--text-muted);">No results yet. Users need to ask questions.</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}{{ charts_script(agg) }}{% endblock %}

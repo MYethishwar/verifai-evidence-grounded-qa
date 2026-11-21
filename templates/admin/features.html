@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block title %}Feature Extraction{% endblock %}
+{% block page_title %}Feature Extraction{% endblock %}
+{% block content %}
+<div class="page-header">
+  <h1><i class="fas fa-project-diagram text-pink me-2"></i>Feature Extraction</h1>
+  <p>TF-IDF vectors, passage embeddings, and semantic representations for biomedical text.</p>
+</div>
+<div class="row g-4 mb-4">
+  <div class="col-md-3"><div class="stat-card"><div class="stat-icon pink-icon"><i class="fas fa-file-alt"></i></div><div class="stat-value">{{ stats.preprocessed_docs }}</div><div class="stat-label">Preprocessed Docs</div></div></div>
+  <div class="col-md-3"><div class="stat-card blue"><div class="stat-icon blue-icon"><i class="fas fa-paragraph"></i></div><div class="stat-value">{{ stats.total_passages }}</div><div class="stat-label">Total Passages</div></div></div>
+  <div class="col-md-3"><div class="stat-card green"><div class="stat-icon green-icon"><i class="fas fa-spell-check"></i></div><div class="stat-value">{{ stats.total_words }}</div><div class="stat-label">Total Words</div></div></div>
+  <div class="col-md-3"><div class="stat-card purple"><div class="stat-icon purple-icon"><i class="fas fa-chart-simple"></i></div><div class="stat-value">{{ stats.avg_words_per_passage }}</div><div class="stat-label">Avg Words/Passage</div></div></div>
+</div>
+<div class="row g-4">
+  <div class="col-lg-6">
+    <div class="content-card">
+      <div class="card-header"><h5><i class="fas fa-table"></i> Traditional Features (Baseline model)</h5></div>
+      <div class="card-body">
+        {% for name, desc in [('TF-IDF Vectorization', 'Term Frequency-Inverse Document Frequency with 5,000 features'), ('Bag of Words', 'Word frequency vectors for document representation'), ('N-gram Features', 'Unigram + bigram feature extraction'), ('Cosine Similarity', 'Similarity metric for document retrieval'), ('Keyword Frequency', 'Top-K biomedical keyword frequencies')] %}
+        <div class="d-flex gap-3 mb-3">
+          <div style="width:8px;background:linear-gradient(to bottom,#2563EB,#60A5FA);border-radius:4px;flex-shrink:0;"></div>
+          <div><div style="font-weight:700;font-size:13.5px;">{{ name }}</div><div style="font-size:12.5px;color:var(--text-muted);">{{ desc }}</div></div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <div class="content-card">
+      <div class="card-header"><h5><i class="fas fa-brain"></i> Semantic Features (VerifAI Model)</h5></div>
+      <div class="card-body">
+        {% for name, desc in [('BM25 Scoring', 'Probabilistic retrieval with k1=1.5, b=0.75 parameters'), ('Passage Embeddings', 'Dense vector representations of biomedical passages'), ('Query Expansion', 'Biomedical synonym expansion for improved recall'), ('Evidence Ranking', 'Multi-factor evidence relevance scoring'), ('Verification Vectors', 'Answer-evidence similarity using TF-IDF')] %}
+        <div class="d-flex gap-3 mb-3">
+          <div style="width:8px;background:linear-gradient(to bottom,#2196F3,#64B5F6);border-radius:4px;flex-shrink:0;"></div>
+          <div><div style="font-weight:700;font-size:13.5px;">{{ name }}</div><div style="font-size:12.5px;color:var(--text-muted);">{{ desc }}</div></div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

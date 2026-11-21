@@ -1,0 +1,120 @@
+{# Shared building blocks for admin evaluation pages. All values come from measured answer reports
+   (services/evaluation_service.aggregate_reports). #}
+
+{% macro fmt(v, kind) -%}
+  {%- if v is none -%}—
+  {%- elif kind == 'pct' -%}{{ '%.1f'|format(v * 100) }}%
+  {%- elif kind == 'ms' -%}{{ '%.2f'|format(v) }} ms
+  {%- elif kind == 'int' -%}{{ v|int }}
+  {%- else -%}{{ '%.2f'|format(v) }}
+  {%- endif -%}
+{%- endmacro %}
+
+{% macro winner(w) -%}
+  {% if w == 'verifai' %}<span class="vf-win vf-win-verifai"><i class="fas fa-arrow-up"></i> VerifAI</span>
+  {% elif w == 'baseline' %}<span class="vf-win vf-win-baseline">Baseline</span>
+  {% elif w == 'tie' %}<span class="vf-win vf-win-tie">Tie</span>
+  {% else %}<span class="vf-muted">—</span>{% endif %}
+{%- endmacro %}
+
+{% macro empty(agg) -%}
+  {% if not agg.count %}
+  <div class="vf-card vf-empty mb-4"><i class="fas fa-chart-simple"></i>
+    No measured answers yet. Every question asked from now on is measured automatically; older answers from before measured reports were introduced are not included.
+  </div>
+  {% endif %}
+{%- endmacro %}
+
+{% macro kpis(agg, bench=None) -%}
+{% set A = agg.averages %}
+<div class="vf-grid vf-grid-4 mb-4">
+  <div class="vf-card vf-kpi">
+    <div class="vf-kpi-label"><i class="fas fa-clipboard-check"></i> Measured answers</div>
+    <div class="vf-kpi-value">{{ agg.count }}</div>
+    <div class="vf-kpi-foot">{{ agg.grounded_count }} with evidence from both systems</div>
+  </div>
+  <div class="vf-card vf-kpi">
+    <div class="vf-kpi-label"><i class="fas fa-bolt"></i> Median retrieval latency</div>
+    <div class="vf-kpi-value">{{ fmt(A.latency_ms.verifai, 'ms') }}</div>
+    <div class="vf-kpi-foot">Baseline {{ fmt(A.latency_ms.baseline, 'ms') }}{% if A.latency_ms.change_pct is not none and A.latency_ms.change_pct > 0 %} · <span class="vf-delta-up">{{ '%.0f'|format(A.latency_ms.change_pct) }}% faster</span>{% endif %}</div>
+  </div>
+  <div class="vf-card vf-kpi">
+    <div class="vf-kpi-label"><i class="fas fa-crosshairs"></i> Question coverage</div>
+    <div class="vf-kpi-value">{{ fmt(A.question_coverage.verifai, 'pct') }}</div>
+    <div class="vf-kpi-foot">Baseline {{ fmt(A.question_coverage.baseline, 'pct') }}</div>
+  </div>
+  <div class="vf-card vf-kpi">
+    <div class="vf-kpi-label"><i class="fas fa-shapes"></i> Clinical breadth</div>
+    <div class="vf-kpi-value">{{ fmt(A.aspect_breadth.verifai, 'pct') }}</div>
+    <div class="vf-kpi-foot">Baseline {{ fmt(A.aspect_breadth.baseline, 'pct') }}</div>
+  </div>
+</div>
+{%- endmacro %}
+
+{% macro metric_table(agg, title='Average over measured answers', show_change=False) -%}
+{% set A = agg.averages %}
+<div class="vf-card mb-4">
+  <div class="vf-card-head">
+    <h3><i class="fas fa-table-list"></i> {{ title }}</h3>
+    <span class="vf-sub">{{ agg.count }} answers · latency is the median</span>
+  </div>
+  <div class="table-responsive">
+  <table class="vf-table">
+    <thead><tr><th style="width:46%">Metric</th><th>Baseline · TF-IDF</th><th>VerifAI · BM25 + LLM</th>{% if show_change %}<th>Change</th>{% endif %}<th>Better</th></tr></thead>
+    <tbody>
+    {% set ns = namespace(group='') %}
+    {% for m in agg.metrics %}
+      {% if m.group != ns.group %}{% set ns.group = m.group %}
+      <tr><td colspan="{{ 5 if show_change else 4 }}" class="vf-small" style="background:var(--slate-50);font-weight:600;color:var(--slate-600);">{{ m.group }}</td></tr>
+      {% endif %}
+      {% set a = A[m.key] %}
+      <tr>
+        <td><div class="vf-metric-name">{{ m.name }}</div><div class="vf-metric-def">{{ m.definition }}</div></td>
+        <td class="vf-num">{% if a.na %}<span class="vf-muted" style="font-weight:500;">n/a · verbatim quote</span>{% else %}{{ fmt(a.baseline, m.kind) }}{% endif %}</td>
+        <td class="vf-num">{{ fmt(a.verifai, m.kind) }}</td>
+        {% if show_change %}<td class="vf-num">{% if a.change_pct is none %}—{% else %}<span class="{{ 'vf-delta-up' if a.change_pct > 0 else ('vf-delta-down' if a.change_pct < 0 else '') }}">{{ '%+.1f'|format(a.change_pct) }}%</span>{% endif %}</td>{% endif %}
+        <td>{% if a.na %}<span class="vf-muted vf-small">VerifAI only</span>{% else %}{{ winner(a.winner) }}{% endif %}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  </div>
+</div>
+{%- endmacro %}
+
+{% macro recent_table(agg, n=20) -%}
+<div class="vf-card mb-4">
+  <div class="vf-card-head"><h3><i class="fas fa-clock-rotate-left"></i> Recent measured answers</h3><span class="vf-sub">B = baseline · V = VerifAI</span></div>
+  {% if agg.recent %}
+  <div class="table-responsive">
+  <table class="vf-table">
+    <thead><tr><th>Question</th><th>Status</th><th>Coverage B / V</th><th>Breadth B / V</th><th>Evidence support V</th><th>Latency B / V</th></tr></thead>
+    <tbody>
+    {% for r in agg.recent[:n] %}
+      <tr>
+        <td style="max-width:360px;"><div style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;" title="{{ r.question }}">{{ r.question }}</div><div class="vf-small vf-muted">{{ r.created_at }}</div></td>
+        <td><span class="vf-badge {% if r.status == 'Verified' %}vf-badge-ok{% elif r.status == 'Partially Verified' %}vf-badge-warn{% elif r.status == 'General Knowledge' %}vf-badge-info{% else %}vf-badge-muted{% endif %}">{{ r.status }}</span></td>
+        <td class="vf-num">{{ fmt(r.baseline.question_coverage, 'pct') }} / {{ fmt(r.verifai.question_coverage, 'pct') }}</td>
+        <td class="vf-num">{{ r.baseline.aspects|length }} / {{ r.verifai.aspects|length }}</td>
+        <td class="vf-num">{{ fmt(r.verifai.evidence_support, 'pct') }}</td>
+        <td class="vf-num">{{ fmt(r.baseline.latency_ms, 'ms') }} / {{ fmt(r.verifai.latency_ms, 'ms') }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  </div>
+  {% else %}<div class="vf-empty"><i class="fas fa-inbox"></i>No measured answers yet.</div>{% endif %}
+</div>
+{%- endmacro %}
+
+{% macro chart(id, title, icon='fa-chart-line', height=140) -%}
+<div class="vf-card">
+  <div class="vf-card-head"><h3><i class="fas {{ icon }}"></i> {{ title }}</h3></div>
+  <div class="vf-card-pad"><canvas id="{{ id }}" height="{{ height }}"></canvas></div>
+</div>
+{%- endmacro %}
+
+{% macro charts_script(agg) -%}
+<script src="{{ url_for('static', filename='js/measured.js') }}"></script>
+<script>document.addEventListener('DOMContentLoaded', () => renderMeasured({{ agg|tojson }}));</script>
+{%- endmacro %}

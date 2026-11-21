@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% from 'admin/_measured.html' import metric_table, chart, charts_script, empty %}
+{% block title %}Improvement analysis{% endblock %}
+{% block section %}Evaluation{% endblock %}
+{% block page_title %}Improvement analysis{% endblock %}
+{% block content %}
+<div class="page-header">
+  <div class="vf-eyebrow">Relative change</div>
+  <h1>Where VerifAI improves on the baseline</h1>
+  <p>Percentage change of VerifAI relative to the baseline for each measured metric. For latency, a positive value means VerifAI is faster.</p>
+</div>
+{{ empty(agg) }}
+<div class="mb-4">{{ chart('mImprove', 'VerifAI vs baseline, % change', 'fa-arrow-trend-up', 120) }}</div>
+{{ metric_table(agg, 'Values behind each change', show_change=True) }}
+<div class="vf-callout neutral">
+  <i class="fas fa-circle-info"></i>
+  <div><b>How to read this.</b> Change = (VerifAI − baseline) ÷ baseline, from averages over {{ agg.count }} measured answers (latency uses medians). Negative values are shown as measured; evidence support is negative by design because the baseline quotes its source verbatim.</div>
+</div>
+{% endblock %}
+{% block scripts %}{{ charts_script(agg) }}{% endblock %}

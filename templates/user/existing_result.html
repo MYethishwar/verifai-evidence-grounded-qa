@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% block title %}Existing Result{% endblock %}
+{% block page_title %}Baseline answer{% endblock %}
+{% block content %}
+<div class="page-header">
+  <div class="breadcrumb-nav">
+    <a href="{{ url_for('user.dashboard') }}">Dashboard</a><span>/</span>
+    <a href="{{ url_for('user.comparison', session_id=session.id) }}">Results</a><span>/</span>
+    <span>Existing Result</span>
+  </div>
+  <h1><i class="fas fa-brain text-pink me-2"></i>Baseline answer</h1>
+  <p>TF-IDF keyword-based retrieval result for your biomedical question.</p>
+</div>
+
+<div class="content-card mb-4">
+  <div class="card-header"><h5><i class="fas fa-question-circle"></i> Your Question</h5></div>
+  <div class="card-body">
+    <div class="answer-box">
+      <div class="answer-label">Biomedical Question</div>
+      <div class="answer-text" style="font-size:16px;font-weight:600;">{{ session.question }}</div>
+    </div>
+  </div>
+</div>
+
+{% if session.existing_result %}
+{% set er = session.existing_result %}
+<div class="row g-4 mb-4">
+  <div class="col-md-4">
+    <div class="stat-card blue"><div class="stat-icon blue-icon"><i class="fas fa-percent"></i></div>
+    <div class="stat-value">{{ '%.3f'|format(er.relevance_score) }}</div>
+    <div class="stat-label">Relevance Score</div></div>
+  </div>
+  <div class="col-md-4">
+    <div class="stat-card orange"><div class="stat-icon orange-icon"><i class="fas fa-stopwatch"></i></div>
+    <div class="stat-value">{{ '%.4f'|format(er.response_time) }}s</div>
+    <div class="stat-label">Response Time</div></div>
+  </div>
+  <div class="col-md-4">
+    <div class="stat-card"><div class="stat-icon pink-icon"><i class="fas fa-cogs"></i></div>
+    <div class="stat-value" style="font-size:14px;margin-top:4px;">{{ er.method }}</div>
+    <div class="stat-label">Retrieval Method</div></div>
+  </div>
+</div>
+
+<div class="content-card mb-4">
+  <div class="card-header"><h5><i class="fas fa-reply"></i> Baseline answer</h5></div>
+  <div class="card-body">
+    <div class="answer-box">
+      <div class="answer-label">Retrieved Answer (Extractive)</div>
+      <div class="answer-text">{{ er.answer }}</div>
+    </div>
+    <div class="alert-pink mt-3">
+      <i class="fas fa-exclamation-triangle"></i>
+      The existing system returns the most relevant passage without answer generation or evidence verification.
+    </div>
+  </div>
+</div>
+
+{% if er.retrieved_docs %}
+<div class="content-card">
+  <div class="card-header"><h5><i class="fas fa-file-alt"></i> Retrieved Documents</h5></div>
+  <div class="card-body">
+    <div class="evidence-card">
+      <div class="evidence-num">Retrieved Documents</div>
+      <div class="evidence-text">{{ er.retrieved_docs }}</div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% else %}
+<div class="no-data"><i class="fas fa-exclamation-circle"></i><h6>No Result Available</h6><p>This session has no existing system result.</p></div>
+{% endif %}
+
+<div class="d-flex gap-3 mt-4">
+  <a href="{{ url_for('user.proposed_result', session_id=session.id) }}" class="btn-pink"><i class="fas fa-atom"></i> View VerifAI Result</a>
+  <a href="{{ url_for('user.comparison', session_id=session.id) }}" class="btn-pink-outline"><i class="fas fa-balance-scale"></i> Full Comparison</a>
+</div>
+{% endblock %}

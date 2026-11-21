@@ -1,0 +1,325 @@
+{
+  "group": "Heart, lungs & blood",
+  "topics": [
+    {
+      "id": "hypertension",
+      "title": "Hypertension (High Blood Pressure)",
+      "category": "Cardiovascular",
+      "type": "condition",
+      "aliases": ["high blood pressure", "htn", "raised blood pressure", "hypertensive", "elevated blood pressure"],
+      "summary": "Hypertension is a long-term condition in which the force of blood against the artery walls is persistently too high, which strains the heart and blood vessels and raises the risk of heart disease, stroke and kidney damage.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Most hypertension has no single cause and develops with age. Risk factors include a family history, excess weight, high salt intake, little physical activity, heavy alcohol use, smoking and stress. Kidney disease and some hormonal disorders can cause secondary hypertension."},
+        {"label": "Symptoms", "text": "Hypertension usually causes no symptoms, which is why it is often called a silent condition. Very high readings can occasionally cause severe headache, chest pain, shortness of breath or vision changes, and these need urgent medical care."},
+        {"label": "Diagnosis", "text": "Hypertension is diagnosed by measuring blood pressure with a cuff on repeated occasions, sometimes with home or 24-hour monitoring to confirm the readings. Doctors may also check blood, urine and heart tests to look for causes and organ damage."},
+        {"label": "Treatment", "text": "Hypertension is treated with lifestyle changes such as less salt, healthy eating, regular exercise, weight loss and limiting alcohol. Many people also need daily blood pressure medicines, and several drug classes are available to choose from."},
+        {"label": "Prevention & outlook", "text": "Hypertension can often be prevented or delayed by staying active, keeping a healthy weight, eating less salt and not smoking. With regular monitoring and treatment, blood pressure can usually be controlled and the risk of complications greatly reduced."}
+      ],
+      "sample_questions": ["What causes hypertension?", "Does hypertension have any symptoms?", "How is hypertension treated?"]
+    },
+    {
+      "id": "coronary-artery-disease",
+      "title": "Coronary Artery Disease",
+      "category": "Cardiovascular",
+      "type": "condition",
+      "aliases": ["cad", "coronary heart disease", "chd", "ischemic heart disease", "atherosclerotic heart disease", "angina"],
+      "summary": "Coronary artery disease occurs when the arteries that supply the heart muscle become narrowed by a build-up of fatty plaque (atherosclerosis), reducing blood flow and sometimes causing chest pain.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Coronary artery disease is caused by atherosclerosis, the gradual build-up of plaque in the heart's arteries. Risk factors include smoking, high blood pressure, high cholesterol, diabetes, obesity, inactivity, older age and a family history of early heart disease."},
+        {"label": "Symptoms", "text": "Coronary artery disease may cause chest pressure or tightness (angina), often on exertion, along with breathlessness and fatigue. Some people have no symptoms until a sudden event occurs. Severe or lasting chest pain needs emergency care."},
+        {"label": "Diagnosis", "text": "Coronary artery disease is assessed with a history and examination, an electrocardiogram (ECG), blood tests, stress testing and heart imaging. A coronary angiogram or CT scan can show narrowed arteries directly."},
+        {"label": "Treatment", "text": "Coronary artery disease is treated with lifestyle changes and medicines that protect the heart, lower cholesterol and control blood pressure. Procedures such as angioplasty with a stent or coronary bypass surgery may be used to restore blood flow."},
+        {"label": "Prevention & outlook", "text": "Coronary artery disease is a long-term condition, but its progress can be slowed by not smoking, eating healthily, staying active, and controlling blood pressure, cholesterol and diabetes. Many people live well for years with proper treatment."}
+      ],
+      "sample_questions": ["What causes coronary artery disease?", "What are the symptoms of coronary artery disease?", "How is coronary artery disease treated?"]
+    },
+    {
+      "id": "heart-attack",
+      "title": "Heart Attack (Myocardial Infarction)",
+      "category": "Cardiovascular",
+      "type": "condition",
+      "aliases": ["mi", "myocardial infarction", "acute coronary syndrome", "cardiac infarction", "coronary thrombosis"],
+      "summary": "A heart attack happens when blood flow to part of the heart muscle is suddenly blocked, usually by a clot on a ruptured plaque, causing that muscle to be damaged. It is a medical emergency.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "A heart attack is usually caused by a blood clot forming on a ruptured fatty plaque in a coronary artery. Risk factors include smoking, high blood pressure, high cholesterol, diabetes, obesity, older age and a family history of heart disease."},
+        {"label": "Symptoms", "text": "A heart attack often causes chest pain or pressure that may spread to the arm, jaw or back, with shortness of breath, sweating, nausea or light-headedness. Symptoms can be milder in women and older adults. Call emergency services immediately."},
+        {"label": "Diagnosis", "text": "A heart attack is diagnosed using an electrocardiogram (ECG) and blood tests for heart muscle damage, such as troponin. Doctors may also use echocardiography or coronary angiography to see which artery is blocked."},
+        {"label": "Treatment", "text": "Treatment of a heart attack aims to reopen the blocked artery quickly, using clot-dissolving drugs or angioplasty with a stent. Other medicines such as antiplatelets, pain relief and oxygen when needed are also given in hospital."},
+        {"label": "Prevention & outlook", "text": "After a heart attack, cardiac rehabilitation and long-term medicines lower the chance of another event. Quitting smoking, eating healthily and exercising help prevention. Outlook depends on how much heart muscle was damaged and how quickly care was received."}
+      ],
+      "sample_questions": ["What are the warning signs of a heart attack?", "What causes a heart attack?", "How is a heart attack treated in hospital?"]
+    },
+    {
+      "id": "heart-failure",
+      "title": "Heart Failure",
+      "category": "Cardiovascular",
+      "type": "condition",
+      "aliases": ["congestive heart failure", "chf", "cardiac failure", "weak heart", "left ventricular failure", "hf"],
+      "summary": "Heart failure is a long-term condition in which the heart cannot pump blood strongly enough to meet the body's needs, leading to breathlessness, tiredness and fluid build-up. It does not mean the heart has stopped.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Heart failure is commonly caused by coronary artery disease, past heart attacks and long-standing high blood pressure. Other causes include heart valve disease, cardiomyopathy, abnormal heart rhythms, diabetes and heavy alcohol use."},
+        {"label": "Symptoms", "text": "Heart failure typically causes breathlessness, especially on exertion or when lying flat, along with tiredness, and swelling of the ankles and legs from fluid retention. Sudden worsening, severe breathlessness or chest pain needs urgent care."},
+        {"label": "Diagnosis", "text": "Heart failure is diagnosed from symptoms, examination, blood tests, a chest X-ray, an electrocardiogram (ECG) and an echocardiogram, which shows how well the heart pumps and helps identify the underlying cause."},
+        {"label": "Treatment", "text": "Heart failure is treated with medicines that ease the heart's workload and improve survival, plus limiting salt and monitoring fluid. Some people benefit from devices such as pacemakers or defibrillators, or from surgery or transplant in severe cases."},
+        {"label": "Prevention & outlook", "text": "Heart failure can often be prevented by controlling blood pressure, treating coronary artery disease, avoiding smoking and limiting alcohol. It is usually chronic, but modern treatment helps many people stay active and stable for years."}
+      ],
+      "sample_questions": ["What causes heart failure?", "What are the first symptoms of heart failure?", "Can heart failure be treated?"]
+    },
+    {
+      "id": "atrial-fibrillation",
+      "title": "Atrial Fibrillation",
+      "category": "Cardiovascular",
+      "type": "condition",
+      "aliases": ["afib", "af", "a-fib", "irregular heartbeat", "irregular heart rhythm", "auricular fibrillation"],
+      "summary": "Atrial fibrillation is a common heart rhythm disorder in which the upper chambers of the heart beat rapidly and irregularly, which can cause palpitations and increases the risk of blood clots and stroke.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Atrial fibrillation becomes more common with age. Risk factors include high blood pressure, heart disease, valve problems, an overactive thyroid, obesity, sleep apnea, heavy alcohol use and a family history. Sometimes no clear cause is found."},
+        {"label": "Symptoms", "text": "Atrial fibrillation may cause palpitations, a racing or irregular pulse, dizziness, tiredness and breathlessness. Some people have no symptoms and the condition is found during a routine check. Chest pain or fainting needs urgent attention."},
+        {"label": "Diagnosis", "text": "Atrial fibrillation is diagnosed with an electrocardiogram (ECG), which shows the irregular rhythm. If episodes come and go, longer heart monitoring may be needed. Blood tests and an echocardiogram help look for causes."},
+        {"label": "Treatment", "text": "Treatment of atrial fibrillation includes anticoagulant medicines to lower stroke risk, drugs to control heart rate or rhythm, and sometimes electrical cardioversion or catheter ablation to restore a normal rhythm. Treating underlying conditions also helps."},
+        {"label": "Prevention & outlook", "text": "Atrial fibrillation risk can be reduced by controlling blood pressure, keeping a healthy weight, limiting alcohol and treating sleep apnea. It is often lifelong but manageable, and treatment greatly lowers the risk of stroke."}
+      ],
+      "sample_questions": ["What causes atrial fibrillation?", "Why does atrial fibrillation raise the risk of stroke?", "How is atrial fibrillation treated?"]
+    },
+    {
+      "id": "stroke",
+      "title": "Stroke",
+      "category": "Neurovascular",
+      "type": "condition",
+      "aliases": ["cerebrovascular accident", "cva", "brain attack", "ischemic stroke", "hemorrhagic stroke", "tia"],
+      "summary": "A stroke occurs when blood supply to part of the brain is blocked or a blood vessel in the brain bursts, causing brain cells to die. It is a medical emergency where fast treatment matters.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Most strokes are ischemic, caused by a clot blocking a brain artery; others are hemorrhagic, caused by bleeding. Risk factors include high blood pressure, atrial fibrillation, diabetes, high cholesterol, smoking, obesity and older age."},
+        {"label": "Symptoms", "text": "Stroke symptoms come on suddenly and include facial drooping, arm weakness, slurred or confused speech, vision loss, severe headache and loss of balance. Call emergency services at once, because quick treatment can limit brain damage."},
+        {"label": "Diagnosis", "text": "A stroke is diagnosed by neurological examination and urgent brain imaging, usually a CT or MRI scan, to tell whether it is caused by a clot or bleeding. Further tests check the heart and blood vessels for the cause."},
+        {"label": "Treatment", "text": "Stroke treatment depends on the type. Clot-dissolving drugs or clot removal can be used for ischemic stroke, while bleeding strokes may need blood pressure control or surgery. Rehabilitation therapy then helps recovery of movement and speech."},
+        {"label": "Prevention & outlook", "text": "Stroke can often be prevented by controlling blood pressure, not smoking, staying active, eating well and treating atrial fibrillation. Recovery varies; some people recover well and others have lasting disability, so early treatment and rehabilitation are important."}
+      ],
+      "sample_questions": ["What are the warning signs of a stroke?", "What is the difference between an ischemic and a hemorrhagic stroke?", "Can a stroke be prevented?"]
+    },
+    {
+      "id": "high-cholesterol",
+      "title": "High Cholesterol",
+      "category": "Cardiovascular",
+      "type": "condition",
+      "aliases": ["hyperlipidemia", "hypercholesterolemia", "dyslipidemia", "high ldl", "raised cholesterol", "high blood cholesterol"],
+      "summary": "High cholesterol means there is too much of a fatty substance called cholesterol in the blood, especially LDL cholesterol, which can build up in artery walls and raise the risk of heart disease and stroke.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "High cholesterol can result from a diet high in saturated fat, inactivity, excess weight, smoking and diabetes. Genetics also matter, and an inherited condition called familial hypercholesterolemia causes very high levels from a young age."},
+        {"label": "Symptoms", "text": "High cholesterol usually causes no symptoms, so it often goes unnoticed until it contributes to heart disease or stroke. In rare inherited forms, fatty deposits may appear on the skin or around the eyes or tendons."},
+        {"label": "Diagnosis", "text": "High cholesterol is diagnosed with a blood test called a lipid profile, which measures total cholesterol, LDL, HDL and triglycerides. Doctors use the results with other risk factors to estimate overall cardiovascular risk."},
+        {"label": "Treatment", "text": "High cholesterol is first managed with a heart-healthy diet, regular exercise, weight loss and stopping smoking. If this is not enough or risk is high, cholesterol-lowering medicines such as statins are commonly prescribed."},
+        {"label": "Prevention & outlook", "text": "High cholesterol can be limited by eating less saturated fat, being active and keeping a healthy weight. With lifestyle changes and treatment, levels can usually be lowered, which reduces the long-term risk of heart attack and stroke."}
+      ],
+      "sample_questions": ["What causes high cholesterol?", "How do I know if I have high cholesterol?", "How can high cholesterol be lowered?"]
+    },
+    {
+      "id": "deep-vein-thrombosis",
+      "title": "Deep Vein Thrombosis and Pulmonary Embolism",
+      "category": "Cardiovascular",
+      "type": "condition",
+      "aliases": ["dvt", "pulmonary embolism", "pe", "venous thromboembolism", "vte", "blood clot in leg", "leg clot"],
+      "summary": "Deep vein thrombosis is a blood clot in a deep vein, usually in the leg. If part of the clot travels to the lungs it causes a pulmonary embolism, which can be life-threatening.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Deep vein thrombosis is linked to slow blood flow or increased clotting. Risk factors include long periods of immobility, recent surgery or injury, hospital stays, pregnancy, hormone therapy, cancer, obesity, older age and inherited clotting disorders."},
+        {"label": "Symptoms", "text": "Deep vein thrombosis typically causes leg swelling, pain, warmth and redness, usually in one leg. A pulmonary embolism may cause sudden breathlessness, sharp chest pain or coughing blood, and needs emergency care."},
+        {"label": "Diagnosis", "text": "Deep vein thrombosis is usually diagnosed with an ultrasound scan of the leg veins, often combined with a D-dimer blood test. Pulmonary embolism is commonly confirmed with a CT scan of the lung blood vessels."},
+        {"label": "Treatment", "text": "Deep vein thrombosis and pulmonary embolism are treated with anticoagulant (blood-thinning) medicines that stop clots growing and let the body break them down. Clot-dissolving drugs or filters are reserved for severe or special cases."},
+        {"label": "Prevention & outlook", "text": "Deep vein thrombosis can be prevented by moving regularly on long journeys, staying active, and using blood thinners or compression stockings when advised around surgery. Most people recover with treatment, though some develop long-term leg swelling or recurrent clots."}
+      ],
+      "sample_questions": ["What are the symptoms of deep vein thrombosis?", "How does deep vein thrombosis lead to a pulmonary embolism?", "How is deep vein thrombosis treated?"]
+    },
+    {
+      "id": "peripheral-artery-disease",
+      "title": "Peripheral Artery Disease",
+      "category": "Cardiovascular",
+      "type": "condition",
+      "aliases": ["pad", "peripheral arterial disease", "peripheral vascular disease", "pvd", "claudication", "poor leg circulation"],
+      "summary": "Peripheral artery disease is a narrowing of the arteries, most often in the legs, caused by plaque build-up, which reduces blood flow and can cause pain when walking.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Peripheral artery disease is usually caused by atherosclerosis, the build-up of fatty plaque in arteries. Smoking is the strongest risk factor, along with diabetes, high blood pressure, high cholesterol, older age and a family history."},
+        {"label": "Symptoms", "text": "Peripheral artery disease commonly causes cramping leg pain on walking that eases with rest (claudication). Advanced disease can cause cold or numb feet, slow-healing sores and, in severe cases, tissue damage needing urgent care."},
+        {"label": "Diagnosis", "text": "Peripheral artery disease is often diagnosed with the ankle-brachial index, which compares blood pressure in the ankle with that in the arm. Ultrasound, CT or MRI angiography can show where arteries are narrowed."},
+        {"label": "Treatment", "text": "Peripheral artery disease is treated with quitting smoking, supervised walking exercise and medicines to lower cholesterol, control blood pressure and reduce clotting. Angioplasty, stenting or bypass surgery may be used when symptoms are severe."},
+        {"label": "Prevention & outlook", "text": "Peripheral artery disease can be prevented or slowed by not smoking, managing diabetes, eating healthily and staying active. It signals widespread artery disease, so treatment also lowers the risk of heart attack and stroke."}
+      ],
+      "sample_questions": ["What causes peripheral artery disease?", "Why do my legs hurt when walking with peripheral artery disease?", "How is peripheral artery disease treated?"]
+    },
+    {
+      "id": "asthma",
+      "title": "Asthma",
+      "category": "Respiratory",
+      "type": "condition",
+      "aliases": ["bronchial asthma", "asthmatic", "asthma attack", "allergic asthma", "wheezing disorder"],
+      "summary": "Asthma is a long-term lung condition in which the airways become inflamed and narrow, causing episodes of wheezing, coughing, chest tightness and breathlessness that vary over time.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Asthma has both genetic and environmental causes. It is more likely with allergies, eczema or a family history. Attacks can be triggered by allergens, cold air, exercise, smoke, air pollution, respiratory infections and strong smells."},
+        {"label": "Symptoms", "text": "Asthma causes wheezing, cough, chest tightness and shortness of breath, often worse at night or early morning. Severe attacks with extreme breathlessness, difficulty speaking or blue lips need emergency treatment."},
+        {"label": "Diagnosis", "text": "Asthma is diagnosed from the pattern of symptoms and breathing tests such as spirometry or peak flow measurement, which show how well air moves in and out. Allergy testing may help identify triggers."},
+        {"label": "Treatment", "text": "Asthma is treated with reliever inhalers that quickly open the airways and preventer inhalers, usually containing steroids, that reduce airway inflammation. A written action plan and avoiding triggers help people stay in control."},
+        {"label": "Prevention & outlook", "text": "Asthma cannot usually be cured, but good control prevents most attacks. Avoiding triggers, not smoking, using preventer medicines as prescribed and having regular reviews allow most people with asthma to lead normal, active lives."}
+      ],
+      "sample_questions": ["What triggers an asthma attack?", "What are the symptoms of asthma?", "How is asthma diagnosed?"]
+    },
+    {
+      "id": "copd",
+      "title": "Chronic Obstructive Pulmonary Disease (COPD)",
+      "category": "Respiratory",
+      "type": "condition",
+      "aliases": ["chronic obstructive pulmonary disease", "emphysema", "chronic obstructive lung disease", "copd flare-up", "smoker's lung"],
+      "summary": "COPD is a long-term, progressive lung disease that blocks airflow and makes breathing difficult. It includes emphysema and is most often caused by smoking.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "COPD is most commonly caused by long-term smoking. Other causes include prolonged exposure to air pollution, dust, chemicals or fumes at work, and a rare inherited condition called alpha-1 antitrypsin deficiency."},
+        {"label": "Symptoms", "text": "COPD causes persistent cough, often with mucus, shortness of breath that gradually worsens and wheezing. People may have flare-ups (exacerbations) triggered by infections, when symptoms suddenly get worse and medical help is needed."},
+        {"label": "Diagnosis", "text": "COPD is diagnosed with spirometry, a breathing test that shows airflow limitation that does not fully reverse. Doctors also consider smoking history and symptoms, and may use a chest X-ray or other tests."},
+        {"label": "Treatment", "text": "COPD is treated by stopping smoking, using inhalers that widen the airways, pulmonary rehabilitation, and vaccinations against flu and pneumonia. Some people need oxygen therapy or, rarely, surgery. Flare-ups may need steroids or antibiotics."},
+        {"label": "Prevention & outlook", "text": "COPD is largely preventable by not smoking and avoiding harmful fumes and dust. The damage is not reversible, but quitting smoking and treatment slow its progress, ease symptoms and improve quality of life."}
+      ],
+      "sample_questions": ["What causes COPD?", "What is the difference between COPD and emphysema?", "Can COPD be cured?"]
+    },
+    {
+      "id": "pneumonia",
+      "title": "Pneumonia",
+      "category": "Respiratory",
+      "type": "condition",
+      "aliases": ["lung infection", "chest infection", "bacterial pneumonia", "viral pneumonia", "walking pneumonia", "community-acquired pneumonia"],
+      "summary": "Pneumonia is an infection of the lungs in which the air sacs become inflamed and may fill with fluid or pus. It can be caused by bacteria, viruses or, less often, fungi.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Pneumonia is caused by germs such as bacteria and viruses. It is more likely in babies, older adults, smokers and people with chronic lung or heart disease, weakened immunity, or recent hospital stays or illnesses such as flu."},
+        {"label": "Symptoms", "text": "Pneumonia causes cough with phlegm, fever, chills, chest pain when breathing and shortness of breath. Older adults may be confused rather than feverish. Severe breathlessness, bluish lips or confusion need urgent medical care."},
+        {"label": "Diagnosis", "text": "Pneumonia is diagnosed from symptoms, listening to the chest and a chest X-ray. Blood tests, sputum tests and measuring oxygen levels may be used in more serious cases to find the cause and judge severity."},
+        {"label": "Treatment", "text": "Bacterial pneumonia is treated with antibiotics, while viral pneumonia is managed mainly with rest, fluids and supportive care. Severe pneumonia may require hospital treatment with oxygen or intravenous medicines."},
+        {"label": "Prevention & outlook", "text": "Pneumonia can be prevented by vaccination against pneumococcus, flu and other infections, good hand hygiene and not smoking. Most healthy people recover fully, though recovery can be slow and pneumonia can be serious in frail people."}
+      ],
+      "sample_questions": ["What are the symptoms of pneumonia?", "What is the difference between bacterial and viral pneumonia?", "How can pneumonia be prevented?"]
+    },
+    {
+      "id": "tuberculosis",
+      "title": "Tuberculosis",
+      "category": "Infectious",
+      "type": "condition",
+      "aliases": ["tb", "consumption", "pulmonary tuberculosis", "mycobacterium tuberculosis", "latent tb", "active tb"],
+      "summary": "Tuberculosis is an infectious disease caused by the bacterium Mycobacterium tuberculosis. It mainly affects the lungs and spreads through the air when a person with active disease coughs.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Tuberculosis is caused by Mycobacterium tuberculosis and spreads in airborne droplets from people with active lung disease. Risk factors include close contact with an infected person, HIV infection, weakened immunity, malnutrition, diabetes, smoking and crowded living conditions."},
+        {"label": "Symptoms", "text": "Active tuberculosis typically causes a persistent cough lasting weeks, sometimes with blood, along with fever, night sweats, weight loss and tiredness. Latent tuberculosis causes no symptoms and is not contagious, but can become active later."},
+        {"label": "Diagnosis", "text": "Tuberculosis is diagnosed with a chest X-ray and tests on sputum samples to find the bacteria. Latent infection is detected with a skin test or a blood test that shows exposure to the germ."},
+        {"label": "Treatment", "text": "Tuberculosis is curable with a combination of several antibiotics taken for many months. It is essential to finish the full course, because stopping early can cause relapse and drug-resistant tuberculosis, which is harder to treat."},
+        {"label": "Prevention & outlook", "text": "Tuberculosis prevention includes finding and treating cases early, screening contacts, treating latent infection and, in some countries, BCG vaccination. With complete treatment most people recover, but untreated active disease can be fatal."}
+      ],
+      "sample_questions": ["How is tuberculosis spread?", "What is the difference between latent and active tuberculosis?", "Can tuberculosis be cured?"]
+    },
+    {
+      "id": "bronchitis",
+      "title": "Bronchitis",
+      "category": "Respiratory",
+      "type": "condition",
+      "aliases": ["acute bronchitis", "chest cold", "chronic bronchitis", "bronchial infection", "inflamed bronchial tubes"],
+      "summary": "Bronchitis is inflammation of the bronchial tubes that carry air to the lungs, causing cough and mucus. The acute form is usually short-lived, while chronic bronchitis is long-term.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Acute bronchitis is usually caused by the viruses that cause colds and flu, and less often by bacteria. Chronic bronchitis is mainly caused by smoking. Irritants such as dust, fumes and pollution can also contribute to bronchitis."},
+        {"label": "Symptoms", "text": "Bronchitis causes a cough that may bring up clear, white or yellow mucus, along with chest discomfort, tiredness, a sore throat and sometimes mild fever. The cough can linger for weeks. Seek care for breathlessness or coughing blood."},
+        {"label": "Diagnosis", "text": "Bronchitis is usually diagnosed from symptoms and a physical examination. A chest X-ray or breathing tests may be used to rule out pneumonia, asthma or COPD, especially if the cough is severe or lasts a long time."},
+        {"label": "Treatment", "text": "Acute bronchitis usually clears on its own with rest, fluids and relief of symptoms, and antibiotics are generally not helpful because it is mostly viral. Chronic bronchitis needs smoking cessation and inhalers or other lung treatments."},
+        {"label": "Prevention & outlook", "text": "Bronchitis risk is reduced by not smoking, avoiding lung irritants, washing hands and having flu vaccination. Acute bronchitis usually resolves within a few weeks, while chronic bronchitis is a long-term condition that needs ongoing management."}
+      ],
+      "sample_questions": ["What causes bronchitis?", "How long does bronchitis last?", "Do I need antibiotics for bronchitis?"]
+    },
+    {
+      "id": "sleep-apnea",
+      "title": "Sleep Apnea",
+      "category": "Respiratory",
+      "type": "condition",
+      "aliases": ["obstructive sleep apnea", "osa", "sleep apnoea", "sleep-disordered breathing", "snoring with pauses in breathing"],
+      "summary": "Sleep apnea is a sleep disorder in which breathing repeatedly stops and starts during sleep. The most common type, obstructive sleep apnea, occurs when the throat muscles relax and block the airway.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Obstructive sleep apnea occurs when the upper airway collapses during sleep. Risk factors include excess weight, a thick neck, a narrow airway, enlarged tonsils, older age, male sex, alcohol or sedative use, smoking and a family history."},
+        {"label": "Symptoms", "text": "Sleep apnea causes loud snoring, pauses in breathing noticed by a partner, gasping during sleep, morning headaches and excessive daytime sleepiness. It can also cause poor concentration and mood changes."},
+        {"label": "Diagnosis", "text": "Sleep apnea is diagnosed with a sleep study, either in a sleep laboratory or with a home monitor, which records breathing, oxygen levels and heart rate overnight. A doctor also reviews symptoms and risk factors."},
+        {"label": "Treatment", "text": "Sleep apnea is commonly treated with continuous positive airway pressure (CPAP), a mask that keeps the airway open during sleep. Weight loss, avoiding alcohol, sleeping position changes, oral devices or surgery may also be used."},
+        {"label": "Prevention & outlook", "text": "Untreated sleep apnea raises the risk of high blood pressure, heart disease, stroke and accidents from sleepiness. Keeping a healthy weight and avoiding alcohol before bed can reduce risk, and treatment usually brings good symptom relief."}
+      ],
+      "sample_questions": ["What are the symptoms of sleep apnea?", "How is sleep apnea diagnosed?", "How does a CPAP machine help sleep apnea?"]
+    },
+    {
+      "id": "iron-deficiency-anemia",
+      "title": "Iron-Deficiency Anemia",
+      "category": "Blood",
+      "type": "condition",
+      "aliases": ["iron deficiency anaemia", "low iron anemia", "anemia from iron deficiency", "iron deficiency", "microcytic anemia", "low iron"],
+      "summary": "Iron-deficiency anemia is a condition in which the body lacks enough iron to make hemoglobin, so red blood cells carry less oxygen, leading to tiredness and paleness. It is the most common type of anemia.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Iron-deficiency anemia is caused by blood loss, such as heavy periods or bleeding in the digestive tract, by too little iron in the diet, or by poor absorption. Pregnancy, infancy and vegetarian diets can increase risk."},
+        {"label": "Symptoms", "text": "Iron-deficiency anemia can cause tiredness, weakness, pale skin, shortness of breath, headaches, dizziness, cold hands and feet and brittle nails. Mild cases may cause few symptoms. Chest pain or severe breathlessness needs urgent care."},
+        {"label": "Diagnosis", "text": "Iron-deficiency anemia is diagnosed with blood tests that show low hemoglobin, small red blood cells and low ferritin, a marker of iron stores. Doctors also look for the source of any blood loss."},
+        {"label": "Treatment", "text": "Iron-deficiency anemia is treated by finding and correcting the cause, eating iron-rich foods and taking iron supplements, usually by mouth. Intravenous iron or blood transfusion is used for severe cases or when tablets are not tolerated."},
+        {"label": "Prevention & outlook", "text": "Iron-deficiency anemia can be prevented with a diet containing iron-rich foods and vitamin C, and with supplements in pregnancy when advised. With treatment and correction of the cause, most people recover fully, though it can return."}
+      ],
+      "sample_questions": ["What causes iron-deficiency anemia?", "What are the symptoms of iron-deficiency anemia?", "How is iron-deficiency anemia treated?"]
+    },
+    {
+      "id": "sickle-cell-disease",
+      "title": "Sickle Cell Disease",
+      "category": "Genetic",
+      "type": "condition",
+      "aliases": ["sickle cell anemia", "sickle cell anaemia", "scd", "hemoglobin ss disease", "sickle cell crisis", "sickle cell"],
+      "summary": "Sickle cell disease is an inherited blood disorder in which abnormal hemoglobin makes red blood cells stiff and crescent-shaped, causing anemia, pain episodes and organ damage.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Sickle cell disease is caused by inheriting two copies of an altered hemoglobin gene, one from each parent. People with one copy have sickle cell trait. It is most common in people with ancestry from Africa, the Middle East, India and the Mediterranean."},
+        {"label": "Symptoms", "text": "Sickle cell disease causes anemia with tiredness and paleness, and sudden episodes of severe pain called crises. It can also cause swelling of hands and feet, frequent infections, delayed growth and serious problems such as stroke."},
+        {"label": "Diagnosis", "text": "Sickle cell disease is diagnosed with a blood test that detects abnormal hemoglobin. It is commonly found by newborn screening in many countries, and genetic testing can identify carriers and help families plan."},
+        {"label": "Treatment", "text": "Sickle cell disease is managed with pain relief, fluids, infection prevention with vaccines and antibiotics, and medicines that reduce crises. Blood transfusions can be used for complications, and stem cell transplant or gene therapy may offer a cure for some."},
+        {"label": "Prevention & outlook", "text": "Sickle cell disease cannot be prevented once inherited, but genetic counselling can inform couples about risk. With newborn screening and modern care, life expectancy and quality of life have improved, though lifelong specialist follow-up is needed."}
+      ],
+      "sample_questions": ["What causes sickle cell disease?", "What is a sickle cell crisis?", "Can sickle cell disease be cured?"]
+    },
+    {
+      "id": "thalassemia",
+      "title": "Thalassemia",
+      "category": "Genetic",
+      "type": "condition",
+      "aliases": ["thalassaemia", "alpha thalassemia", "beta thalassemia", "cooley's anemia", "mediterranean anemia", "thalassemia major"],
+      "summary": "Thalassemia is a group of inherited blood disorders in which the body makes reduced or abnormal hemoglobin, leading to anemia of varying severity. The main types are alpha and beta thalassemia.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Thalassemia is caused by inherited changes in the genes that make hemoglobin and is passed from parents to children. It is more common in people with Mediterranean, Middle Eastern, South Asian, Southeast Asian and African ancestry."},
+        {"label": "Symptoms", "text": "Thalassemia can range from no symptoms in carriers to severe anemia. Symptoms may include fatigue, pale or yellowish skin, slow growth, bone changes and an enlarged spleen. Severe forms appear in early childhood."},
+        {"label": "Diagnosis", "text": "Thalassemia is diagnosed with blood tests such as a complete blood count and hemoglobin analysis, and confirmed by genetic testing. Prenatal testing and carrier screening are available for families at risk."},
+        {"label": "Treatment", "text": "Mild thalassemia may need no treatment. Severe thalassemia is treated with regular blood transfusions, iron chelation therapy to remove excess iron, and sometimes folic acid. Stem cell transplant can cure some patients, and gene therapies are emerging."},
+        {"label": "Prevention & outlook", "text": "Thalassemia cannot be prevented once inherited, but carrier screening and genetic counselling help couples understand their risk. With regular treatment and monitoring, many people with severe thalassemia now live into adulthood."}
+      ],
+      "sample_questions": ["What causes thalassemia?", "What is the difference between alpha and beta thalassemia?", "How is thalassemia treated?"]
+    },
+    {
+      "id": "hemophilia",
+      "title": "Hemophilia",
+      "category": "Blood",
+      "type": "condition",
+      "aliases": ["haemophilia", "hemophilia a", "hemophilia b", "bleeding disorder", "factor viii deficiency", "factor ix deficiency"],
+      "summary": "Hemophilia is an inherited bleeding disorder in which the blood does not clot properly because of a shortage of a clotting factor, causing prolonged bleeding after injury and sometimes spontaneous bleeding.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Hemophilia is caused by a change in the gene for clotting factor VIII (hemophilia A) or factor IX (hemophilia B), located on the X chromosome. It mainly affects males, while females are usually carriers. Some cases arise without family history."},
+        {"label": "Symptoms", "text": "Hemophilia causes easy bruising, prolonged bleeding from cuts or dental work, nosebleeds and bleeding into joints and muscles, causing pain and swelling. Bleeding in the head or severe injury is an emergency."},
+        {"label": "Diagnosis", "text": "Hemophilia is diagnosed with blood tests that measure how long blood takes to clot and the level of specific clotting factors. Genetic testing can confirm the type and identify carriers in a family."},
+        {"label": "Treatment", "text": "Hemophilia is treated by replacing the missing clotting factor, either regularly to prevent bleeds or when bleeding occurs. Newer non-factor medicines and gene therapy are available for some patients. Care at a specialist centre is advised."},
+        {"label": "Prevention & outlook", "text": "Hemophilia cannot be prevented, but genetic counselling helps families understand inheritance. With modern treatment, people with hemophilia can usually lead active lives, avoiding high-risk activities and some medicines that increase bleeding, such as aspirin."}
+      ],
+      "sample_questions": ["What causes hemophilia?", "How is hemophilia diagnosed?", "How is hemophilia treated?"]
+    },
+    {
+      "id": "cystic-fibrosis",
+      "title": "Cystic Fibrosis",
+      "category": "Genetic",
+      "type": "condition",
+      "aliases": ["cf", "mucoviscidosis", "cftr disease", "inherited lung and digestive disease", "cystic fibrosis of the pancreas"],
+      "summary": "Cystic fibrosis is an inherited condition that causes thick, sticky mucus to build up in the lungs and digestive system, leading to repeated lung infections and problems absorbing nutrients.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Cystic fibrosis is caused by changes in the CFTR gene and occurs when a child inherits a faulty copy from both parents. Carriers with one copy are healthy. It is most common in people of European ancestry but occurs in all groups."},
+        {"label": "Symptoms", "text": "Cystic fibrosis causes persistent cough, wheezing, frequent chest infections, salty-tasting skin, poor weight gain and greasy, bulky stools. It can also lead to diabetes, liver problems and infertility, and symptoms vary between people."},
+        {"label": "Diagnosis", "text": "Cystic fibrosis is often found through newborn screening blood tests. It is confirmed with a sweat test, which measures salt in sweat, and genetic testing to identify the CFTR gene changes."},
+        {"label": "Treatment", "text": "Cystic fibrosis is treated with airway clearance physiotherapy, inhaled and oral medicines, antibiotics for infections, pancreatic enzymes and a high-energy diet. Modulator drugs that target the faulty CFTR protein help many patients, and lung transplant is an option in severe disease."},
+        {"label": "Prevention & outlook", "text": "Cystic fibrosis cannot be prevented once inherited, but carrier testing and genetic counselling can inform couples about risk. Thanks to early diagnosis and improved treatments, life expectancy has risen substantially, though the condition remains lifelong and needs specialist care."}
+      ],
+      "sample_questions": ["What causes cystic fibrosis?", "How is cystic fibrosis diagnosed?", "What treatments are available for cystic fibrosis?"]
+    }
+  ]
+}

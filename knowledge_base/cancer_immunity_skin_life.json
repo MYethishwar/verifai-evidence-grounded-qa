@@ -1,0 +1,853 @@
+{
+  "group": "Cancer, immunity, bones, skin & life stages",
+  "topics": [
+    {
+      "id": "cancer-basics",
+      "title": "Cancer: How It Develops and Spreads",
+      "category": "Cancer",
+      "type": "condition",
+      "aliases": [
+        "cancer",
+        "tumour",
+        "tumor",
+        "oncology",
+        "malignancy",
+        "metastasis",
+        "neoplasm"
+      ],
+      "summary": "Cancer is a group of diseases in which cells grow uncontrollably because of changes (mutations) in their DNA. Cancer cells can invade nearby tissue and spread to distant organs, a process called metastasis.",
+      "sections": [
+        {
+          "label": "Causes & risk factors",
+          "text": "Cancer arises when DNA damage lets cells ignore normal signals to stop dividing. Common risk factors include tobacco use, ageing, excess alcohol, obesity, ultraviolet radiation, some infections such as HPV, and inherited gene changes."
+        },
+        {
+          "label": "Symptoms",
+          "text": "Cancer symptoms depend on where it starts. General warning signs include a new lump, unexplained weight loss, persistent tiredness, unusual bleeding, a sore that does not heal, or a long-lasting cough or change in bowel habit."
+        },
+        {
+          "label": "Diagnosis",
+          "text": "Cancer is usually confirmed by a biopsy, in which a tissue sample is examined under a microscope. Imaging such as X-ray, CT, MRI or PET scans and blood tests help show the cancer's size and whether it has spread (staging)."
+        },
+        {
+          "label": "Treatment",
+          "text": "Cancer treatment depends on the type and stage. Main options are surgery, radiotherapy, chemotherapy, hormone therapy, targeted therapy and immunotherapy, often combined. Supportive and palliative care help manage symptoms at any stage."
+        },
+        {
+          "label": "Prevention & outlook",
+          "text": "Many cancers can be prevented by avoiding tobacco, limiting alcohol, staying active, protecting skin from the sun and getting vaccinated against HPV and hepatitis B. Cancer outlook is generally better when it is found early through screening or prompt investigation of symptoms."
+        }
+      ],
+      "sample_questions": [
+        "How does cancer start in the body?",
+        "What does it mean when cancer metastasizes?",
+        "What are the main treatments for cancer?"
+      ]
+    },
+    {
+      "id": "breast-cancer",
+      "title": "Breast Cancer",
+      "category": "Cancer",
+      "type": "condition",
+      "aliases": [
+        "breast tumour",
+        "breast carcinoma",
+        "mammary cancer",
+        "ductal carcinoma",
+        "breast lump"
+      ],
+      "summary": "Breast cancer is a cancer that begins in the cells of the breast, most often in the milk ducts or lobules. It occurs mainly in women but can also affect men.",
+      "sections": [
+        {
+          "label": "Causes & risk factors",
+          "text": "Breast cancer risk rises with age, a family history, and inherited changes in genes such as BRCA1 and BRCA2. Other factors include alcohol use, obesity, long exposure to oestrogen, and earlier radiation to the chest."
+        },
+        {
+          "label": "Symptoms",
+          "text": "Breast cancer often first appears as a new lump or thickening in the breast or armpit. Other signs include a change in breast size or shape, skin dimpling, nipple discharge or inversion, and redness or scaling."
+        },
+        {
+          "label": "Diagnosis",
+          "text": "Breast cancer is investigated with a clinical breast exam, mammography and ultrasound, and confirmed by biopsy. Tissue testing checks for hormone receptors and HER2, which guide the choice of treatment."
+        },
+        {
+          "label": "Treatment",
+          "text": "Breast cancer treatment usually includes surgery (lumpectomy or mastectomy) and often radiotherapy. Depending on tumour features, chemotherapy, hormone therapy or HER2-targeted therapy may be added before or after surgery."
+        },
+        {
+          "label": "Prevention & outlook",
+          "text": "Regular screening mammography can detect breast cancer early, when treatment works best. Limiting alcohol, staying active and keeping a healthy weight may lower risk. Outlook for breast cancer is generally good when found at an early stage."
+        }
+      ],
+      "sample_questions": [
+        "What are the early signs of breast cancer?",
+        "How is breast cancer diagnosed?",
+        "What treatments are used for breast cancer?"
+      ]
+    },
+    {
+      "id": "lung-cancer",
+      "title": "Lung Cancer",
+      "category": "Cancer",
+      "type": "condition",
+      "aliases": [
+        "lung tumour",
+        "lung carcinoma",
+        "nsclc",
+        "sclc",
+        "non-small cell",
+        "small cell",
+        "bronchogenic carcinoma"
+      ],
+      "summary": "Lung cancer is a cancer that starts in the cells of the lungs. The two main types are non-small cell lung cancer, which is more common, and small cell lung cancer, which tends to grow and spread faster.",
+      "sections": [
+        {
+          "label": "Causes & risk factors",
+          "text": "Smoking tobacco is the leading cause of lung cancer. Other risks include second-hand smoke, radon gas in buildings, asbestos and other workplace chemicals, air pollution, a family history, and earlier chest radiation."
+        },
+        {
+          "label": "Symptoms",
+          "text": "Lung cancer may cause a cough that does not go away, coughing up blood, breathlessness, chest pain, wheeze, hoarseness, weight loss and tiredness. Early lung cancer often causes no symptoms."
+        },
+        {
+          "label": "Diagnosis",
+          "text": "Lung cancer is usually suspected from a chest X-ray or CT scan and confirmed by biopsy, taken during bronchoscopy or with a needle. Further scans and tests of the tumour show the stage and guide treatment choices."
+        },
+        {
+          "label": "Treatment",
+          "text": "Lung cancer treatment depends on type and stage. Options include surgery, radiotherapy, chemotherapy, targeted drugs for specific gene changes, and immunotherapy. Small cell lung cancer is usually treated mainly with chemotherapy and radiotherapy."
+        },
+        {
+          "label": "Prevention & outlook",
+          "text": "The best way to prevent lung cancer is to avoid smoking or stop, and to avoid second-hand smoke and radon. Outlook for lung cancer is better when detected early; some people at high risk are offered low-dose CT screening."
+        }
+      ],
+      "sample_questions": [
+        "What causes lung cancer besides smoking?",
+        "What are the symptoms of lung cancer?",
+        "What is the difference between small cell and non-small cell lung cancer?"
+      ]
+    },
+    {
+      "id": "colorectal-cancer",
+      "title": "Colorectal Cancer",
+      "category": "Cancer",
+      "type": "condition",
+      "aliases": [
+        "bowel cancer",
+        "colon cancer",
+        "rectal cancer",
+        "crc",
+        "colon tumour",
+        "large bowel cancer"
+      ],
+      "summary": "Colorectal cancer is a cancer of the colon or rectum, parts of the large intestine. It usually develops slowly from small growths called polyps that form on the inner lining of the bowel.",
+      "sections": [
+        {
+          "label": "Causes & risk factors",
+          "text": "Colorectal cancer risk increases with age, a family history, inherited conditions such as Lynch syndrome, and inflammatory bowel disease. Lifestyle risks include a diet high in red and processed meat, obesity, inactivity, smoking and heavy alcohol use."
+        },
+        {
+          "label": "Symptoms",
+          "text": "Colorectal cancer may cause blood in the stool, a lasting change in bowel habits, abdominal pain or bloating, unexplained weight loss, and tiredness from anaemia. Early colorectal cancer often causes no symptoms."
+        },
+        {
+          "label": "Diagnosis",
+          "text": "Colorectal cancer is diagnosed mainly by colonoscopy, which lets doctors view the bowel and take biopsies. Stool tests for hidden blood and CT scans help screening and show whether the cancer has spread."
+        },
+        {
+          "label": "Treatment",
+          "text": "Colorectal cancer is mainly treated with surgery to remove the affected bowel segment. Chemotherapy, radiotherapy (especially for rectal cancer), targeted therapy or immunotherapy may be added depending on the stage and tumour features."
+        },
+        {
+          "label": "Prevention & outlook",
+          "text": "Screening can find and remove polyps before they become colorectal cancer, making it one of the more preventable cancers. A high-fibre diet, activity, and avoiding tobacco help. Outlook is best when found early."
+        }
+      ],
+      "sample_questions": [
+        "What are the warning signs of colorectal cancer?",
+        "How does a colonoscopy detect colorectal cancer?",
+        "Can colorectal cancer be prevented by screening?"
+      ]
+    },
+    {
+      "id": "prostate-cancer",
+      "title": "Prostate Cancer",
+      "category": "Cancer",
+      "type": "condition",
+      "aliases": [
+        "prostate tumour",
+        "prostate carcinoma",
+        "psa",
+        "prostate gland cancer",
+        "prostatic cancer"
+      ],
+      "summary": "Prostate cancer is a cancer of the prostate, a small gland below the bladder in men that helps produce semen. It is common in older men and often grows slowly.",
+      "sections": [
+        {
+          "label": "Causes & risk factors",
+          "text": "Prostate cancer risk rises with age and is higher in men with a family history of it or of breast and ovarian cancer. Ancestry also plays a role, and the exact cause of prostate cancer is not fully known."
+        },
+        {
+          "label": "Symptoms",
+          "text": "Early prostate cancer often causes no symptoms. As it grows it may cause a weak urine stream, needing to pass urine often, especially at night, blood in urine or semen, or bone pain if it has spread."
+        },
+        {
+          "label": "Diagnosis",
+          "text": "Prostate cancer is investigated with a PSA blood test, a digital rectal examination and often MRI. Diagnosis is confirmed by prostate biopsy, and the tissue is graded to show how aggressive the prostate cancer is."
+        },
+        {
+          "label": "Treatment",
+          "text": "Prostate cancer treatment depends on how aggressive it is. Options include active surveillance, surgery to remove the prostate, radiotherapy, and hormone therapy that lowers male hormones. Chemotherapy and newer drugs are used for advanced disease."
+        },
+        {
+          "label": "Prevention & outlook",
+          "text": "No sure way to prevent prostate cancer exists, but a healthy weight and an active lifestyle are advised. Many men with slow-growing prostate cancer live for many years, though advanced prostate cancer is harder to cure."
+        }
+      ],
+      "sample_questions": [
+        "What does a PSA test tell you about prostate cancer?",
+        "What are the symptoms of prostate cancer?",
+        "Does prostate cancer always need treatment?"
+      ]
+    },
+    {
+      "id": "cervical-cancer",
+      "title": "Cervical Cancer & HPV",
+      "category": "Cancer",
+      "type": "condition",
+      "aliases": [
+        "hpv",
+        "human papillomavirus",
+        "cervix cancer",
+        "cervical screening",
+        "pap smear",
+        "cervical carcinoma",
+        "cervical dysplasia"
+      ],
+      "summary": "Cervical cancer is a cancer of the cervix, the lower part of the womb. It is caused almost always by long-term infection with high-risk types of human papillomavirus (HPV).",
+      "sections": [
+        {
+          "label": "Causes & risk factors",
+          "text": "Cervical cancer is caused by persistent infection with high-risk HPV, which spreads through sexual contact. Smoking, a weakened immune system such as with HIV, and not attending screening increase the risk of cervical cancer."
+        },
+        {
+          "label": "Symptoms",
+          "text": "Early cervical cancer usually causes no symptoms. Later signs can include bleeding after sex, between periods or after menopause, unusual vaginal discharge, and pelvic pain or pain during sex."
+        },
+        {
+          "label": "Diagnosis",
+          "text": "Cervical cancer is prevented and found early through screening, using a Pap smear or HPV testing. Abnormal results lead to colposcopy and biopsy, which confirm precancer or cervical cancer."
+        },
+        {
+          "label": "Treatment",
+          "text": "Precancerous cervical changes can be removed with minor procedures. Cervical cancer treatment includes surgery, radiotherapy and chemotherapy, depending on stage. Early-stage cervical cancer may be treated in ways that preserve fertility in some cases."
+        },
+        {
+          "label": "Prevention & outlook",
+          "text": "HPV vaccination and regular screening greatly reduce the risk of cervical cancer. Outlook is very good when cervical cancer is found early, and screening can detect changes before cancer develops."
+        }
+      ],
+      "sample_questions": [
+        "Does HPV cause cervical cancer?",
+        "How does a Pap smear help prevent cervical cancer?",
+        "Can the HPV vaccine prevent cervical cancer?"
+      ]
+    },
+    {
+      "id": "leukemia",
+      "title": "Leukemia",
+      "category": "Cancer",
+      "type": "condition",
+      "aliases": [
+        "leukaemia",
+        "blood cancer",
+        "acute lymphoblastic leukemia",
+        "all",
+        "aml",
+        "cll",
+        "cml"
+      ],
+      "summary": "Leukemia is a cancer of the blood-forming tissue, usually the bone marrow, in which abnormal white blood cells multiply and crowd out healthy blood cells. It can be acute or chronic.",
+      "sections": [
+        {
+          "label": "Causes & risk factors",
+          "text": "The exact cause of leukemia is often unknown. Known risk factors include previous chemotherapy or radiation, exposure to high levels of benzene, smoking, certain genetic conditions such as Down syndrome, and a family history in some types."
+        },
+        {
+          "label": "Symptoms",
+          "text": "Leukemia can cause tiredness, paleness, frequent infections, fever, easy bruising or bleeding, bone or joint pain, swollen lymph nodes and weight loss. Acute leukemia develops quickly, while chronic leukemia may cause few symptoms at first."
+        },
+        {
+          "label": "Diagnosis",
+          "text": "Leukemia is suspected from a full blood count showing abnormal cells and confirmed by bone marrow biopsy. Genetic and other laboratory tests identify the exact type of leukemia, which guides treatment."
+        },
+        {
+          "label": "Treatment",
+          "text": "Leukemia treatment depends on type and the person's health. It may include chemotherapy, targeted drugs, immunotherapy, radiotherapy and stem cell (bone marrow) transplant. Some slow chronic leukemia is watched without immediate treatment."
+        },
+        {
+          "label": "Prevention & outlook",
+          "text": "Most leukemia cannot be prevented, though avoiding tobacco and harmful chemicals lowers some risk. Outlook varies widely by leukemia type and age, and many people achieve long remissions with modern treatment."
+        }
+      ],
+      "sample_questions": [
+        "What are the first symptoms of leukemia?",
+        "What is the difference between acute and chronic leukemia?",
+        "How is leukemia diagnosed?"
+      ]
+    },
+    {
+      "id": "lymphoma",
+      "title": "Lymphoma",
+      "category": "Cancer",
+      "type": "condition",
+      "aliases": [
+        "hodgkin lymphoma",
+        "non-hodgkin lymphoma",
+        "nhl",
+        "lymph node cancer",
+        "lymphatic cancer",
+        "lymphoid cancer"
+      ],
+      "summary": "Lymphoma is a cancer of the lymphatic system, which is part of the immune system. The two main groups are Hodgkin lymphoma and non-Hodgkin lymphoma, which behave and are treated differently.",
+      "sections": [
+        {
+          "label": "Causes & risk factors",
+          "text": "The cause of lymphoma is often unknown. Risk factors include a weakened immune system, autoimmune disease, some infections such as Epstein-Barr virus and Helicobacter pylori, older age, and a family history of lymphoma."
+        },
+        {
+          "label": "Symptoms",
+          "text": "Lymphoma commonly causes painless swelling of lymph nodes in the neck, armpit or groin. Other symptoms include fever, drenching night sweats, unexplained weight loss, itching and tiredness."
+        },
+        {
+          "label": "Diagnosis",
+          "text": "Lymphoma is diagnosed by removing a swollen lymph node or tissue for biopsy. Blood tests and imaging such as CT or PET scans show how far the lymphoma has spread and help to stage it."
+        },
+        {
+          "label": "Treatment",
+          "text": "Lymphoma treatment depends on the type and stage. Options include chemotherapy, radiotherapy, antibody-based drugs, targeted therapy, immunotherapy and stem cell transplant. Some slow-growing lymphoma is monitored without immediate treatment."
+        },
+        {
+          "label": "Prevention & outlook",
+          "text": "There is no proven way to prevent lymphoma. Outlook depends on the type and stage, and Hodgkin lymphoma in particular is often curable. Many people with non-Hodgkin lymphoma also do well with treatment."
+        }
+      ],
+      "sample_questions": [
+        "What are the early signs of lymphoma?",
+        "What is the difference between Hodgkin and non-Hodgkin lymphoma?",
+        "Is lymphoma curable?"
+      ]
+    },
+    {
+      "id": "skin-cancer",
+      "title": "Skin Cancer",
+      "category": "Cancer",
+      "type": "condition",
+      "aliases": [
+        "melanoma",
+        "basal cell carcinoma",
+        "squamous cell carcinoma",
+        "non-melanoma skin cancer",
+        "bcc",
+        "mole cancer",
+        "sunburn cancer"
+      ],
+      "summary": "Skin cancer is the abnormal growth of skin cells, mostly caused by ultraviolet (UV) radiation. The main types are non-melanoma cancers, such as basal cell and squamous cell carcinoma, and the more dangerous melanoma.",
+      "sections": [
+        {
+          "label": "Causes & risk factors",
+          "text": "Skin cancer is mainly caused by UV radiation from the sun and tanning beds. Risks include fair skin, many moles, a history of sunburn, a family history, a weakened immune system and older age."
+        },
+        {
+          "label": "Symptoms",
+          "text": "Skin cancer may appear as a new growth, a sore that does not heal, or a pearly or scaly patch. Melanoma often shows as a mole that changes in shape, colour, size or border, or becomes itchy or bleeds."
+        },
+        {
+          "label": "Diagnosis",
+          "text": "Skin cancer is checked by examining the skin, often with a dermatoscope, and confirmed by biopsy of the suspicious spot. For melanoma, the thickness of the lesion helps to decide further tests and treatment."
+        },
+        {
+          "label": "Treatment",
+          "text": "Skin cancer is mostly treated by surgical removal. Other options for non-melanoma types include creams, freezing, scraping, radiotherapy or Mohs surgery. Advanced melanoma may be treated with immunotherapy or targeted drugs."
+        },
+        {
+          "label": "Prevention & outlook",
+          "text": "Skin cancer is largely preventable by using shade, protective clothing, hats and sunscreen, and avoiding sunburn and tanning beds. Non-melanoma skin cancer is usually curable, and melanoma has a good outlook when caught early."
+        }
+      ],
+      "sample_questions": [
+        "What does skin cancer look like?",
+        "What is the difference between melanoma and other types of skin cancer?",
+        "How can I prevent skin cancer?"
+      ]
+    },
+    {
+      "id": "pancreatic-cancer",
+      "title": "Pancreatic Cancer",
+      "category": "Cancer",
+      "type": "condition",
+      "aliases": [
+        "pancreas cancer",
+        "pancreatic tumour",
+        "pancreatic adenocarcinoma",
+        "pancreatic carcinoma",
+        "cancer of the pancreas"
+      ],
+      "summary": "Pancreatic cancer is a cancer that starts in the pancreas, an organ behind the stomach that makes digestive enzymes and hormones such as insulin. It is often found late and is difficult to treat.",
+      "sections": [
+        {
+          "label": "Causes & risk factors",
+          "text": "Pancreatic cancer risk increases with age, smoking, obesity, long-standing diabetes, chronic pancreatitis and a family history. Some inherited gene changes also raise the risk of pancreatic cancer."
+        },
+        {
+          "label": "Symptoms",
+          "text": "Pancreatic cancer often causes no early symptoms. Later signs include yellowing of the skin and eyes (jaundice), upper abdominal or back pain, weight loss, poor appetite, pale stools and new-onset diabetes."
+        },
+        {
+          "label": "Diagnosis",
+          "text": "Pancreatic cancer is investigated with CT or MRI scans and endoscopic ultrasound, which can also take a biopsy. Blood tests help assess the liver and overall health, and further imaging shows whether it has spread."
+        },
+        {
+          "label": "Treatment",
+          "text": "Pancreatic cancer is best treated by surgery when the tumour can be fully removed, but this is possible for only some people. Chemotherapy, radiotherapy and supportive care are used to control the disease and relieve symptoms."
+        },
+        {
+          "label": "Prevention & outlook",
+          "text": "Not smoking, keeping a healthy weight and limiting alcohol may lower the risk of pancreatic cancer. Because it is usually found late, the outlook for pancreatic cancer is generally poor, though earlier-stage cases do better."
+        }
+      ],
+      "sample_questions": [
+        "Why is pancreatic cancer often found late?",
+        "What are the symptoms of pancreatic cancer?",
+        "Can pancreatic cancer be treated with surgery?"
+      ]
+    },
+    {
+      "id": "rheumatoid-arthritis",
+      "title": "Rheumatoid Arthritis",
+      "category": "Immune & joints",
+      "type": "condition",
+      "aliases": [
+        "ra",
+        "inflammatory arthritis",
+        "autoimmune arthritis",
+        "rheumatoid",
+        "joint inflammation",
+        "rheumatic arthritis"
+      ],
+      "summary": "Rheumatoid arthritis is a long-term autoimmune disease in which the immune system attacks the lining of the joints, causing pain, swelling and stiffness. It can also affect other organs.",
+      "sections": [
+        {
+          "label": "Causes & risk factors",
+          "text": "The exact cause of rheumatoid arthritis is unknown, but it involves the immune system attacking joint tissue. Risk factors include being female, middle age, a family history, smoking and obesity."
+        },
+        {
+          "label": "Symptoms",
+          "text": "Rheumatoid arthritis typically causes painful, swollen, warm joints, often in both hands and feet equally. Morning stiffness lasting more than an hour, tiredness and low fever are common, and symptoms come and go in flares."
+        },
+        {
+          "label": "Diagnosis",
+          "text": "Rheumatoid arthritis is diagnosed from symptoms, examination of the joints, blood tests such as rheumatoid factor and anti-CCP antibodies and markers of inflammation, and imaging such as X-ray or ultrasound of the joints."
+        },
+        {
+          "label": "Treatment",
+          "text": "Rheumatoid arthritis is treated with disease-modifying drugs (DMARDs), including biologic medicines, that slow joint damage, along with pain relievers and sometimes steroids. Physiotherapy, exercise and, occasionally, joint surgery also help."
+        },
+        {
+          "label": "Prevention & outlook",
+          "text": "Rheumatoid arthritis cannot be fully prevented, but not smoking may lower risk. Starting treatment early helps prevent joint damage, and many people with rheumatoid arthritis reach low disease activity or remission."
+        }
+      ],
+      "sample_questions": [
+        "What causes rheumatoid arthritis?",
+        "How is rheumatoid arthritis different from osteoarthritis?",
+        "What medicines are used to treat rheumatoid arthritis?"
+      ]
+    },
+    {
+      "id": "osteoarthritis",
+      "title": "Osteoarthritis",
+      "category": "Musculoskeletal",
+      "type": "condition",
+      "aliases": [
+        "oa",
+        "degenerative joint disease",
+        "wear and tear arthritis",
+        "knee arthritis",
+        "joint wear",
+        "degenerative arthritis"
+      ],
+      "summary": "Osteoarthritis is the most common form of arthritis, in which the cartilage cushioning a joint gradually wears down. It causes joint pain and stiffness, most often in the knees, hips, hands and spine.",
+      "sections": [
+        {
+          "label": "Causes & risk factors",
+          "text": "Osteoarthritis develops from gradual breakdown of joint cartilage. Risk factors include older age, obesity, previous joint injury, repetitive joint use, a family history and being female."
+        },
+        {
+          "label": "Symptoms",
+          "text": "Osteoarthritis causes joint pain that worsens with activity, stiffness after rest that usually eases within a short time, reduced movement, joint swelling and sometimes a grating sensation. Symptoms usually develop slowly over years."
+        },
+        {
+          "label": "Diagnosis",
+          "text": "Osteoarthritis is usually diagnosed from the history and examination of the affected joint. X-rays can show narrowing of the joint space, and blood tests may be done to rule out other types of arthritis."
+        },
+        {
+          "label": "Treatment",
+          "text": "Osteoarthritis treatment focuses on exercise, weight loss if needed, physiotherapy and pain relief with simple painkillers or anti-inflammatory medicines. Joint injections and, for severe cases, joint replacement surgery may be considered."
+        },
+        {
+          "label": "Prevention & outlook",
+          "text": "Keeping a healthy weight, staying active and protecting joints from injury may reduce the risk or slow osteoarthritis. It is a long-term condition, but many people stay active with good self-management."
+        }
+      ],
+      "sample_questions": [
+        "What causes osteoarthritis?",
+        "Can exercise help osteoarthritis of the knee?",
+        "When is surgery needed for osteoarthritis?"
+      ]
+    },
+    {
+      "id": "lupus",
+      "title": "Lupus",
+      "category": "Immune & joints",
+      "type": "condition",
+      "aliases": [
+        "sle",
+        "systemic lupus erythematosus",
+        "lupus erythematosus",
+        "autoimmune lupus",
+        "butterfly rash",
+        "discoid lupus"
+      ],
+      "summary": "Lupus is a long-term autoimmune disease in which the immune system attacks healthy tissue. The most common form, systemic lupus erythematosus, can affect the skin, joints, kidneys, heart and other organs.",
+      "sections": [
+        {
+          "label": "Causes & risk factors",
+          "text": "The cause of lupus is not fully known, but genes, hormones and environmental triggers such as sunlight, infections and some drugs are thought to play a part. Lupus is far more common in women, often starting in young adulthood."
+        },
+        {
+          "label": "Symptoms",
+          "text": "Lupus symptoms vary and come in flares. They include fatigue, joint pain, fever, a butterfly-shaped rash across the cheeks, sun-sensitive skin, mouth sores, hair loss, and sometimes kidney, lung or heart problems."
+        },
+        {
+          "label": "Diagnosis",
+          "text": "Lupus is hard to diagnose because it mimics other illnesses. Doctors combine symptoms, examination and blood tests, including antinuclear antibody (ANA) and other specific antibodies, plus urine tests to check the kidneys."
+        },
+        {
+          "label": "Treatment",
+          "text": "Lupus cannot be cured but can be controlled. Treatment often includes hydroxychloroquine, anti-inflammatory medicines, steroids and drugs that suppress the immune system, chosen according to which organs are affected."
+        },
+        {
+          "label": "Prevention & outlook",
+          "text": "Lupus cannot be prevented, but flares may be reduced by sun protection, not smoking, regular check-ups and taking medicines as advised. With modern care, most people with lupus live long lives."
+        }
+      ],
+      "sample_questions": [
+        "What are the symptoms of lupus?",
+        "How is lupus diagnosed?",
+        "Can lupus be cured?"
+      ]
+    },
+    {
+      "id": "psoriasis",
+      "title": "Psoriasis",
+      "category": "Skin",
+      "type": "condition",
+      "aliases": [
+        "plaque psoriasis",
+        "psoriatic",
+        "scaly skin patches",
+        "psoriatic arthritis",
+        "skin plaques",
+        "guttate psoriasis"
+      ],
+      "summary": "Psoriasis is a long-term, non-contagious autoimmune skin condition in which skin cells build up too quickly, forming thick, red, scaly patches. It can also affect the nails and joints.",
+      "sections": [
+        {
+          "label": "Causes & risk factors",
+          "text": "Psoriasis results from an overactive immune system that speeds up skin cell growth, with a strong inherited component. Flares can be triggered by stress, skin injury, infections, some medicines, smoking and heavy alcohol use."
+        },
+        {
+          "label": "Symptoms",
+          "text": "Psoriasis causes raised red patches covered with silvery scales, often on the elbows, knees, scalp and lower back. The patches can itch or burn, and psoriasis may cause pitted nails and painful, swollen joints."
+        },
+        {
+          "label": "Diagnosis",
+          "text": "Psoriasis is usually diagnosed by examining the skin, scalp and nails and asking about family history. A small skin biopsy is occasionally needed to rule out other skin conditions."
+        },
+        {
+          "label": "Treatment",
+          "text": "Psoriasis treatment includes moisturisers and creams such as corticosteroids and vitamin D analogues, light therapy (phototherapy), and tablets or injected biologic medicines for moderate to severe disease. Treatment is tailored to severity."
+        },
+        {
+          "label": "Prevention & outlook",
+          "text": "Psoriasis cannot be cured and tends to come and go over a lifetime, but it can usually be controlled. Avoiding triggers, keeping skin moisturised, and managing weight and stress help reduce flares."
+        }
+      ],
+      "sample_questions": [
+        "Is psoriasis contagious?",
+        "What triggers a psoriasis flare-up?",
+        "How is psoriasis treated?"
+      ]
+    },
+    {
+      "id": "eczema",
+      "title": "Eczema",
+      "category": "Skin",
+      "type": "condition",
+      "aliases": [
+        "atopic dermatitis",
+        "atopic eczema",
+        "dermatitis",
+        "itchy skin rash",
+        "contact dermatitis",
+        "dry itchy skin"
+      ],
+      "summary": "Eczema is a common skin condition that causes dry, itchy, inflamed skin. The most frequent type, atopic dermatitis, often starts in childhood and tends to flare and settle over time.",
+      "sections": [
+        {
+          "label": "Causes & risk factors",
+          "text": "Eczema is linked to a weakened skin barrier and an overactive immune response. It runs in families, often alongside asthma and hay fever, and flares can be triggered by irritants, allergens, dry air, sweat and stress."
+        },
+        {
+          "label": "Symptoms",
+          "text": "Eczema causes intensely itchy, dry, red or darker patches of skin, which may become cracked, weepy or crusted when scratched. In babies it often affects the face, while in older children it is common in skin folds."
+        },
+        {
+          "label": "Diagnosis",
+          "text": "Eczema is diagnosed by a doctor from the look and distribution of the rash, the itch and personal or family history of allergy. Patch or allergy tests may be used if a trigger such as contact allergy is suspected."
+        },
+        {
+          "label": "Treatment",
+          "text": "Eczema treatment centres on regular moisturisers (emollients), avoiding triggers and short courses of topical corticosteroids or other anti-inflammatory creams during flares. Severe eczema may need light therapy or specialist medicines."
+        },
+        {
+          "label": "Prevention & outlook",
+          "text": "Daily moisturising and avoiding known irritants can reduce eczema flares. Eczema often improves as children grow older, though some people have it in adulthood. It is not contagious."
+        }
+      ],
+      "sample_questions": [
+        "What causes eczema?",
+        "Is eczema contagious?",
+        "How can I stop eczema from itching?"
+      ]
+    },
+    {
+      "id": "allergies-and-anaphylaxis",
+      "title": "Allergies & Anaphylaxis",
+      "category": "Immune & joints",
+      "type": "condition",
+      "aliases": [
+        "allergy",
+        "allergic reaction",
+        "anaphylactic",
+        "anaphylactic shock",
+        "food allergy",
+        "hay fever",
+        "epinephrine",
+        "epipen"
+      ],
+      "summary": "An allergy is an overreaction of the immune system to a harmless substance such as pollen, food or insect venom. Anaphylaxis is a severe, sudden, life-threatening allergic reaction needing emergency treatment.",
+      "sections": [
+        {
+          "label": "Causes & risk factors",
+          "text": "Allergies occur when the immune system wrongly treats a substance as dangerous. Common triggers include foods such as peanuts, milk and shellfish, pollen, dust mites, pets, insect stings and medicines. Allergies often run in families."
+        },
+        {
+          "label": "Symptoms",
+          "text": "Allergies can cause sneezing, itchy eyes, rash, hives and swelling. Anaphylaxis may involve difficulty breathing, swelling of the throat or tongue, wheeze, dizziness, a drop in blood pressure and collapse."
+        },
+        {
+          "label": "Diagnosis",
+          "text": "Allergies are diagnosed from the history of reactions, skin prick tests and blood tests for allergen-specific antibodies. Supervised food or drug challenges may be used in specialist clinics to confirm an allergy."
+        },
+        {
+          "label": "Treatment",
+          "text": "Allergy treatment includes avoiding triggers, antihistamines, nasal steroid sprays and sometimes allergen immunotherapy. Anaphylaxis is treated with an adrenaline (epinephrine) injection, and emergency services must be called straight away."
+        },
+        {
+          "label": "Prevention & outlook",
+          "text": "People with allergies should avoid known triggers and people at risk of anaphylaxis should carry prescribed adrenaline. Seek urgent emergency care for any suspected anaphylaxis. Some childhood allergies, such as to milk and egg, are outgrown."
+        }
+      ],
+      "sample_questions": [
+        "What are the signs of anaphylaxis?",
+        "What should you do if someone has a severe allergic reaction?",
+        "How are food allergies diagnosed?"
+      ]
+    },
+    {
+      "id": "low-back-pain",
+      "title": "Low Back Pain",
+      "category": "Musculoskeletal",
+      "type": "condition",
+      "aliases": [
+        "lower back pain",
+        "backache",
+        "sciatica",
+        "lumbago",
+        "slipped disc",
+        "back strain",
+        "lumbar pain"
+      ],
+      "summary": "Low back pain is pain, tension or stiffness in the lower part of the back, sometimes spreading to the buttock or leg. It is very common and usually improves within weeks.",
+      "sections": [
+        {
+          "label": "Causes & risk factors",
+          "text": "Most low back pain is non-specific and linked to muscle or ligament strain. Other causes include disc problems, arthritis of the spine and nerve irritation such as sciatica. Risks include inactivity, obesity, smoking, heavy lifting and stress."
+        },
+        {
+          "label": "Symptoms",
+          "text": "Low back pain may feel dull, aching or sharp and can limit bending or lifting. Sciatica adds pain, numbness or tingling travelling down one leg. Pain lasting more than twelve weeks is called chronic."
+        },
+        {
+          "label": "Diagnosis",
+          "text": "Low back pain is usually diagnosed from the history and a physical examination. Scans such as X-ray or MRI are not needed for most people and are kept for suspected serious causes or pain that does not improve."
+        },
+        {
+          "label": "Treatment",
+          "text": "Low back pain usually improves with staying active, simple pain relief, heat and physiotherapy. Prolonged bed rest is not advised. Persistent pain may be treated with exercise programmes, other medicines or, rarely, surgery."
+        },
+        {
+          "label": "Prevention & outlook",
+          "text": "Regular exercise, a healthy weight and safe lifting may help prevent low back pain, which often recurs but usually settles. Seek urgent care for back pain with leg weakness, numbness in the groin, loss of bladder or bowel control, or after a major injury."
+        }
+      ],
+      "sample_questions": [
+        "What causes low back pain?",
+        "How long does low back pain usually last?",
+        "When should I see a doctor about low back pain?"
+      ]
+    },
+    {
+      "id": "pregnancy-and-prenatal-care",
+      "title": "Pregnancy & Prenatal Care",
+      "category": "Women's health",
+      "type": "lifestyle",
+      "aliases": [
+        "prenatal",
+        "antenatal",
+        "prenatal care",
+        "antenatal care",
+        "expecting",
+        "maternity care",
+        "gestation"
+      ],
+      "summary": "Pregnancy is the roughly nine-month period in which a baby develops in the womb. Prenatal care is the regular health care given during pregnancy to support the health of the mother and baby.",
+      "sections": [
+        {
+          "label": "What happens",
+          "text": "During pregnancy, a fertilised egg implants in the womb and grows over about forty weeks, divided into three trimesters. The mother's body changes with rising hormones, weight gain and growing blood volume to support the baby."
+        },
+        {
+          "label": "Common concerns & symptoms",
+          "text": "Common pregnancy symptoms include nausea, tiredness, breast tenderness, heartburn, back pain and needing to pass urine often. Conditions such as gestational diabetes and high blood pressure (pre-eclampsia) can develop and need monitoring."
+        },
+        {
+          "label": "Check-ups & tests",
+          "text": "Prenatal care includes regular visits to check blood pressure, weight and the baby's growth. Typical tests include blood and urine tests, ultrasound scans and optional screening for genetic conditions."
+        },
+        {
+          "label": "Care & management",
+          "text": "Pregnancy care includes a balanced diet, folic acid supplements, gentle regular exercise and avoiding alcohol, tobacco and unprescribed drugs. Recommended vaccines and advice on safe medicines and foods are part of prenatal care."
+        },
+        {
+          "label": "When to seek help",
+          "text": "Seek urgent care during pregnancy for vaginal bleeding, severe abdominal pain, severe headache with vision changes, sudden swelling, fluid leaking, reduced baby movements or fever. Prompt prenatal care helps protect mother and baby."
+        }
+      ],
+      "sample_questions": [
+        "What is prenatal care and why is it important?",
+        "What tests are done during pregnancy?",
+        "What are the warning signs that need urgent help in pregnancy?"
+      ]
+    },
+    {
+      "id": "menopause",
+      "title": "Menopause",
+      "category": "Women's health",
+      "type": "lifestyle",
+      "aliases": [
+        "perimenopause",
+        "change of life",
+        "hot flushes",
+        "hot flashes",
+        "postmenopausal",
+        "climacteric",
+        "hrt"
+      ],
+      "summary": "Menopause is the natural end of menstrual periods, confirmed after twelve months without a period, usually around age 50. It happens when the ovaries produce much less oestrogen and stop releasing eggs.",
+      "sections": [
+        {
+          "label": "What happens",
+          "text": "At menopause the ovaries stop releasing eggs and oestrogen levels fall. The years of change before it, called perimenopause, bring irregular periods, and menopause is diagnosed after twelve months without a period."
+        },
+        {
+          "label": "Common concerns & symptoms",
+          "text": "Menopause commonly causes hot flushes, night sweats, sleep problems, mood changes, vaginal dryness and reduced libido. Lower oestrogen after menopause also raises the risk of bone loss (osteoporosis) and heart disease."
+        },
+        {
+          "label": "Check-ups & tests",
+          "text": "Menopause is usually recognised from age and symptoms alone, without tests. Doctors may check hormone levels in younger women or suspect other causes, and may advise bone density and blood pressure checks after menopause."
+        },
+        {
+          "label": "Care & management",
+          "text": "Menopause symptoms can be eased by healthy lifestyle habits, regular exercise and calcium and vitamin D for bones. Menopausal hormone therapy is effective for many symptoms, and other treatments exist for those who cannot use it."
+        },
+        {
+          "label": "When to seek help",
+          "text": "See a doctor if menopause symptoms disrupt daily life, if periods stop before age 40, or if bleeding returns after menopause, as postmenopausal bleeding always needs medical assessment. Mood changes that feel severe also warrant help."
+        }
+      ],
+      "sample_questions": [
+        "At what age does menopause usually start?",
+        "What are the common symptoms of menopause?",
+        "Is hormone therapy used to treat menopause symptoms?"
+      ]
+    },
+    {
+      "id": "childhood-immunization",
+      "title": "Childhood Immunization",
+      "category": "Child health",
+      "type": "lifestyle",
+      "aliases": [
+        "vaccination schedule",
+        "childhood vaccines",
+        "vaccines for children",
+        "immunisation",
+        "baby vaccines",
+        "routine vaccination",
+        "child vaccination"
+      ],
+      "summary": "Childhood immunization means giving children vaccines to protect them from serious infectious diseases. Vaccines train the immune system to recognise germs so the body can fight them if exposed later.",
+      "sections": [
+        {
+          "label": "What happens",
+          "text": "In childhood immunization, a vaccine containing a weakened or inactive germ, or part of one, prompts the body to make protective antibodies and memory cells. This gives protection without causing the full illness."
+        },
+        {
+          "label": "Common concerns & symptoms",
+          "text": "After childhood immunization, mild effects such as a sore arm, low fever or fussiness are common and short-lived. Serious allergic reactions are very rare. Vaccines are tested for safety and monitored after use."
+        },
+        {
+          "label": "Check-ups & tests",
+          "text": "Childhood immunization is usually given at routine health visits from infancy through adolescence. Typical vaccines protect against measles, mumps, rubella, polio, diphtheria, tetanus, whooping cough, hepatitis B and others. Schedules vary by country."
+        },
+        {
+          "label": "Care & management",
+          "text": "To support childhood immunization, keep a record of vaccines given and follow the national schedule. Missed doses can usually be caught up. High vaccination rates also protect babies and others who cannot be vaccinated (herd protection)."
+        },
+        {
+          "label": "When to seek help",
+          "text": "After childhood immunization, seek urgent care for difficulty breathing, facial swelling, a very high fever or a seizure. Parents with questions about delayed doses, illness or allergies should ask a health professional."
+        }
+      ],
+      "sample_questions": [
+        "Why is childhood immunization important?",
+        "What are the common side effects of childhood vaccines?",
+        "Which diseases does childhood immunization protect against?"
+      ]
+    }
+  ]
+}

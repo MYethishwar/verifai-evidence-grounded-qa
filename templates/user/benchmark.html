@@ -1,0 +1,148 @@
+{% extends 'base.html' %}
+{% block title %}Benchmark{% endblock %}
+{% block section %}Evaluation{% endblock %}
+{% block page_title %}Benchmark{% endblock %}
+{% block content %}
+{% set B, V = b.baseline, b.verifai %}
+{% macro row(name, definition, bv, vv, fmt='pct', lower_better=False) -%}
+  {% if lower_better %}{% set win = 'verifai' if vv < bv * 0.98 else ('baseline' if bv < vv * 0.98 else 'tie') %}
+  {% else %}{% set win = 'verifai' if vv > bv + 0.0049 else ('baseline' if bv > vv + 0.0049 else 'tie') %}{% endif %}
+  <tr>
+    <td><div class="vf-metric-name">{{ name }}</div><div class="vf-metric-def">{{ definition }}</div></td>
+    <td class="vf-num">{% if fmt == 'pct' %}{{ '%.1f'|format(bv * 100) }}%{% elif fmt == 'ms' %}{{ '%.2f'|format(bv) }} ms{% else %}{{ '%.3f'|format(bv) }}{% endif %}</td>
+    <td class="vf-num">{% if fmt == 'pct' %}{{ '%.1f'|format(vv * 100) }}%{% elif fmt == 'ms' %}{{ '%.2f'|format(vv) }} ms{% else %}{{ '%.3f'|format(vv) }}{% endif %}</td>
+    <td>
+      {% if win == 'verifai' %}<span class="vf-win vf-win-verifai"><i class="fas fa-arrow-up"></i> VerifAI</span>
+      {% elif win == 'baseline' %}<span class="vf-win vf-win-baseline">Baseline</span>
+      {% else %}<span class="vf-win vf-win-tie">Tie</span>{% endif %}
+    </td>
+  </tr>
+{%- endmacro %}
+
+<div class="page-header d-flex justify-content-between align-items-end flex-wrap gap-3">
+  <div>
+    <div class="vf-eyebrow">Measured, reproducible</div>
+    <h1>Retrieval benchmark</h1>
+    <p>Both search engines answer the same {{ b.questions }} questions with known correct sources. Nothing on this page is estimated or simulated.</p>
+  </div>
+  <div class="d-flex gap-2 align-items-center">
+    <span class="vf-muted vf-small">Run {{ b.generated_at }} · {{ b.index_passages }} indexed passages</span>
+    <a href="{{ url_for('user.benchmark_page', refresh=1) }}" class="vf-btn-ghost"><i class="fas fa-rotate"></i> Re-run</a>
+  </div>
+</div>
+
+<div class="vf-grid vf-grid-4 mb-4">
+  <div class="vf-card vf-kpi">
+    <div class="vf-kpi-label">Median retrieval latency</div>
+    <div class="vf-kpi-value">{{ '%.2f'|format(V.latency_p50_ms) }}<small>ms</small></div>
+    <div class="vf-kpi-foot">{% if V.latency_p50_ms > 0 %}<span class="vf-delta-up">{{ '%.1f'|format(B.latency_p50_ms / V.latency_p50_ms) }}× faster</span> than baseline ({{ '%.2f'|format(B.latency_p50_ms) }} ms){% endif %}</div>
+  </div>
+  <div class="vf-card vf-kpi">
+    <div class="vf-kpi-label">Correct source in top 5</div>
+    <div class="vf-kpi-value">{{ '%.1f'|format(V.recall_at_5 * 100) }}<small>%</small></div>
+    <div class="vf-kpi-foot">Baseline {{ '%.1f'|format(B.recall_at_5 * 100) }}%</div>
+  </div>
+  <div class="vf-card vf-kpi">
+    <div class="vf-kpi-label">Correct source ranked first</div>
+    <div class="vf-kpi-value">{{ '%.1f'|format(V.hit_at_1 * 100) }}<small>%</small></div>
+    <div class="vf-kpi-foot">Baseline {{ '%.1f'|format(B.hit_at_1 * 100) }}%</div>
+  </div>
+  <div class="vf-card vf-kpi">
+    <div class="vf-kpi-label">Scope guard accuracy</div>
+    {% set sg = b.scope_guard %}
+    <div class="vf-kpi-value">{{ '%.0f'|format(100 * (sg.in_scope_accepted + sg.out_scope_rejected) / (sg.in_scope_total + sg.out_scope_total)) }}<small>%</small></div>
+    <div class="vf-kpi-foot">{{ sg.in_scope_accepted }}/{{ sg.in_scope_total }} medical accepted · {{ sg.out_scope_rejected }}/{{ sg.out_scope_total }} off-topic declined</div>
+  </div>
+</div>
+
+<div class="vf-card mb-4">
+  <div class="vf-card-head">
+    <h3><i class="fas fa-table-list"></i> Head-to-head results</h3>
+    <span class="vf-sub">{{ b.questions }} questions · higher is better unless noted</span>
+  </div>
+  <div class="table-responsive">
+    <table class="vf-table">
+      <thead><tr><th style="width:52%">Metric</th><th>Baseline · TF-IDF</th><th>VerifAI · BM25</th><th>Better</th></tr></thead>
+      <tbody>
+        {{ row('Hit@1', 'Share of questions where the first passage returned comes from the correct source.', B.hit_at_1, V.hit_at_1) }}
+        {{ row('Recall@5', 'Share of questions where the correct source appears anywhere in the top five passages.', B.recall_at_5, V.recall_at_5) }}
+        {{ row('MRR', 'Mean reciprocal rank: 1 if the correct source is first, 0.5 if second, and so on, averaged over all questions.', B.mrr, V.mrr, 'num') }}
+        {{ row('nDCG@5', 'Ranking quality of the top five, rewarding correct sources that appear higher in the list.', B.ndcg_at_5, V.ndcg_at_5, 'num') }}
+        {{ row('Latency (median)', 'Time to search the whole index for one question, median of three runs per question. Lower is better.', B.latency_p50_ms, V.latency_p50_ms, 'ms', True) }}
+        {{ row('Latency (95th percentile)', 'Slowest 5% of searches. Lower is better.', B.latency_p95_ms, V.latency_p95_ms, 'ms', True) }}
+        {{ row('No-result rate', 'Share of in-scope questions where no on-topic passage was found. Lower is better.', B.no_result_rate, V.no_result_rate, 'pct', True) }}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="vf-grid vf-grid-2 mb-4">
+  <div class="vf-card">
+    <div class="vf-card-head"><h3><i class="fas fa-chart-column"></i> Ranking quality</h3></div>
+    <div class="vf-card-pad"><canvas id="qualityChart" height="190"></canvas></div>
+  </div>
+  <div class="vf-card">
+    <div class="vf-card-head"><h3><i class="fas fa-stopwatch"></i> Latency per question</h3></div>
+    <div class="vf-card-pad"><canvas id="latencyChart" height="190"></canvas></div>
+  </div>
+</div>
+
+<div class="vf-grid vf-grid-2 mb-4">
+  <div class="vf-card">
+    <div class="vf-card-head"><h3><i class="fas fa-layer-group"></i> Results by question set</h3></div>
+    <table class="vf-table">
+      <thead><tr><th>Question set</th><th>Questions</th><th>Hit@1 (B / V)</th><th>Recall@5 (B / V)</th></tr></thead>
+      <tbody>
+      {% for name, d in b.by_set.items() %}
+        <tr>
+          <td class="vf-metric-name">{{ name }}</td>
+          <td class="vf-num">{{ b.sets[name] }}</td>
+          <td class="vf-num">{{ '%.0f'|format(d.baseline.hit1 * 100) }}% / {{ '%.0f'|format(d.verifai.hit1 * 100) }}%</td>
+          <td class="vf-num">{{ '%.0f'|format(d.baseline.hit5 * 100) }}% / {{ '%.0f'|format(d.verifai.hit5 * 100) }}%</td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <div class="vf-card">
+    <div class="vf-card-head"><h3><i class="fas fa-microscope"></i> How this is measured</h3></div>
+    <div class="vf-card-pad vf-small" style="color:var(--slate-600);">
+      <p class="mb-2"><b>Questions.</b> The curated test set (20 questions labelled with their source article) and every sample question in the knowledge base (labelled with its topic).</p>
+      <p class="mb-2"><b>Correct source.</b> A returned passage counts as correct when it belongs to a labelled source for that question. Each question is scored on its top 10 results.</p>
+      <p class="mb-2"><b>Same conditions.</b> Both engines search the same {{ b.index_passages }} passages with the same topic filter. Only the ranking method differs: TF-IDF cosine similarity versus BM25.</p>
+      <p class="mb-0"><b>Scope guard.</b> Every benchmark question must be accepted as medical; {{ b.scope_guard.out_scope_total }} everyday questions (sport, finance, travel…) must be declined.</p>
+      {% if skipped %}<p class="mt-2 mb-0"><b>Data hygiene.</b> {{ skipped }} uploaded passages contained only a question and no information, so they are excluded from search.</p>{% endif %}
+    </div>
+  </div>
+</div>
+
+<div class="vf-callout neutral">
+  <i class="fas fa-circle-info"></i>
+  <div><b>Reading these results.</b> VerifAI's search finds the correct source as often as the baseline and is several times faster. On ranking the correct source <em>first</em>, the two are within a few questions of each other. VerifAI's main advantage is downstream: it writes an answer from the top passages, cites them, and verifies the answer against them. Every individual answer shows those measurements in its <b>answer report</b>.</div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script>
+(function () {
+  const B = {{ b.baseline|tojson }}, V = {{ b.verifai|tojson }};
+  const base = '#94A3B8', vf = '#2563EB';
+  new Chart(document.getElementById('qualityChart'), {
+    type: 'bar',
+    data: { labels: ['Hit@1', 'Recall@5', 'MRR', 'nDCG@5'],
+      datasets: [
+        { label: 'Baseline · TF-IDF', data: [B.hit_at_1, B.recall_at_5, B.mrr, B.ndcg_at_5], backgroundColor: base, borderRadius: 4 },
+        { label: 'VerifAI · BM25', data: [V.hit_at_1, V.recall_at_5, V.mrr, V.ndcg_at_5], backgroundColor: vf, borderRadius: 4 } ] },
+    options: { scales: { y: { min: 0.5, max: 1, ticks: { callback: v => Math.round(v * 100) + '%' } } },
+               plugins: { legend: { position: 'bottom' } } }
+  });
+  new Chart(document.getElementById('latencyChart'), {
+    type: 'bar',
+    data: { labels: ['Median', '95th percentile'],
+      datasets: [
+        { label: 'Baseline · TF-IDF', data: [B.latency_p50_ms, B.latency_p95_ms], backgroundColor: base, borderRadius: 4 },
+        { label: 'VerifAI · BM25', data: [V.latency_p50_ms, V.latency_p95_ms], backgroundColor: vf, borderRadius: 4 } ] },
+    options: { indexAxis: 'y', scales: { x: { ticks: { callback: v => v + ' ms' } } }, plugins: { legend: { position: 'bottom' } } }
+  });
+})();
+</script>
+{% endblock %}

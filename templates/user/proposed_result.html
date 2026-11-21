@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+{% block title %}VerifAI Result{% endblock %}
+{% block page_title %}Evidence &amp; verification{% endblock %}
+{% block content %}
+<div class="page-header">
+  <div class="breadcrumb-nav">
+    <a href="{{ url_for('user.dashboard') }}">Dashboard</a><span>/</span>
+    <a href="{{ url_for('user.comparison', session_id=session.id) }}">Results</a><span>/</span>
+    <span>VerifAI Result</span>
+  </div>
+  <h1><i class="fas fa-atom text-pink me-2"></i>VerifAI Evidence-Backed Result</h1>
+  <p>Semantic retrieval + AI-generated answer + evidence verification.</p>
+</div>
+
+<div class="content-card mb-4">
+  <div class="card-header"><h5><i class="fas fa-question-circle"></i> Your Question</h5></div>
+  <div class="card-body">
+    <div class="answer-box">
+      <div class="answer-label">Biomedical Question</div>
+      <div class="answer-text" style="font-size:16px;font-weight:600;">{{ session.question }}</div>
+    </div>
+  </div>
+</div>
+
+{% if session.proposed_result %}
+{% set pr = session.proposed_result %}
+
+<!-- VERIFICATION STATUS BANNER -->
+{% set vs = pr.verification_status %}
+<div class="content-card mb-4" style="border-left: 5px solid {% if vs == 'Verified' %}#4CAF50{% elif vs == 'Partially Verified' %}#FF9800{% elif vs == 'Conflicting Evidence' %}#9C27B0{% else %}#F44336{% endif %};">
+  <div class="card-body">
+    <div class="d-flex align-items-center gap-4 flex-wrap">
+      <div>
+        <div style="font-size:11px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">Verification Status</div>
+        <span class="badge-{% if vs == 'Verified' %}verified{% elif vs == 'Partially Verified' %}partial{% elif vs == 'Conflicting Evidence' %}conflicting{% else %}insufficient{% endif %}" style="font-size:14px;padding:8px 18px;">{{ vs }}</span>
+      </div>
+      <div>
+        <div style="font-size:11px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;">Answer Confidence</div>
+        <div style="font-size:28px;font-weight:800;color:var(--pink-primary);">{{ '%.1f'|format(pr.confidence_score * 100) }}%</div>
+      </div>
+      <div>
+        <div style="font-size:11px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;">Evidence Relevance</div>
+        <div style="font-size:28px;font-weight:800;color:#2196F3;">{{ '%.1f'|format(pr.evidence_relevance * 100) }}%</div>
+      </div>
+      <div>
+        <div style="font-size:11px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;">Evidence Coverage</div>
+        <div style="font-size:28px;font-weight:800;color:#4CAF50;">{{ '%.1f'|format(pr.evidence_coverage * 100) }}%</div>
+      </div>
+    </div>
+    <!-- Confidence bars -->
+    <div class="mt-3">
+      <div class="confidence-meter">
+        <div class="confidence-label"><span>Answer Confidence</span><span>{{ '%.1f'|format(pr.confidence_score * 100) }}%</span></div>
+        <div class="confidence-bar"><div class="confidence-fill {{ 'high' if pr.confidence_score >= 0.7 else ('medium' if pr.confidence_score >= 0.45 else 'low') }}" data-width="{{ (pr.confidence_score * 100)|int }}"></div></div>
+      </div>
+      <div class="confidence-meter">
+        <div class="confidence-label"><span>Evidence Relevance</span><span>{{ '%.1f'|format(pr.evidence_relevance * 100) }}%</span></div>
+        <div class="confidence-bar"><div class="confidence-fill pink" data-width="{{ (pr.evidence_relevance * 100)|int }}"></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ANSWER -->
+<div class="content-card mb-4">
+  <div class="card-header"><h5><i class="fas fa-robot"></i> VerifAI Generated Answer</h5></div>
+  <div class="card-body">
+    <div class="answer-box">
+      <div class="answer-label">Evidence-Based Answer</div>
+      <div class="answer-text">{{ pr.answer }}</div>
+    </div>
+  </div>
+</div>
+
+<!-- EVIDENCE -->
+<div class="content-card mb-4">
+  <div class="card-header">
+    <h5><i class="fas fa-file-medical"></i> Supporting Evidence Passages ({{ pr.evidences|length }})</h5>
+  </div>
+  <div class="card-body">
+    {% for ev in pr.evidences %}
+    <div class="evidence-card">
+      <div class="evidence-num">Evidence Passage {{ loop.index }}</div>
+      <div class="evidence-text">{{ ev.passage_text }}</div>
+      <div class="relevance-bar">
+        <div class="relevance-fill" data-width="{{ (ev.relevance_score * 100)|int }}"></div>
+      </div>
+      <div class="evidence-meta mt-2">
+        {% if ev.source_title %}<span><i class="fas fa-book"></i> {{ ev.source_title[:60] }}{% if ev.source_title|length > 60 %}...{% endif %}</span>{% endif %}
+        {% if ev.source_journal %}<span><i class="fas fa-newspaper"></i> {{ ev.source_journal }}</span>{% endif %}
+        {% if ev.source_year %}<span><i class="fas fa-calendar"></i> {{ ev.source_year }}</span>{% endif %}
+        <span style="margin-left:auto;"><strong style="color:var(--pink-primary);">Relevance: {{ '%.1f'|format(ev.relevance_score * 100) }}%</strong></span>
+      </div>
+    </div>
+    {% else %}
+    <div class="no-data"><i class="fas fa-exclamation-circle"></i><h6>No Evidence Found</h6><p>No relevant passages were retrieved. Please ensure biomedical datasets are uploaded and indexed.</p></div>
+    {% endfor %}
+  </div>
+</div>
+
+{% else %}
+<div class="no-data"><i class="fas fa-exclamation-circle"></i><h6>No VerifAI Result</h6></div>
+{% endif %}
+
+<div class="d-flex gap-3 mt-2">
+  <a href="{{ url_for('user.existing_result', session_id=session.id) }}" class="btn-pink-outline"><i class="fas fa-brain"></i> Existing Result</a>
+  <a href="{{ url_for('user.comparison', session_id=session.id) }}" class="btn-pink"><i class="fas fa-balance-scale"></i> Full Comparison</a>
+  <a href="{{ url_for('user.feedback', session_id=session.id) }}" class="btn-pink-outline"><i class="fas fa-star"></i> Give Feedback</a>
+</div>
+{% endblock %}

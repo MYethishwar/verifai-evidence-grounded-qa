@@ -1,0 +1,194 @@
+{% extends 'base.html' %}
+{% from 'admin/_measured.html' import chart, charts_script %}
+{% block title %}Admin Dashboard{% endblock %}
+{% block page_title %}Admin Dashboard{% endblock %}
+{% block content %}
+<div class="page-header">
+  <div class="breadcrumb-nav">
+    <i class="fas fa-home text-pink"></i>
+    <span>/</span><span>Admin Dashboard</span>
+  </div>
+  <div class="d-flex align-items-center justify-content-between">
+    <div>
+      <h1><i class="fas fa-tachometer-alt text-pink me-2"></i>Admin Dashboard</h1>
+      <p>Welcome back, Administrator! Here's your VerifAI system overview.</p>
+    </div>
+    <div style="text-align:right;">
+      <div style="font-size:13px;color:var(--text-muted);"><i class="fas fa-calendar text-pink"></i> System Overview</div>
+      <div style="font-size:12px;color:var(--text-muted);">Index Built: {{ 'Yes' if index_stats.index_built else 'No' }}</div>
+    </div>
+  </div>
+</div>
+
+<!-- STAT CARDS ROW 1 -->
+<div class="row g-3 mb-4">
+  <div class="col-xl-3 col-md-6">
+    <div class="stat-card">
+      <div class="stat-icon pink-icon"><i class="fas fa-users"></i></div>
+      <div class="stat-value">{{ total_users }}</div>
+      <div class="stat-label">Total Users</div>
+    </div>
+  </div>
+  <div class="col-xl-3 col-md-6">
+    <div class="stat-card green">
+      <div class="stat-icon green-icon"><i class="fas fa-user-check"></i></div>
+      <div class="stat-value">{{ active_users }}</div>
+      <div class="stat-label">Active Users</div>
+    </div>
+  </div>
+  <div class="col-xl-3 col-md-6">
+    <div class="stat-card orange">
+      <div class="stat-icon orange-icon"><i class="fas fa-clock"></i></div>
+      <div class="stat-value">{{ pending_users }}</div>
+      <div class="stat-label">Pending Activation</div>
+    </div>
+  </div>
+  <div class="col-xl-3 col-md-6">
+    <div class="stat-card blue">
+      <div class="stat-icon blue-icon"><i class="fas fa-database"></i></div>
+      <div class="stat-value">{{ total_datasets }}</div>
+      <div class="stat-label">Datasets Uploaded</div>
+    </div>
+  </div>
+</div>
+<!-- STAT CARDS ROW 2 -->
+<div class="row g-3 mb-4">
+  <div class="col-xl-3 col-md-6">
+    <div class="stat-card purple">
+      <div class="stat-icon purple-icon"><i class="fas fa-file-medical"></i></div>
+      <div class="stat-value">{{ total_documents }}</div>
+      <div class="stat-label">Biomedical Documents</div>
+    </div>
+  </div>
+  <div class="col-xl-3 col-md-6">
+    <div class="stat-card teal">
+      <div class="stat-icon teal-icon"><i class="fas fa-paragraph"></i></div>
+      <div class="stat-value">{{ total_passages }}</div>
+      <div class="stat-label">Indexed Passages</div>
+    </div>
+  </div>
+  <div class="col-xl-3 col-md-6">
+    <div class="stat-card">
+      <div class="stat-icon pink-icon"><i class="fas fa-question-circle"></i></div>
+      <div class="stat-value">{{ total_questions }}</div>
+      <div class="stat-label">Total Questions</div>
+    </div>
+  </div>
+  <div class="col-xl-3 col-md-6">
+    <div class="stat-card green">
+      <div class="stat-icon green-icon"><i class="fas fa-check-double"></i></div>
+      <div class="stat-value">{{ verified_answers }}</div>
+      <div class="stat-label">Verified Answers</div>
+    </div>
+  </div>
+</div>
+
+<!-- MEASURED QUALITY (from answer reports) -->
+<div class="vf-section-title d-flex justify-content-between align-items-center">
+  <span>Measured quality <span class="vf-muted vf-small" style="font-weight:500;">· {{ agg.count }} measured answers</span></span>
+  <a href="{{ url_for('admin.accuracy') }}" class="vf-small">All quality metrics →</a>
+</div>
+<div class="vf-grid vf-grid-2 mb-4">
+  {{ chart('mTrend', 'Coverage and breadth per question', 'fa-chart-line', 150) }}
+  {{ chart('mLatency', 'Retrieval latency per question', 'fa-stopwatch', 150) }}
+</div>
+
+<!-- UPLOADED DATASETS TABLE WITH DELETE ICON -->
+<div class="content-card mb-4">
+  <div class="card-header">
+    <h5><i class="fas fa-database text-pink me-2"></i> Uploaded Datasets ({{ datasets|length if datasets else 0 }})</h5>
+    <a href="{{ url_for('admin.upload_dataset') }}" class="btn-pink btn-sm-pink"><i class="fas fa-plus"></i> Upload New Dataset</a>
+  </div>
+  <div class="card-body p-0">
+    <div class="table-container">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Dataset Name</th>
+            <th>Records</th>
+            <th>Status</th>
+            <th>Uploaded Date</th>
+            <th style="text-align:center;">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for d in datasets %}
+          <tr>
+            <td>{{ d.id }}</td>
+            <td>
+              <strong>{{ d.name }}</strong>
+              {% if d.description %}<br><small style="color:var(--text-muted);">{{ d.description[:60] }}{% if d.description|length > 60 %}...{% endif %}</small>{% endif %}
+            </td>
+            <td><span class="badge-active">{{ d.records_count }} docs</span></td>
+            <td>
+              <span class="badge-{% if d.status == 'indexed' %}verified{% elif d.status == 'preprocessed' %}partial{% else %}pending{% endif %}">
+                {{ d.status|title }}
+              </span>
+            </td>
+            <td style="font-size:12px;">{{ d.created_at.strftime('%Y-%m-%d %H:%M') }}</td>
+            <td style="text-align:center;">
+              <a href="{{ url_for('admin.delete_dataset', did=d.id) }}" 
+                 class="btn-pink-outline btn-sm-pink" 
+                 style="color:#F44336;border-color:#F44336;padding:4px 10px;" 
+                 title="Delete Dataset" 
+                 onclick="return confirm('Are you sure you want to delete dataset &quot;{{ d.name }}&quot; and all its documents?');">
+                <i class="fas fa-trash-alt"></i> Delete
+              </a>
+            </td>
+          </tr>
+          {% else %}
+          <tr><td colspan="6" class="text-center" style="padding:28px;color:var(--text-muted);"><i class="fas fa-database" style="font-size:22px;display:block;margin-bottom:8px;"></i>No datasets uploaded yet.</td></tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- RECENT SESSIONS -->
+<div class="content-card">
+  <div class="card-header">
+    <h5><i class="fas fa-history"></i> Recent QA Sessions</h5>
+    <a href="{{ url_for('admin.accuracy') }}" class="btn-pink btn-sm-pink">View All Metrics</a>
+  </div>
+  <div class="card-body p-0">
+    <div class="table-container">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Question</th>
+            <th>User</th>
+            <th>Status</th>
+            <th>Verification</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for s in sessions %}
+          <tr>
+            <td>{{ s.id }}</td>
+            <td style="max-width:300px;">{{ s.question[:80] }}{% if s.question|length > 80 %}...{% endif %}</td>
+            <td>{{ s.user.username if s.user else 'N/A' }}</td>
+            <td><span class="badge-{{ 'active' if s.status == 'completed' else 'pending' }}">{{ s.status }}</span></td>
+            <td>
+              {% if s.proposed_result %}
+              {% set vs = s.proposed_result.verification_status %}
+              <span class="badge-{% if vs == 'Verified' %}verified{% elif vs == 'Partially Verified' %}partial{% elif vs == 'Conflicting Evidence' %}conflicting{% else %}insufficient{% endif %}">{{ vs }}</span>
+              {% else %}<span class="badge-pending">Pending</span>{% endif %}
+            </td>
+            <td style="font-size:12px;">{{ s.created_at.strftime('%Y-%m-%d %H:%M') }}</td>
+          </tr>
+          {% else %}
+          <tr><td colspan="6" class="text-center" style="padding:32px;color:var(--text-muted);"><i class="fas fa-inbox" style="font-size:24px;display:block;margin-bottom:8px;"></i>No QA sessions yet. Users need to ask questions first.</td></tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}
+{{ charts_script(agg) }}
+{% endblock %}

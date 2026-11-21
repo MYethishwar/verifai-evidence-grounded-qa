@@ -1,0 +1,14 @@
+{# VerifAI brand: logo mark + wordmark. Usage: {% from '_brand.html' import logo %} {{ logo() }} #}
+{% macro mark(size=32) -%}
+<img src="{{ url_for('static', filename='img/verifai-mark.svg') }}" width="{{ size }}" height="{{ size }}" alt="" class="vf-mark">
+{%- endmacro %}
+
+{% macro logo(size=32, tagline=None, dark=False) -%}
+<span class="vf-logo {% if dark %}vf-logo-dark{% endif %}">
+  {{ mark(size) }}
+  <span class="vf-logo-text">
+    <span class="vf-wordmark">Verif<span class="vf-wordmark-ai">AI</span></span>
+    {% if tagline %}<span class="vf-tagline">{{ tagline }}</span>{% endif %}
+  </span>
+</span>
+{%- endmacro %}

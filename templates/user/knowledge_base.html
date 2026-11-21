@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+{% block title %}Knowledge base{% endblock %}
+{% block section %}Workspace{% endblock %}
+{% block page_title %}Knowledge base{% endblock %}
+{% block content %}
+<div class="page-header d-flex justify-content-between align-items-end flex-wrap gap-3">
+  <div>
+    <div class="vf-eyebrow">Curated clinical reference</div>
+    <h1>What VerifAI can answer from</h1>
+    <p>Every answer about these topics is grounded in this reference and cites the exact section it used. Pick a sample question to try it.</p>
+  </div>
+  <a href="{{ url_for('user.question') }}" class="vf-btn"><i class="fas fa-comments"></i> Ask VerifAI</a>
+</div>
+
+<div class="vf-grid vf-grid-4 mb-4">
+  <div class="vf-card vf-kpi"><div class="vf-kpi-label"><i class="fas fa-book-medical"></i> Topics</div><div class="vf-kpi-value">{{ stats.topics }}</div><div class="vf-kpi-foot">across {{ stats.groups }} clinical areas</div></div>
+  <div class="vf-card vf-kpi"><div class="vf-kpi-label"><i class="fas fa-paragraph"></i> Indexed sections</div><div class="vf-kpi-value">{{ stats.sections }}</div><div class="vf-kpi-foot">each one a citable source</div></div>
+  <div class="vf-card vf-kpi"><div class="vf-kpi-label"><i class="fas fa-circle-question"></i> Sample questions</div><div class="vf-kpi-value">{{ stats.questions }}</div><div class="vf-kpi-foot">also used in the <a href="{{ url_for('user.benchmark_page') }}">benchmark</a></div></div>
+  <div class="vf-card vf-kpi"><div class="vf-kpi-label"><i class="fas fa-shapes"></i> Coverage per topic</div><div class="vf-kpi-value">5 <small>aspects</small></div><div class="vf-kpi-foot">causes, symptoms, diagnosis, treatment, outlook</div></div>
+</div>
+
+<div class="kb-toolbar">
+  <div class="kb-search">
+    <i class="fas fa-magnifying-glass"></i>
+    <input type="search" id="kbSearch" class="form-control" placeholder="Search topics, conditions, medicines or tests…" autocomplete="off">
+  </div>
+  <div class="kb-tabs" id="kbTabs">
+    <button class="kb-tab active" data-group="">All areas</button>
+    {% for g in catalog %}<button class="kb-tab" data-group="{{ g.name }}">{{ g.name }}</button>{% endfor %}
+  </div>
+</div>
+
+{% for g in catalog %}
+<section class="kb-group" data-group="{{ g.name }}">
+  <div class="vf-section-title">{{ g.name }} <span class="vf-muted vf-small" style="font-weight:500;">· {{ g.topics|length }} topics</span></div>
+  <div class="vf-grid vf-grid-3">
+    {% for t in g.topics %}
+    <article class="vf-card vf-card-pad kb-topic" id="{{ t.id }}"
+             data-search="{{ (t.title ~ ' ' ~ t.category ~ ' ' ~ t.summary ~ ' ' ~ t.sample_questions|join(' '))|lower }}">
+      <div class="d-flex justify-content-between align-items-start gap-2">
+        <h4>{{ t.title }}</h4>
+        <span class="vf-chip">{{ t.category }}</span>
+      </div>
+      <p>{{ t.summary }}</p>
+      <div class="kb-sections">
+        {% for s in t.sections %}<span class="vf-chip vf-chip-brand">{{ s }}</span>{% endfor %}
+      </div>
+      <div style="margin-top:auto;">
+        {% for q in t.sample_questions %}
+        <a class="kb-q" href="{{ url_for('user.question') }}?q={{ q|urlencode }}"><i class="fas fa-arrow-right"></i>{{ q }}</a>
+        {% endfor %}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% endfor %}
+<div class="vf-empty d-none" id="kbEmpty"><i class="fas fa-magnifying-glass"></i>No topics match your search. VerifAI only answers from this knowledge base and uploaded datasets; an administrator can add a dataset to cover new subjects.</div>
+{% endblock %}
+{% block scripts %}
+<script>
+(function () {
+  const input = document.getElementById('kbSearch');
+  const tabs = document.querySelectorAll('.kb-tab');
+  let group = '';
+  function apply() {
+    const q = (input.value || '').trim().toLowerCase();
+    let shown = 0;
+    document.querySelectorAll('.kb-group').forEach(sec => {
+      const inGroup = !group || sec.dataset.group === group;
+      let visible = 0;
+      sec.querySelectorAll('.kb-topic').forEach(card => {
+        const ok = inGroup && (!q || card.dataset.search.includes(q));
+        card.parentElement.style.display = '';
+        card.style.display = ok ? '' : 'none';
+        if (ok) visible++;
+      });
+      sec.style.display = visible ? '' : 'none';
+      shown += visible;
+    });
+    document.getElementById('kbEmpty').classList.toggle('d-none', shown > 0);
+  }
+  input.addEventListener('input', apply);
+  tabs.forEach(t => t.addEventListener('click', () => {
+    tabs.forEach(x => x.classList.remove('active'));
+    t.classList.add('active'); group = t.dataset.group; apply();
+  }));
+})();
+</script>
+{% endblock %}

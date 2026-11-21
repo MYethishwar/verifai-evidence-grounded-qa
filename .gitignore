@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local database (created automatically on first run)
+instance/
+*.db
+*.db-shm
+*.db-wal
+
+# Files uploaded through the app
+static/uploads/*
+!static/uploads/.gitkeep
+
+# Secrets / local settings
+.env
+*.local
+
+# Editors & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

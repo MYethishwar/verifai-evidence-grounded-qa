@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% block title %}Dataset Upload{% endblock %}
+{% block page_title %}Dataset Upload{% endblock %}
+{% block content %}
+<div class="page-header">
+  <h1><i class="fas fa-cloud-upload-alt text-pink me-2"></i>Biomedical Dataset Upload</h1>
+  <p>Upload biomedical datasets from PubMed, BioASQ, MedQuAD, or custom CSV/Excel/JSON files.</p>
+</div>
+<div class="row g-4">
+  <div class="col-lg-6">
+    <div class="content-card">
+      <div class="card-header"><h5><i class="fas fa-plus-circle"></i> Upload New Dataset</h5></div>
+      <div class="card-body">
+        <form method="POST" action="{{ url_for('admin.upload_dataset') }}" enctype="multipart/form-data">
+          <div class="form-group">
+            <label class="form-label">Dataset Name</label>
+            <input type="text" name="name" class="form-control" placeholder="e.g., PubMed Diabetes 2024">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Description</label>
+            <textarea name="description" class="form-control" rows="2" placeholder="Brief description of this dataset..."></textarea>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Dataset File</label>
+            <div class="upload-zone" id="uploadZone">
+              <input type="file" name="dataset_file" id="datasetFile" accept=".csv,.xlsx,.xls,.json,.txt" style="display:none;" required>
+              <div class="upload-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+              <h5>Click to Upload or Drag & Drop</h5>
+              <p>Supports: CSV, Excel (.xlsx/.xls), JSON, TXT</p>
+              <p class="upload-filename" style="margin-top:8px;font-weight:600;">No file selected</p>
+            </div>
+          </div>
+          <div class="alert-pink">
+            <i class="fas fa-info-circle"></i>
+            Ensure your file has columns like: <strong>title, abstract, authors, journal, year, pmid, doi</strong>. Flexible column detection is used.
+          </div>
+          <button type="submit" class="btn-pink w-100 justify-content-center" style="padding:12px;">
+            <i class="fas fa-upload"></i> Upload Dataset
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <div class="content-card">
+      <div class="card-header"><h5><i class="fas fa-database"></i> Uploaded Datasets ({{ datasets|length }})</h5></div>
+      <div class="card-body p-0">
+        <table class="data-table">
+          <thead><tr><th>#</th><th>Name</th><th>Records</th><th>Status</th><th>Uploaded</th><th style="text-align:center;">Action</th></tr></thead>
+          <tbody>
+            {% for d in datasets %}
+            <tr>
+              <td>{{ d.id }}</td>
+              <td>
+                <strong>{{ d.name }}</strong>
+                {% if d.description %}<br><small style="color:var(--text-muted);">{{ d.description[:50] }}</small>{% endif %}
+              </td>
+              <td><span class="badge-active">{{ d.records_count }} docs</span></td>
+              <td><span class="badge-{% if d.status == 'indexed' %}verified{% elif d.status == 'preprocessed' %}partial{% else %}pending{% endif %}">{{ d.status|title }}</span></td>
+              <td style="font-size:12px;">{{ d.created_at.strftime('%d %b %Y') }}</td>
+              <td style="text-align:center;">
+                <a href="{{ url_for('admin.delete_dataset', did=d.id) }}" 
+                   class="btn-pink-outline btn-sm-pink" 
+                   style="color:#F44336;border-color:#F44336;padding:4px 10px;" 
+                   title="Delete Dataset" 
+                   onclick="return confirm('Are you sure you want to delete dataset \'{{ d.name }}\' and all its documents?');">
+                  <i class="fas fa-trash-alt"></i> Delete
+                </a>
+              </td>
+            </tr>
+            {% else %}
+            <tr><td colspan="6" class="text-center" style="padding:24px;color:var(--text-muted);"><i class="fas fa-database" style="font-size:20px;display:block;margin-bottom:6px;"></i>No datasets uploaded yet.</td></tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}<script>document.addEventListener('DOMContentLoaded', function() { initUploadZone('uploadZone', 'datasetFile'); });</script>{% endblock %}

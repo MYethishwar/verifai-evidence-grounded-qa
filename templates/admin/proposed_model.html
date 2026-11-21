@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% from 'admin/_measured.html' import chart, charts_script %}
+{% block title %}VerifAI Model{% endblock %}
+{% block page_title %}VerifAI model{% endblock %}
+{% block content %}
+<div class="page-header">
+  <h1><i class="fas fa-atom text-pink me-2"></i>VerifAI – VerifAI model</h1>
+  <p>BM25 semantic retrieval + AI answer generation + evidence verification pipeline.</p>
+</div>
+<div class="row g-4 mb-4">
+  <div class="col-md-3"><div class="stat-card"><div class="stat-icon pink-icon"><i class="fas fa-list"></i></div><div class="stat-value">{{ stats.total_results }}</div><div class="stat-label">Total Results</div></div></div>
+  <div class="col-md-3"><div class="stat-card green"><div class="stat-icon green-icon"><i class="fas fa-shield-check"></i></div><div class="stat-value">{{ stats.verified_count }}</div><div class="stat-label">Verified Answers</div></div></div>
+  <div class="col-md-3"><div class="stat-card blue"><div class="stat-icon blue-icon"><i class="fas fa-percent"></i></div><div class="stat-value">{{ '%.3f'|format(stats.avg_confidence) }}</div><div class="stat-label">Avg Confidence</div></div></div>
+  <div class="col-md-3"><div class="stat-card purple"><div class="stat-icon purple-icon"><i class="fas fa-search"></i></div><div class="stat-value">{{ '%.3f'|format(stats.avg_evidence_relevance) }}</div><div class="stat-label">Avg Evidence Relevance</div></div></div>
+</div>
+<div class="content-card mb-4">
+  <div class="card-header"><h5><i class="fas fa-sitemap"></i> VerifAI Pipeline: {{ stats.method }}</h5></div>
+  <div class="card-body">
+    <div class="d-flex align-items-center gap-2 flex-wrap">
+      {% for step in ['Question Input', 'BM25 Retrieval', 'Top-K Evidence', 'AI Generation', 'Answer Verification', 'Confidence Score', 'Final Output'] %}
+      <div style="background:linear-gradient(135deg,#2563EB,#1D4ED8);color:white;padding:8px 16px;border-radius:20px;font-size:12px;font-weight:700;">{{ step }}</div>
+      {% if not loop.last %}<i class="fas fa-arrow-right text-pink"></i>{% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<div class="vf-grid vf-grid-2 mb-4">
+  {{ chart('mTrend', 'Coverage and breadth per question', 'fa-chart-line', 150) }}
+  {{ chart('mLatency', 'Retrieval latency per question', 'fa-stopwatch', 150) }}
+</div>
+
+<div class="content-card">
+  <div class="card-header"><h5><i class="fas fa-history"></i> Recent VerifAI Results</h5></div>
+  <div class="card-body p-0">
+    <table class="data-table">
+      <thead><tr><th>#</th><th>Answer (Preview)</th><th>Confidence</th><th>Ev. Relevance</th><th>Verification Status</th><th>Date</th></tr></thead>
+      <tbody>
+        {% for r in results %}
+        <tr>
+          <td>{{ r.id }}</td>
+          <td style="max-width:350px;">{{ r.answer[:100] if r.answer else 'N/A' }}...</td>
+          <td><strong>{{ '%.1f'|format(r.confidence_score * 100) }}%</strong></td>
+          <td>{{ '%.1f'|format(r.evidence_relevance * 100) }}%</td>
+          <td>
+            {% set vs = r.verification_status %}
+            <span class="badge-{% if vs == 'Verified' %}verified{% elif vs == 'Partially Verified' %}partial{% elif vs == 'Conflicting Evidence' %}conflicting{% else %}insufficient{% endif %}">{{ vs }}</span>
+          </td>
+          <td style="font-size:12px;">{{ r.created_at.strftime('%Y-%m-%d') }}</td>
+        </tr>
+        {% else %}
+        <tr><td colspan="6" class="text-center" style="padding:24px;color:var(--text-muted);">No results yet. Users need to ask questions.</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}{{ charts_script(agg) }}{% endblock %}

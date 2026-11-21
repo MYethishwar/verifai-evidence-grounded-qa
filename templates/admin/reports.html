@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% from 'admin/_measured.html' import kpis, recent_table, chart, charts_script, empty %}
+{% block title %}Reports{% endblock %}
+{% block section %}Evaluation{% endblock %}
+{% block page_title %}Reports{% endblock %}
+{% block content %}
+<div class="page-header">
+  <div class="vf-eyebrow">Platform report</div>
+  <h1>Usage and verification report</h1>
+  <p>{{ total_users }} users ({{ active_users }} active) · {{ total_questions }} questions asked in total · {{ agg.count }} with a measured report.</p>
+</div>
+{{ empty(agg) }}
+{{ kpis(agg) }}
+<div class="vf-grid vf-grid-3 mb-4">
+  {{ chart('mStatus', 'Verification outcome', 'fa-shield-halved', 200) }}
+  <div class="vf-card">
+    <div class="vf-card-head"><h3><i class="fas fa-book-open"></i> Where answers came from</h3></div>
+    <ul class="vf-list">
+      {% set labels = {'evidence': 'Indexed sources (knowledge base or datasets)', 'knowledge': 'General medical knowledge (labelled)', 'unavailable': 'No source and no model available', 'not_covered': 'Not covered by the provided data (declined)'} %}
+      {% for k, v in agg.sources.items() %}
+      <li><span style="flex:1;">{{ labels.get(k, k) }}</span><span class="vf-num">{{ v }}</span><span class="vf-muted vf-small" style="width:48px;text-align:right;">{{ '%.0f'|format(100 * v / agg.count) }}%</span></li>
+      {% else %}<li class="vf-muted">No measured answers yet.</li>{% endfor %}
+    </ul>
+  </div>
+  <div class="vf-card">
+    <div class="vf-card-head"><h3><i class="fas fa-circle-check"></i> Verification breakdown</h3></div>
+    <ul class="vf-list">
+      {% for k, v in agg.statuses.items() %}
+      <li><span style="flex:1;">{{ k }}</span><span class="vf-num">{{ v }}</span><span class="vf-muted vf-small" style="width:48px;text-align:right;">{{ '%.0f'|format(100 * v / agg.count) }}%</span></li>
+      {% else %}<li class="vf-muted">No measured answers yet.</li>{% endfor %}
+    </ul>
+  </div>
+</div>
+<div class="vf-grid vf-grid-2 mb-4">
+  {{ chart('mTrend', 'Coverage and breadth per question', 'fa-chart-line', 170) }}
+  {{ chart('mLatency', 'Retrieval latency per question', 'fa-stopwatch', 170) }}
+</div>
+{{ recent_table(agg, 30) }}
+{% endblock %}
+{% block scripts %}{{ charts_script(agg) }}{% endblock %}

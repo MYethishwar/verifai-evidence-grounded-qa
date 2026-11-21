@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% from 'admin/_measured.html' import kpis, metric_table, recent_table, chart, charts_script, empty %}
+{% block title %}Quality metrics{% endblock %}
+{% block section %}Evaluation{% endblock %}
+{% block page_title %}Quality metrics{% endblock %}
+{% block content %}
+<div class="page-header">
+  <div class="vf-eyebrow">Live usage · measured per answer</div>
+  <h1>Answer and retrieval quality</h1>
+  <p>Averages over every answer measured in production use. Each metric is computed from the actual question, the retrieved passages and the answer; see the definitions beside each row.</p>
+</div>
+{{ empty(agg) }}
+{{ kpis(agg) }}
+<div class="vf-grid vf-grid-2 mb-4">
+  {{ chart('mTrend', 'Coverage and breadth per question', 'fa-chart-line', 170) }}
+  {{ chart('mAverages', 'Average quality, baseline vs VerifAI', 'fa-chart-column', 170) }}
+</div>
+{{ metric_table(agg) }}
+{{ recent_table(agg, 25) }}
+{% endblock %}
+{% block scripts %}{{ charts_script(agg) }}{% endblock %}

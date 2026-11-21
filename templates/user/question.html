@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% block title %}Ask VerifAI{% endblock %}
+{% block section %}Workspace{% endblock %}
+{% block page_title %}Ask VerifAI{% endblock %}
+{% block content %}
+<div class="vf-grid vf-grid-main" style="align-items:start;">
+  <div class="content-card chat-card" style="margin-bottom:0;">
+    <div class="card-header chat-header">
+      <h5><i class="fas fa-comments"></i> Conversation</h5>
+      <div class="chat-header-actions">
+        <span class="vf-small vf-muted d-none d-md-inline">Follow-up questions keep their context</span>
+        <button type="button" class="btn-sm-pink" id="newChatBtn" title="Start a new conversation">
+          <i class="fas fa-plus"></i> New conversation
+        </button>
+      </div>
+    </div>
+    <div class="chat-thread" id="chatThread" aria-live="polite"></div>
+    <form class="chat-composer" id="chatForm" autocomplete="off">
+      <textarea id="chatInput" rows="1" maxlength="2000" aria-label="Your question"
+                placeholder="Ask a clinical question, or a follow-up…">{{ request.query_params.get('q', '') }}</textarea>
+      <button type="submit" class="chat-send" id="chatSend" aria-label="Send">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+    </form>
+    <div class="chat-hint">Enter to send · Shift+Enter for a new line · Answers are for information and do not replace clinical judgement.</div>
+  </div>
+
+  <div class="d-flex flex-column gap-3">
+    <div class="vf-card">
+      <div class="vf-card-head"><h3><i class="fas fa-lightbulb"></i> Suggested questions</h3></div>
+      <div class="vf-card-pad" style="padding-top:10px;">
+        {% set examples = [
+          'What are the early signs of Type 2 diabetes?',
+          'How is high blood pressure treated?',
+          'What does the HbA1c test measure?',
+          'How do statins lower cholesterol?',
+          'Is psoriasis contagious?',
+          'How is malaria spread?'
+        ] %}
+        {% for ex in examples %}
+        <button type="button" class="chat-example" data-q="{{ ex }}"><i class="fas fa-arrow-right me-2" style="color:var(--brand);font-size:11px;"></i>{{ ex }}</button>
+        {% endfor %}
+        <div class="chat-example-note">Then follow up with "how is it treated?" or "what about in children?"</div>
+        <a href="{{ url_for('user.knowledge_base_page') }}" class="vf-small d-inline-block mt-2">Browse all {{ vf_kb_topics }} topics →</a>
+      </div>
+    </div>
+    <div class="vf-card">
+      <div class="vf-card-head"><h3><i class="fas fa-route"></i> How each answer is produced</h3></div>
+      <div class="vf-card-pad">
+        {% for title, desc in [
+          ('Understand', 'Detects greetings, new questions and follow-ups, and resolves what "it" refers to.'),
+          ('Check scope', 'Confirms the question is clinical or biomedical; anything else is declined politely.'),
+          ('Retrieve', 'Searches the knowledge base and your datasets for passages on the exact topic.'),
+          ('Answer', 'Writes a breadth-first answer only from those passages, citing each one.'),
+          ('Verify', 'Checks every sentence against the sources and reports what is supported.')] %}
+        <div class="d-flex gap-2 mb-2">
+          <div class="chat-step-num">{{ loop.index }}</div>
+          <div><div style="font-size:13px;font-weight:600;">{{ title }}</div><div class="vf-small vf-muted">{{ desc }}</div></div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+<script id="chatData" type="application/json">{{ chat_messages|tojson }}</script>
+<script id="chatUser" type="application/json">{{ (current_user.name or current_user.username)|tojson }}</script>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+{% endblock %}

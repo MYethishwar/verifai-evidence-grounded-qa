@@ -1,0 +1,389 @@
+{
+  "group": "Hormones, metabolism, digestion & kidneys",
+  "topics": [
+    {
+      "id": "type-1-diabetes",
+      "title": "Type 1 Diabetes",
+      "category": "Endocrine",
+      "type": "condition",
+      "aliases": ["t1d", "juvenile diabetes", "insulin-dependent diabetes", "autoimmune diabetes", "type 1 diabetic"],
+      "summary": "Type 1 diabetes is a lifelong autoimmune condition in which the immune system destroys the insulin-producing beta cells of the pancreas, so the body can make little or no insulin and blood sugar rises.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Type 1 diabetes occurs when the immune system attacks the beta cells of the pancreas. The exact trigger is unknown, but genetic susceptibility and a family history raise risk. It is not caused by diet or lifestyle and cannot currently be prevented."},
+        {"label": "Symptoms", "text": "Type 1 diabetes often causes excessive thirst, frequent urination, tiredness, blurred vision and weight loss despite normal eating. Symptoms usually develop over weeks. Nausea, vomiting and fast breathing can signal diabetic ketoacidosis, which needs urgent medical care."},
+        {"label": "Diagnosis", "text": "Type 1 diabetes is diagnosed with blood tests showing raised glucose, such as fasting glucose, random glucose or HbA1c. Tests for autoantibodies against the pancreas help distinguish it from other forms of diabetes, and ketones may be checked."},
+        {"label": "Treatment", "text": "Type 1 diabetes is treated with lifelong insulin, given by injections or an insulin pump. People monitor blood glucose, often with continuous sensors, and match insulin to food and activity. Education and regular check-ups help prevent complications."},
+        {"label": "Prevention & outlook", "text": "Type 1 diabetes cannot yet be prevented. With good glucose control, most people live long, active lives. Over time, poorly controlled blood sugar can damage eyes, kidneys, nerves and the heart, so regular screening is important."}
+      ],
+      "sample_questions": ["What causes type 1 diabetes?", "What are the early symptoms of type 1 diabetes?", "How is type 1 diabetes treated?"]
+    },
+    {
+      "id": "type-2-diabetes",
+      "title": "Type 2 Diabetes",
+      "category": "Endocrine",
+      "type": "condition",
+      "aliases": ["t2d", "adult-onset diabetes", "non-insulin-dependent diabetes", "type 2 diabetic", "insulin resistance", "high blood sugar"],
+      "summary": "Type 2 diabetes is a common long-term condition in which the body becomes resistant to insulin and does not make enough of it, leading to persistently high blood glucose.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Type 2 diabetes develops when cells respond poorly to insulin and the pancreas cannot compensate. Risk rises with excess body weight, inactivity, older age, family history and certain ethnic backgrounds. Previous gestational diabetes also increases risk."},
+        {"label": "Symptoms", "text": "Type 2 diabetes may cause thirst, frequent urination, tiredness, blurred vision, slow-healing wounds and frequent infections. Many people have few or no symptoms for years, so the condition is often found on routine testing."},
+        {"label": "Diagnosis", "text": "Type 2 diabetes is diagnosed with blood tests: HbA1c, fasting plasma glucose or an oral glucose tolerance test. Results above the diagnostic thresholds, usually confirmed on repeat testing, establish the diagnosis."},
+        {"label": "Treatment", "text": "Type 2 diabetes treatment centres on healthy eating, physical activity and weight management. Medicines such as metformin and others are added as needed, and some people eventually require insulin. Blood pressure and cholesterol are also managed."},
+        {"label": "Prevention & outlook", "text": "Type 2 diabetes can often be delayed or prevented by weight loss, regular exercise and a balanced diet. With good control, complications of the eyes, kidneys, nerves and heart can be reduced. It is a lifelong condition needing ongoing care."}
+      ],
+      "sample_questions": ["What are the risk factors for type 2 diabetes?", "How is type 2 diabetes diagnosed?", "Can type 2 diabetes be prevented or reversed?"]
+    },
+    {
+      "id": "prediabetes",
+      "title": "Prediabetes",
+      "category": "Endocrine",
+      "type": "condition",
+      "aliases": ["impaired fasting glucose", "impaired glucose tolerance", "borderline diabetes", "raised blood sugar", "pre-diabetic"],
+      "summary": "Prediabetes means blood glucose is higher than normal but not high enough to be called diabetes. It raises the risk of developing type 2 diabetes and heart disease, but can often be reversed.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Prediabetes is linked to insulin resistance, often related to excess weight, especially around the waist, physical inactivity, older age and a family history of diabetes. A history of gestational diabetes or polycystic ovary syndrome also raises the risk."},
+        {"label": "Symptoms", "text": "Prediabetes usually causes no symptoms, so many people do not know they have it. Some develop darkened skin patches around the neck or armpits (acanthosis nigricans), which can indicate insulin resistance."},
+        {"label": "Diagnosis", "text": "Prediabetes is diagnosed with blood tests such as HbA1c, fasting glucose or an oral glucose tolerance test, where results fall between normal and diabetic ranges. Screening is advised for adults with risk factors."},
+        {"label": "Treatment", "text": "Prediabetes is managed mainly through lifestyle change: moderate weight loss, regular physical activity and a healthy diet. In selected people at high risk, a doctor may consider medication. Follow-up testing is done regularly."},
+        {"label": "Prevention & outlook", "text": "Prediabetes does not always progress; lifestyle changes can return blood glucose to normal or delay type 2 diabetes substantially. Without changes, many people go on to develop diabetes, so regular monitoring is recommended."}
+      ],
+      "sample_questions": ["What does prediabetes mean?", "Can prediabetes be reversed?", "How is prediabetes diagnosed?"]
+    },
+    {
+      "id": "gestational-diabetes",
+      "title": "Gestational Diabetes",
+      "category": "Women's health",
+      "type": "condition",
+      "aliases": ["gdm", "pregnancy diabetes", "diabetes in pregnancy", "high blood sugar in pregnancy"],
+      "summary": "Gestational diabetes is high blood sugar that first appears during pregnancy, usually in the second or third trimester, and typically resolves after birth but needs careful management to protect mother and baby.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Gestational diabetes develops when pregnancy hormones make the body more resistant to insulin and the pancreas cannot keep up. Risk is higher with overweight, older maternal age, a family history of diabetes, or gestational diabetes in a previous pregnancy."},
+        {"label": "Symptoms", "text": "Gestational diabetes often causes no noticeable symptoms. Some women have increased thirst, frequent urination or tiredness, but these are common in pregnancy, so screening blood tests are the main way it is found."},
+        {"label": "Diagnosis", "text": "Gestational diabetes is diagnosed with blood glucose testing, commonly an oral glucose tolerance test offered between about 24 and 28 weeks, or earlier for women at higher risk."},
+        {"label": "Treatment", "text": "Gestational diabetes is managed with healthy eating, regular activity and home blood glucose monitoring. If targets are not met, medication such as insulin may be needed. Extra antenatal checks monitor the baby's growth."},
+        {"label": "Prevention & outlook", "text": "Gestational diabetes usually resolves after delivery, but it raises the later risk of type 2 diabetes in the mother, so follow-up testing is advised. Healthy weight and activity before and during pregnancy may lower risk."}
+      ],
+      "sample_questions": ["What causes gestational diabetes?", "How is gestational diabetes tested during pregnancy?", "Does gestational diabetes go away after birth?"]
+    },
+    {
+      "id": "hypothyroidism",
+      "title": "Hypothyroidism",
+      "category": "Endocrine",
+      "type": "condition",
+      "aliases": ["underactive thyroid", "low thyroid", "hashimoto's thyroiditis", "hashimoto's disease", "myxedema", "low thyroid hormone"],
+      "summary": "Hypothyroidism is a condition in which the thyroid gland does not make enough thyroid hormone, slowing the body's metabolism. It is common, especially in women and older adults, and is easily treatable.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Hypothyroidism is most often caused by autoimmune thyroid disease (Hashimoto's thyroiditis). Other causes include thyroid surgery, radioactive iodine treatment, certain medicines and iodine deficiency. Female sex, older age and a family history raise the risk."},
+        {"label": "Symptoms", "text": "Hypothyroidism can cause tiredness, feeling cold, weight gain, constipation, dry skin, hair thinning, low mood and slow thinking. A swelling in the neck (goitre) may occur. Symptoms develop gradually and can be mistaken for ageing."},
+        {"label": "Diagnosis", "text": "Hypothyroidism is diagnosed with blood tests: a raised thyroid-stimulating hormone (TSH) with low free thyroxine (T4) indicates an underactive thyroid. Tests for thyroid antibodies can identify an autoimmune cause."},
+        {"label": "Treatment", "text": "Hypothyroidism is treated with daily levothyroxine, a replacement thyroid hormone taken by mouth. The amount is adjusted using TSH blood tests. Treatment is usually lifelong for autoimmune or surgical causes."},
+        {"label": "Prevention & outlook", "text": "Hypothyroidism caused by autoimmune disease cannot generally be prevented, though adequate iodine intake helps avoid deficiency-related cases. With correct treatment and monitoring, most people feel well and have a normal life expectancy."}
+      ],
+      "sample_questions": ["What are the symptoms of hypothyroidism?", "How is hypothyroidism treated?", "What causes hypothyroidism?"]
+    },
+    {
+      "id": "hyperthyroidism",
+      "title": "Hyperthyroidism",
+      "category": "Endocrine",
+      "type": "condition",
+      "aliases": ["overactive thyroid", "graves' disease", "thyrotoxicosis", "toxic goitre", "high thyroid hormone"],
+      "summary": "Hyperthyroidism occurs when the thyroid gland makes too much thyroid hormone, speeding up the body's metabolism. Graves' disease is the most common cause, and effective treatments are available.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Hyperthyroidism is most commonly caused by Graves' disease, an autoimmune condition. Other causes include thyroid nodules that overproduce hormone and thyroiditis. Female sex, family history and other autoimmune diseases increase the risk."},
+        {"label": "Symptoms", "text": "Hyperthyroidism may cause weight loss despite a good appetite, fast or irregular heartbeat, sweating, heat intolerance, anxiety, tremor, diarrhoea and trouble sleeping. Graves' disease can also cause bulging, irritated eyes."},
+        {"label": "Diagnosis", "text": "Hyperthyroidism is diagnosed with blood tests showing a low thyroid-stimulating hormone (TSH) with raised thyroid hormones. Thyroid antibody tests and imaging such as a scan may identify the cause."},
+        {"label": "Treatment", "text": "Hyperthyroidism can be treated with antithyroid medicines, radioactive iodine or thyroid surgery, chosen by cause and patient factors. Beta-blockers may ease symptoms such as palpitations and tremor while treatment takes effect."},
+        {"label": "Prevention & outlook", "text": "Hyperthyroidism is usually not preventable, but most people respond well to treatment. Left untreated it can lead to heart rhythm problems and bone loss. After definitive treatment, some people later develop an underactive thyroid and need monitoring."}
+      ],
+      "sample_questions": ["What are the symptoms of hyperthyroidism?", "What is the main cause of hyperthyroidism?", "How is hyperthyroidism treated?"]
+    },
+    {
+      "id": "obesity",
+      "title": "Obesity",
+      "category": "Metabolic",
+      "type": "condition",
+      "aliases": ["overweight", "excess weight", "high bmi", "adiposity", "weight management", "obese"],
+      "summary": "Obesity is a chronic condition of excess body fat that can harm health. It is commonly defined in adults by a body mass index of 30 or more and raises the risk of many diseases.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Obesity results from a complex mix of factors: genetics, diet, low physical activity, sleep, stress, certain medicines, some medical conditions and the surrounding environment. It develops when energy intake exceeds energy use over a long period."},
+        {"label": "Symptoms", "text": "Obesity itself is mainly recognised by increased body fat and weight. It can lead to breathlessness, joint pain, snoring or sleep apnoea, and tiredness, and it contributes to conditions such as type 2 diabetes and high blood pressure."},
+        {"label": "Diagnosis", "text": "Obesity is assessed using body mass index (BMI), often together with waist circumference, because BMI alone does not show fat distribution. Doctors also check for related conditions such as blood pressure, blood sugar and cholesterol."},
+        {"label": "Treatment", "text": "Obesity treatment starts with lifestyle changes in eating, activity and behaviour, with professional support. Medicines may be added for some people, and bariatric (weight-loss) surgery is an option for those with severe obesity."},
+        {"label": "Prevention & outlook", "text": "Obesity can be reduced by a balanced diet, regular physical activity, adequate sleep and supportive environments. Even modest weight loss improves blood pressure, blood sugar and joint health, although long-term maintenance needs ongoing effort."}
+      ],
+      "sample_questions": ["What causes obesity?", "How is obesity diagnosed using BMI?", "What treatments are available for obesity?"]
+    },
+    {
+      "id": "metabolic-syndrome",
+      "title": "Metabolic Syndrome",
+      "category": "Metabolic",
+      "type": "condition",
+      "aliases": ["insulin resistance syndrome", "syndrome x", "cardiometabolic syndrome", "dysmetabolic syndrome"],
+      "summary": "Metabolic syndrome is a cluster of conditions occurring together: abdominal obesity, raised blood pressure, high blood sugar and abnormal blood fats. It increases the risk of heart disease, stroke and type 2 diabetes.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Metabolic syndrome is closely linked to insulin resistance and excess abdominal fat. Inactivity, an unhealthy diet, ageing, genetics and conditions such as polycystic ovary syndrome raise the risk of developing it."},
+        {"label": "Symptoms", "text": "Metabolic syndrome usually has no symptoms of its own. A large waist circumference is the most visible sign, and the other components, such as high blood pressure or blood sugar, are typically found on testing."},
+        {"label": "Diagnosis", "text": "Metabolic syndrome is diagnosed when a person has several of these features: increased waist size, raised triglycerides, low HDL cholesterol, high blood pressure and raised fasting glucose. Exact criteria vary slightly between organisations."},
+        {"label": "Treatment", "text": "Metabolic syndrome is treated mainly with lifestyle changes: weight loss, regular exercise, a healthy diet and stopping smoking. Medicines may be used to treat individual components such as high blood pressure, cholesterol or blood sugar."},
+        {"label": "Prevention & outlook", "text": "Metabolic syndrome can often be prevented or improved by maintaining a healthy weight and staying active. Controlling its components reduces the risk of heart disease and type 2 diabetes, so regular check-ups are advised."}
+      ],
+      "sample_questions": ["What are the criteria for metabolic syndrome?", "What causes metabolic syndrome?", "How is metabolic syndrome treated?"]
+    },
+    {
+      "id": "pcos",
+      "title": "Polycystic Ovary Syndrome (PCOS)",
+      "category": "Women's health",
+      "type": "condition",
+      "aliases": ["polycystic ovary syndrome", "polycystic ovarian syndrome", "polycystic ovaries", "stein-leventhal syndrome", "hyperandrogenism"],
+      "summary": "Polycystic ovary syndrome (PCOS) is a common hormonal condition in women of reproductive age, marked by irregular periods, excess androgen hormones and often polycystic-appearing ovaries. It is also linked to insulin resistance.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "The exact cause of PCOS is unknown. It is linked to insulin resistance, higher levels of androgens (male-type hormones) and genetic factors. PCOS often runs in families, and excess weight can worsen its features."},
+        {"label": "Symptoms", "text": "PCOS may cause irregular or absent periods, excess facial or body hair, acne, scalp hair thinning, weight gain and difficulty becoming pregnant. Symptoms vary widely and may begin in the teenage years."},
+        {"label": "Diagnosis", "text": "PCOS is diagnosed by a doctor when at least two of three features are present: irregular ovulation, signs of high androgens, and polycystic ovaries on ultrasound. Other conditions with similar features are ruled out with blood tests."},
+        {"label": "Treatment", "text": "PCOS treatment depends on goals. Lifestyle changes help with weight and insulin resistance. Hormonal contraceptives can regulate periods and reduce acne and hair growth, and fertility treatments can help women trying to conceive."},
+        {"label": "Prevention & outlook", "text": "PCOS cannot be prevented, but healthy weight and activity improve symptoms. It is a lifelong condition that raises the risk of type 2 diabetes, high blood pressure and endometrial problems, so regular health monitoring is recommended."}
+      ],
+      "sample_questions": ["What are the symptoms of PCOS?", "How is PCOS diagnosed?", "Can women with PCOS get pregnant?"]
+    },
+    {
+      "id": "osteoporosis",
+      "title": "Osteoporosis",
+      "category": "Musculoskeletal",
+      "type": "condition",
+      "aliases": ["brittle bones", "bone loss", "low bone density", "osteopenia", "fragility fracture", "weak bones"],
+      "summary": "Osteoporosis is a condition in which bones lose density and strength, becoming fragile and more likely to fracture, often after minor falls. It is most common in older adults, especially postmenopausal women.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Osteoporosis arises when bone is lost faster than it is rebuilt. Risk factors include older age, female sex, menopause, family history, low body weight, smoking, heavy alcohol use, low calcium or vitamin D, and long-term steroid medicines."},
+        {"label": "Symptoms", "text": "Osteoporosis is usually silent until a fracture occurs, commonly of the wrist, hip or spine. Spinal fractures can cause back pain, loss of height and a stooped posture."},
+        {"label": "Diagnosis", "text": "Osteoporosis is diagnosed with a bone density scan, called a DXA scan, which measures bone mineral density. Doctors also assess fracture risk using age, history and other risk factors."},
+        {"label": "Treatment", "text": "Osteoporosis treatment includes adequate calcium and vitamin D, weight-bearing exercise, fall prevention and medicines that slow bone loss or build bone, such as bisphosphonates. The choice depends on fracture risk."},
+        {"label": "Prevention & outlook", "text": "Osteoporosis risk can be reduced by building strong bones early, regular weight-bearing exercise, a calcium-rich diet, not smoking and limiting alcohol. With treatment, fracture risk can be lowered substantially."}
+      ],
+      "sample_questions": ["What causes osteoporosis?", "How is osteoporosis diagnosed with a bone density scan?", "How can I prevent osteoporosis?"]
+    },
+    {
+      "id": "gout",
+      "title": "Gout",
+      "category": "Musculoskeletal",
+      "type": "condition",
+      "aliases": ["gouty arthritis", "uric acid", "hyperuricemia", "high uric acid", "gout flare", "podagra"],
+      "summary": "Gout is a form of inflammatory arthritis caused by uric acid crystals depositing in joints, producing sudden attacks of severe pain, swelling and redness, most often in the big toe.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Gout occurs when high blood uric acid (hyperuricemia) forms crystals in joints. Risk factors include male sex, obesity, kidney disease, certain medicines such as diuretics, alcohol (especially beer), sugary drinks, and purine-rich foods such as red meat and shellfish."},
+        {"label": "Symptoms", "text": "Gout typically causes sudden, intense joint pain with swelling, warmth and redness, often at night and often in the big toe. Attacks usually ease within days to weeks but may recur, and long-term gout can form lumps called tophi."},
+        {"label": "Diagnosis", "text": "Gout is diagnosed from symptoms and examination, and confirmed by finding uric acid crystals in fluid drawn from the affected joint. Blood uric acid levels and imaging may support the diagnosis."},
+        {"label": "Treatment", "text": "Gout attacks are treated with anti-inflammatory medicines such as NSAIDs, colchicine or corticosteroids. For people with repeated attacks, long-term urate-lowering medicines such as allopurinol reduce uric acid and prevent flares."},
+        {"label": "Prevention & outlook", "text": "Gout flares can be reduced by limiting alcohol and sugary drinks, moderating purine-rich foods, losing excess weight and staying hydrated. With proper treatment, gout can be well controlled; untreated, it can damage joints and kidneys."}
+      ],
+      "sample_questions": ["What foods trigger gout?", "How is gout diagnosed?", "How can I prevent gout attacks?"]
+    },
+    {
+      "id": "chronic-kidney-disease",
+      "title": "Chronic Kidney Disease",
+      "category": "Kidney & urinary",
+      "type": "condition",
+      "aliases": ["ckd", "chronic renal failure", "kidney failure", "renal insufficiency", "end-stage kidney disease", "esrd"],
+      "summary": "Chronic kidney disease is a long-term, usually progressive loss of kidney function over months or years. Advanced stages may require dialysis or a kidney transplant.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Chronic kidney disease is most often caused by diabetes and high blood pressure. Other causes include glomerulonephritis, polycystic kidney disease, long-term urinary obstruction and some medicines. Older age, obesity, smoking and a family history raise risk."},
+        {"label": "Symptoms", "text": "Chronic kidney disease is often silent in early stages. Later it may cause tiredness, swollen ankles, foamy urine, nausea, itching, poor appetite and shortness of breath as waste and fluid build up."},
+        {"label": "Diagnosis", "text": "Chronic kidney disease is diagnosed with blood tests that estimate kidney filtering (eGFR, from creatinine) and urine tests for protein (albumin). Results persisting for three months or more confirm it. Ultrasound may look for structural causes."},
+        {"label": "Treatment", "text": "Chronic kidney disease treatment aims to slow progression by controlling blood pressure and blood sugar, using kidney-protective medicines, adjusting diet and avoiding kidney-harming drugs. Kidney failure is treated with dialysis or transplantation."},
+        {"label": "Prevention & outlook", "text": "Chronic kidney disease can be prevented or slowed by managing diabetes and blood pressure, not smoking, keeping a healthy weight and having regular testing if at risk. Early detection greatly improves long-term outcomes."}
+      ],
+      "sample_questions": ["What are the stages and symptoms of chronic kidney disease?", "What causes chronic kidney disease?", "How is chronic kidney disease treated?"]
+    },
+    {
+      "id": "kidney-stones",
+      "title": "Kidney Stones",
+      "category": "Kidney & urinary",
+      "type": "condition",
+      "aliases": ["renal calculi", "nephrolithiasis", "urolithiasis", "renal colic", "ureteral stones"],
+      "summary": "Kidney stones are hard deposits of minerals and salts that form inside the kidneys. They may pass unnoticed or cause severe pain as they move through the urinary tract.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Kidney stones form when urine becomes concentrated with minerals such as calcium, oxalate or uric acid. Low fluid intake, a family history, certain diets, obesity, some medical conditions and repeated urinary infections increase the risk."},
+        {"label": "Symptoms", "text": "Kidney stones can cause severe, cramping pain in the side or back that may spread to the groin, along with blood in the urine, nausea and vomiting. Fever or inability to pass urine needs urgent medical care."},
+        {"label": "Diagnosis", "text": "Kidney stones are diagnosed with imaging, most often a CT scan or ultrasound, together with urine and blood tests. Analysing a passed stone helps identify its type and guide prevention."},
+        {"label": "Treatment", "text": "Small kidney stones often pass on their own with fluids and pain relief. Larger or blocking stones may need shock wave lithotripsy, ureteroscopy or other procedures to break up or remove them."},
+        {"label": "Prevention & outlook", "text": "Kidney stones can be prevented by drinking plenty of fluids, limiting salt, moderating animal protein and following advice based on stone type. Stones often recur, so prevention measures are important after a first episode."}
+      ],
+      "sample_questions": ["What causes kidney stones?", "What does kidney stones pain feel like?", "How can I prevent kidney stones from coming back?"]
+    },
+    {
+      "id": "urinary-tract-infection",
+      "title": "Urinary Tract Infection",
+      "category": "Kidney & urinary",
+      "type": "condition",
+      "aliases": ["uti", "bladder infection", "cystitis", "kidney infection", "pyelonephritis", "urine infection"],
+      "summary": "A urinary tract infection is an infection of any part of the urinary system, most often the bladder, usually caused by bacteria. It is common, especially in women, and is generally treated with antibiotics.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "A urinary tract infection usually occurs when bacteria from the bowel, most often E. coli, enter the urethra and travel to the bladder. Women are at higher risk, as are people with catheters, kidney stones, diabetes, pregnancy or urinary obstruction."},
+        {"label": "Symptoms", "text": "A urinary tract infection often causes burning when passing urine, frequent urgent urination, cloudy or strong-smelling urine and lower abdominal discomfort. Fever, back pain or vomiting suggest a kidney infection and need prompt medical attention."},
+        {"label": "Diagnosis", "text": "A urinary tract infection is diagnosed from symptoms and a urine test, such as a dipstick, with urine culture used in some cases to identify the bacteria and the antibiotics that will work."},
+        {"label": "Treatment", "text": "A urinary tract infection is treated with a course of antibiotics chosen by a clinician, along with fluids and pain relief if needed. Kidney infections may need stronger or hospital-based treatment."},
+        {"label": "Prevention & outlook", "text": "Urinary tract infection risk can be reduced by drinking enough fluids, urinating after sex, wiping front to back and not delaying urination. Most infections clear quickly with treatment, though some people experience recurrences."}
+      ],
+      "sample_questions": ["What are the symptoms of a urinary tract infection?", "How is a urinary tract infection treated?", "How can I prevent a urinary tract infection?"]
+    },
+    {
+      "id": "gerd",
+      "title": "GERD (Acid Reflux)",
+      "category": "Digestive",
+      "type": "condition",
+      "aliases": ["acid reflux", "heartburn", "gastroesophageal reflux disease", "reflux", "gastric reflux", "indigestion"],
+      "summary": "GERD (gastroesophageal reflux disease) is a chronic condition in which stomach acid repeatedly flows back into the esophagus, causing heartburn and sometimes irritation or damage to the esophageal lining.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "GERD occurs when the lower esophageal sphincter, the valve between the esophagus and stomach, relaxes or weakens. Obesity, pregnancy, smoking, hiatal hernia, large or late meals and certain foods or medicines can contribute."},
+        {"label": "Symptoms", "text": "GERD typically causes heartburn, a burning feeling behind the breastbone, and regurgitation of sour fluid. It may also cause chronic cough, hoarseness or difficulty swallowing. Chest pain should be checked urgently to rule out heart problems."},
+        {"label": "Diagnosis", "text": "GERD is often diagnosed from typical symptoms and response to treatment. If symptoms are severe or persistent, tests such as endoscopy, or esophageal acid monitoring, may be used to look for damage or confirm reflux."},
+        {"label": "Treatment", "text": "GERD is treated with lifestyle changes such as weight loss, smaller meals and avoiding trigger foods, plus medicines that reduce stomach acid, including antacids, H2 blockers and proton pump inhibitors. Surgery is an option for some people."},
+        {"label": "Prevention & outlook", "text": "GERD symptoms can often be reduced by avoiding late meals, raising the head of the bed, quitting smoking and managing weight. Untreated, long-term GERD may cause esophagitis, narrowing or Barrett's esophagus, so persistent symptoms need review."}
+      ],
+      "sample_questions": ["What causes GERD?", "How can I relieve heartburn from GERD?", "When should I see a doctor about GERD?"]
+    },
+    {
+      "id": "peptic-ulcer",
+      "title": "Peptic Ulcer",
+      "category": "Digestive",
+      "type": "condition",
+      "aliases": ["stomach ulcer", "gastric ulcer", "duodenal ulcer", "h. pylori", "helicobacter pylori infection", "ulcer"],
+      "summary": "A peptic ulcer is an open sore in the lining of the stomach or the first part of the small intestine (duodenum), most often caused by Helicobacter pylori infection or long-term use of anti-inflammatory painkillers.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "A peptic ulcer is usually caused by Helicobacter pylori bacteria or by regular use of NSAIDs such as aspirin and ibuprofen. Smoking, heavy alcohol use and older age add to the risk. Stress and spicy food are not the main causes."},
+        {"label": "Symptoms", "text": "A peptic ulcer commonly causes burning upper abdominal pain, bloating, nausea and feeling full quickly. Black stools, vomiting blood or sudden severe abdominal pain are warning signs of bleeding or perforation and need emergency care."},
+        {"label": "Diagnosis", "text": "A peptic ulcer is diagnosed by endoscopy, which allows direct viewing and biopsy of the lining. Tests for Helicobacter pylori, such as a breath, stool or biopsy test, are also done."},
+        {"label": "Treatment", "text": "A peptic ulcer is treated with acid-reducing medicines, mainly proton pump inhibitors, and with a course of antibiotics if Helicobacter pylori is found. Stopping or replacing NSAIDs, where possible, helps healing."},
+        {"label": "Prevention & outlook", "text": "Peptic ulcer risk is lowered by treating Helicobacter pylori, using NSAIDs carefully, not smoking and limiting alcohol. Most ulcers heal with treatment, but untreated ulcers can cause bleeding, perforation or obstruction."}
+      ],
+      "sample_questions": ["What causes a peptic ulcer?", "What are the symptoms of a peptic ulcer?", "How is a peptic ulcer treated?"]
+    },
+    {
+      "id": "irritable-bowel-syndrome",
+      "title": "Irritable Bowel Syndrome (IBS)",
+      "category": "Digestive",
+      "type": "condition",
+      "aliases": ["ibs", "irritable bowel", "spastic colon", "functional bowel disorder", "ibs-d", "ibs-c"],
+      "summary": "Irritable bowel syndrome (IBS) is a common long-term disorder of gut function causing abdominal pain with bloating and changes in bowel habit, without visible damage to the bowel.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "The exact cause of IBS is unclear. It is linked to changes in gut sensitivity and movement, the gut-brain connection, past gut infections, gut bacteria and stress. IBS is more common in women and often begins in younger adults."},
+        {"label": "Symptoms", "text": "IBS typically causes recurring abdominal pain or cramping, bloating, gas, and diarrhoea, constipation or both alternating. Symptoms often ease after a bowel movement and may flare with certain foods or stress."},
+        {"label": "Diagnosis", "text": "IBS is diagnosed mainly from symptom patterns after other conditions such as celiac disease and inflammatory bowel disease are excluded. Basic blood and stool tests are often done, and a colonoscopy may be needed if warning signs are present."},
+        {"label": "Treatment", "text": "IBS is managed with dietary changes, such as a low-FODMAP diet under guidance, regular exercise, stress management and symptom-targeted medicines for pain, diarrhoea or constipation. Some people benefit from psychological therapies."},
+        {"label": "Prevention & outlook", "text": "IBS is a long-term condition that cannot be cured but can usually be well controlled. Identifying trigger foods, eating regularly and reducing stress help. IBS does not cause bowel cancer or damage the bowel."}
+      ],
+      "sample_questions": ["What are the symptoms of IBS?", "What foods trigger IBS?", "How is IBS diagnosed and treated?"]
+    },
+    {
+      "id": "inflammatory-bowel-disease",
+      "title": "Inflammatory Bowel Disease (Crohn's Disease and Ulcerative Colitis)",
+      "category": "Digestive",
+      "type": "condition",
+      "aliases": ["ibd", "crohn's disease", "ulcerative colitis", "crohns", "colitis", "uc"],
+      "summary": "Inflammatory bowel disease (IBD) is a group of chronic inflammatory conditions of the gut, mainly Crohn's disease, which can affect any part of the digestive tract, and ulcerative colitis, which affects the colon and rectum.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "IBD, including Crohn's disease and ulcerative colitis, results from an abnormal immune response in the gut in genetically susceptible people, influenced by environmental factors and gut bacteria. A family history and smoking (for Crohn's disease) raise risk."},
+        {"label": "Symptoms", "text": "IBD commonly causes persistent diarrhoea, abdominal pain, tiredness, weight loss and sometimes blood in the stool. Symptoms come in flares and remissions, and IBD can also affect joints, skin and eyes."},
+        {"label": "Diagnosis", "text": "IBD is diagnosed with blood and stool tests, such as stool calprotectin, together with colonoscopy and biopsies. Imaging of the small bowel may be used, particularly for Crohn's disease, to see the extent of inflammation."},
+        {"label": "Treatment", "text": "IBD treatment aims to control inflammation and keep the disease in remission, using anti-inflammatory drugs, immune-suppressing medicines and biologic therapies. Surgery may be needed for complications or severe disease, particularly in Crohn's disease and ulcerative colitis."},
+        {"label": "Prevention & outlook", "text": "IBD cannot currently be prevented or cured, but most people can control it with ongoing treatment and monitoring. Not smoking and regular follow-up help. Long-standing colitis may raise colon cancer risk, so surveillance colonoscopy is advised."}
+      ],
+      "sample_questions": ["What is the difference between Crohn's disease and ulcerative colitis in inflammatory bowel disease?", "What are the symptoms of inflammatory bowel disease?", "How is inflammatory bowel disease treated?"]
+    },
+    {
+      "id": "celiac-disease",
+      "title": "Celiac Disease",
+      "category": "Digestive",
+      "type": "condition",
+      "aliases": ["coeliac disease", "gluten intolerance", "gluten-sensitive enteropathy", "celiac sprue", "gluten allergy"],
+      "summary": "Celiac disease is a lifelong autoimmune condition in which eating gluten, a protein in wheat, barley and rye, triggers immune damage to the lining of the small intestine and poor nutrient absorption.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Celiac disease occurs in genetically susceptible people when gluten triggers an immune attack on the small intestine. It is more common in those with a close relative with celiac disease, type 1 diabetes or other autoimmune conditions."},
+        {"label": "Symptoms", "text": "Celiac disease can cause diarrhoea, bloating, abdominal pain, weight loss and tiredness, but some people have anaemia, bone thinning, itchy blistering rash, or few digestive symptoms at all. Children may have poor growth."},
+        {"label": "Diagnosis", "text": "Celiac disease is diagnosed with blood tests for specific antibodies, such as tissue transglutaminase, while the person is still eating gluten, usually confirmed by a small intestine biopsy. Gluten should not be stopped before testing."},
+        {"label": "Treatment", "text": "Celiac disease is treated by a strict, lifelong gluten-free diet, which allows the intestine to heal. Dietitian support helps avoid hidden gluten, and deficiencies such as iron, folate or vitamin D may need correcting."},
+        {"label": "Prevention & outlook", "text": "Celiac disease cannot be prevented, but strict adherence to a gluten-free diet relieves symptoms and lowers the risk of complications such as bone loss and, rarely, intestinal lymphoma. Regular follow-up is recommended."}
+      ],
+      "sample_questions": ["What are the symptoms of celiac disease?", "How is celiac disease diagnosed?", "Can people with celiac disease ever eat gluten?"]
+    },
+    {
+      "id": "hepatitis-b",
+      "title": "Hepatitis B",
+      "category": "Liver",
+      "type": "condition",
+      "aliases": ["hbv", "hep b", "hepatitis b virus", "hbv infection", "serum hepatitis"],
+      "summary": "Hepatitis B is a liver infection caused by the hepatitis B virus (HBV). It can be short-lived or become chronic, leading to cirrhosis and liver cancer, but a safe and effective vaccine prevents it.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Hepatitis B is caused by the hepatitis B virus, spread through blood and body fluids: from mother to baby at birth, through unprotected sex, or by sharing needles or other contaminated equipment. It is not spread by casual contact or food."},
+        {"label": "Symptoms", "text": "Hepatitis B often causes no symptoms. When present, they include tiredness, nausea, abdominal pain, dark urine and yellowing of the skin and eyes (jaundice). Chronic hepatitis B may be silent for years while liver damage develops."},
+        {"label": "Diagnosis", "text": "Hepatitis B is diagnosed with blood tests that detect viral proteins and antibodies, such as hepatitis B surface antigen, and measure viral levels. Liver function tests and imaging assess liver damage."},
+        {"label": "Treatment", "text": "Acute hepatitis B is usually managed with rest and supportive care. Chronic hepatitis B can be controlled with antiviral medicines that suppress the virus, and regular monitoring of the liver, including screening for liver cancer, is important."},
+        {"label": "Prevention & outlook", "text": "Hepatitis B is highly preventable with vaccination, which is recommended for infants and at-risk adults, together with safe sex and not sharing needles. Most adults clear the infection, while infection acquired in infancy is more likely to become chronic."}
+      ],
+      "sample_questions": ["How is hepatitis B spread?", "Can hepatitis B be cured or treated?", "How does the hepatitis B vaccine prevent infection?"]
+    },
+    {
+      "id": "hepatitis-c",
+      "title": "Hepatitis C",
+      "category": "Liver",
+      "type": "condition",
+      "aliases": ["hcv", "hep c", "hepatitis c virus", "hcv infection", "chronic hcv"],
+      "summary": "Hepatitis C is a liver infection caused by the hepatitis C virus (HCV), spread mainly through blood. It often becomes chronic and can cause cirrhosis, but modern antiviral medicines cure most people.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Hepatitis C is caused by the hepatitis C virus, spread mainly through blood, especially by sharing needles or drug equipment. Other routes include unsafe medical procedures, unscreened blood products in the past, and, less often, mother to baby or sex."},
+        {"label": "Symptoms", "text": "Hepatitis C often causes no symptoms for years. Some people have tiredness, nausea, abdominal discomfort or jaundice. Many only learn they are infected after liver damage appears or through screening."},
+        {"label": "Diagnosis", "text": "Hepatitis C is diagnosed with a blood test for antibodies to the virus, followed by a test for viral genetic material (HCV RNA) to confirm active infection. The liver is then assessed for scarring."},
+        {"label": "Treatment", "text": "Hepatitis C is treated with direct-acting antiviral tablets taken for a few weeks to months, which cure the infection in the large majority of people. Liver health is monitored afterwards, especially if scarring is present."},
+        {"label": "Prevention & outlook", "text": "No vaccine exists for hepatitis C, so prevention relies on avoiding shared needles, safe medical practices and screening of blood. Cure is common, and treatment greatly reduces the risk of cirrhosis and liver cancer, though reinfection is possible."}
+      ],
+      "sample_questions": ["How is hepatitis C spread?", "Can hepatitis C be cured?", "What are the symptoms of hepatitis C?"]
+    },
+    {
+      "id": "fatty-liver-disease",
+      "title": "Fatty Liver Disease",
+      "category": "Liver",
+      "type": "condition",
+      "aliases": ["nafld", "masld", "nash", "mash", "hepatic steatosis", "non-alcoholic fatty liver", "alcoholic fatty liver"],
+      "summary": "Fatty liver disease is a build-up of excess fat in liver cells. It is most often linked to obesity and metabolic problems (MASLD/NAFLD) or to heavy alcohol use, and can progress to inflammation and scarring.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Fatty liver disease is commonly associated with obesity, type 2 diabetes, insulin resistance, high cholesterol or triglycerides, and metabolic syndrome. Excess alcohol causes alcohol-related fatty liver disease. Rapid weight loss and some medicines can also contribute."},
+        {"label": "Symptoms", "text": "Fatty liver disease usually causes no symptoms in its early stages. Some people feel tired or have discomfort in the upper right abdomen. Jaundice, swelling or confusion occur only if the disease has progressed to advanced liver damage."},
+        {"label": "Diagnosis", "text": "Fatty liver disease is often found incidentally on ultrasound or abnormal liver blood tests. Doctors rule out other causes and assess scarring with blood scores, elastography (a type of scan) or, occasionally, a liver biopsy."},
+        {"label": "Treatment", "text": "Fatty liver disease is treated mainly by lifestyle change: gradual weight loss, a healthy diet, regular exercise and avoiding alcohol. Managing diabetes, cholesterol and blood pressure is important, and newer medicines are available for some patients."},
+        {"label": "Prevention & outlook", "text": "Fatty liver disease can often be prevented or reversed in early stages by maintaining a healthy weight, staying active and limiting alcohol. If inflammation and scarring develop, it can progress to cirrhosis, so monitoring is advised for at-risk people."}
+      ],
+      "sample_questions": ["What causes fatty liver disease?", "Can fatty liver disease be reversed?", "How is fatty liver disease diagnosed?"]
+    },
+    {
+      "id": "cirrhosis",
+      "title": "Cirrhosis",
+      "category": "Liver",
+      "type": "condition",
+      "aliases": ["liver cirrhosis", "scarring of the liver", "liver fibrosis", "end-stage liver disease", "decompensated liver disease"],
+      "summary": "Cirrhosis is advanced, permanent scarring of the liver caused by long-term damage. The scar tissue disrupts liver structure and function and can lead to serious complications, including liver failure.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Cirrhosis is most commonly caused by long-term heavy alcohol use, chronic hepatitis B or C infection, and fatty liver disease. Less common causes include autoimmune liver diseases, bile duct disorders, and inherited conditions such as hemochromatosis."},
+        {"label": "Symptoms", "text": "Cirrhosis may cause no symptoms early on. Later signs include tiredness, loss of appetite, weight loss, jaundice, itching, easy bruising, swollen legs and abdomen (ascites), and confusion. Vomiting blood requires emergency care."},
+        {"label": "Diagnosis", "text": "Cirrhosis is diagnosed with blood tests, imaging such as ultrasound or elastography, and sometimes a liver biopsy. Doctors also look for complications such as enlarged veins in the esophagus (varices)."},
+        {"label": "Treatment", "text": "Cirrhosis treatment targets the underlying cause, such as stopping alcohol or treating viral hepatitis, and manages complications with medicines, dietary changes and procedures. A liver transplant may be needed for advanced disease."},
+        {"label": "Prevention & outlook", "text": "Cirrhosis can be prevented by limiting alcohol, hepatitis B vaccination, treating hepatitis C and maintaining a healthy weight. The damage is not reversible, but removing the cause can halt progression and improve outlook."}
+      ],
+      "sample_questions": ["What causes cirrhosis of the liver?", "What are the symptoms of cirrhosis?", "Can cirrhosis be reversed or treated?"]
+    },
+    {
+      "id": "gallstones",
+      "title": "Gallstones",
+      "category": "Digestive",
+      "type": "condition",
+      "aliases": ["gallbladder stones", "cholelithiasis", "biliary colic", "cholecystitis", "gallbladder disease", "bile duct stones"],
+      "summary": "Gallstones are hard deposits, usually of cholesterol or bilirubin, that form in the gallbladder. Many cause no problems, but they can block bile ducts and cause pain, infection or inflammation.",
+      "sections": [
+        {"label": "Causes & risk factors", "text": "Gallstones form when bile contains too much cholesterol or bilirubin, or the gallbladder does not empty well. Risk factors include female sex, age over 40, obesity, rapid weight loss, pregnancy, a family history and diabetes."},
+        {"label": "Symptoms", "text": "Gallstones often cause no symptoms. When a stone blocks a duct, it can cause sudden, severe pain in the upper right abdomen, often after fatty meals, with nausea. Fever, jaundice or persistent pain need urgent medical attention."},
+        {"label": "Diagnosis", "text": "Gallstones are most often diagnosed with an abdominal ultrasound. Blood tests check for infection, inflammation or bile duct blockage, and further imaging may be used if stones are suspected in the bile duct."},
+        {"label": "Treatment", "text": "Gallstones that cause no symptoms usually need no treatment. When they cause repeated pain or complications, the usual treatment is surgical removal of the gallbladder (cholecystectomy), commonly done by keyhole surgery."},
+        {"label": "Prevention & outlook", "text": "Gallstones risk may be lowered by maintaining a healthy weight, losing weight gradually, eating a balanced diet and staying active. People live normally after gallbladder removal, though some notice looser stools or fat intolerance."}
+      ],
+      "sample_questions": ["What causes gallstones?", "What are the symptoms of gallstones?", "Do gallstones always need surgery?"]
+    }
+  ]
+}

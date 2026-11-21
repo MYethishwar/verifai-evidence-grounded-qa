@@ -1,0 +1,45 @@
+{% from '_brand.html' import logo %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}{% endblock %} · VerifAI</title>
+  <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='img/verifai-mark.svg') }}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/theme.css') }}" rel="stylesheet">
+</head>
+<body style="background:#fff;">
+<div class="vf-auth">
+  <aside class="vf-auth-aside">
+    <div class="vf-hero-canvas" data-vf-particles="dark"></div>
+    <a href="{{ url_for('auth.home') }}" style="text-decoration:none;">{{ logo(36, 'Evidence-grounded biomedical AI', dark=True) }}</a>
+    <div>
+      <h2 data-vf-pop>Clinical answers you can check, not just trust.</h2>
+      <p>VerifAI answers biomedical questions from curated sources, cites every claim, and shows how well each answer is supported.</p>
+      <ul class="vf-auth-points">
+        <li><i class="fas fa-circle-check"></i><span><b>Cited answers.</b> Each sentence links back to the passage it came from.</span></li>
+        <li><i class="fas fa-shield-halved"></i><span><b>Automatic verification.</b> Answers are checked against their sources before you see them.</span></li>
+        <li><i class="fas fa-book-medical"></i><span><b>{{ vf_kb_topics }} curated topics.</b> Conditions, medicines and lab tests, plus your own datasets.</span></li>
+      </ul>
+    </div>
+    <div class="vf-small" style="color:var(--slate-500);">For information and research. Not a substitute for professional medical advice.</div>
+  </aside>
+  <main class="vf-auth-main">
+    <div class="vf-auth-card">
+      <div class="d-lg-none mb-2">{{ logo(32) }}</div>
+      {% with messages = get_flashed_messages(with_categories=true) %}
+        {% for category, message in messages %}
+          <div class="flash-message flash-{{ category }} mt-3"><i class="fas fa-circle-info"></i> {{ message }}</div>
+        {% endfor %}
+      {% endwith %}
+      {% block card %}{% endblock %}
+    </div>
+  </main>
+</div>
+{% include '_visual_libs.html' %}
+</body>
+</html>

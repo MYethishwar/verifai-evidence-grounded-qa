@@ -1,0 +1,642 @@
+{
+  "group": "Biology basics, nutrition & healthy living",
+  "topics": [
+    {
+      "id": "dna",
+      "title": "DNA (Deoxyribonucleic Acid)",
+      "category": "Molecular biology",
+      "type": "concept",
+      "aliases": [
+        "deoxyribonucleic acid",
+        "double helix",
+        "genetic material",
+        "nucleotides",
+        "genome",
+        "chromosomes"
+      ],
+      "summary": "DNA is the molecule that carries the genetic instructions for the growth, functioning and reproduction of living things. It is a long double-stranded helix built from four chemical bases, and the order of those bases encodes information.",
+      "sections": [
+        {
+          "label": "Structure & components",
+          "text": "DNA is made of two strands twisted into a double helix. Each strand is a chain of nucleotides, and each nucleotide contains a sugar (deoxyribose), a phosphate group and one of four bases: adenine (A), thymine (T), guanine (G) or cytosine (C)."
+        },
+        {
+          "label": "Function",
+          "text": "DNA stores the instructions a cell needs to build proteins and carry out its activities. DNA also passes genetic information from parent to offspring and from one cell to its daughter cells when cells divide."
+        },
+        {
+          "label": "How it works",
+          "text": "In DNA, the two strands are held together by base pairing: A pairs with T, and G pairs with C. Before a cell divides, DNA is copied (replicated), with each strand serving as a template for a new partner strand."
+        },
+        {
+          "label": "Clinical relevance",
+          "text": "Changes in DNA (mutations) can cause inherited conditions or raise the risk of diseases such as some cancers. DNA is also used in genetic testing, in forensic identification and in establishing family relationships."
+        },
+        {
+          "label": "Key facts",
+          "text": "In human cells, most DNA is packaged into 23 pairs of chromosomes in the nucleus, and a small amount is found in mitochondria. DNA from two unrelated people is very similar overall, differing in only a small fraction of its sequence."
+        }
+      ],
+      "sample_questions": [
+        "What is the structure of DNA?",
+        "What does DNA do in the body?",
+        "How does DNA copy itself when a cell divides?"
+      ]
+    },
+    {
+      "id": "rna",
+      "title": "RNA (Ribonucleic Acid)",
+      "category": "Molecular biology",
+      "type": "concept",
+      "aliases": [
+        "ribonucleic acid",
+        "mrna",
+        "messenger rna",
+        "trna",
+        "rrna",
+        "transcription"
+      ],
+      "summary": "RNA is a single-stranded molecule that helps cells read the instructions stored in DNA and turn them into proteins. Several types of RNA exist, each with a different job in the cell.",
+      "sections": [
+        {
+          "label": "Structure & components",
+          "text": "RNA is usually a single strand of nucleotides. Its sugar is ribose rather than deoxyribose, and it uses the base uracil (U) in place of the thymine found in DNA, alongside adenine, guanine and cytosine."
+        },
+        {
+          "label": "Function",
+          "text": "RNA acts as a go-between that carries genetic instructions from DNA to the machinery that makes proteins. Some RNA molecules also have structural or regulatory roles, and in certain viruses RNA is the genetic material itself."
+        },
+        {
+          "label": "How it works",
+          "text": "In transcription, a section of DNA is copied into messenger RNA (mRNA). The mRNA is then read in ribosomes, where transfer RNA (tRNA) brings amino acids in the right order to build a protein (translation)."
+        },
+        {
+          "label": "Clinical relevance",
+          "text": "Many viruses, including influenza and coronaviruses, have RNA genomes. RNA-based technology is also used in some medicines and in mRNA vaccines, which give cells temporary instructions to make a harmless piece of a germ."
+        },
+        {
+          "label": "Key facts",
+          "text": "The main types of RNA are messenger RNA (mRNA), transfer RNA (tRNA) and ribosomal RNA (rRNA). RNA is generally less stable than DNA and is broken down after use, which suits its temporary messenger role."
+        }
+      ],
+      "sample_questions": [
+        "What is RNA and how is it different from DNA?",
+        "What are the main types of RNA?",
+        "What does mRNA do in making proteins?"
+      ]
+    },
+    {
+      "id": "genes-and-mutations",
+      "title": "Genes and Mutations",
+      "category": "Genetics",
+      "type": "concept",
+      "aliases": [
+        "gene",
+        "mutation",
+        "genetic",
+        "hereditary",
+        "inherited",
+        "alleles",
+        "genetic variation"
+      ],
+      "summary": "A gene is a stretch of DNA that carries the instructions for making a particular protein or functional RNA. A mutation is a change in that DNA sequence, which may have no effect, a harmful effect or occasionally a beneficial one.",
+      "sections": [
+        {
+          "label": "Structure & components",
+          "text": "Genes are segments of DNA located on chromosomes. Humans have roughly 20,000 protein-coding genes, and each person normally carries two copies of most genes, one inherited from each parent. Different versions of a gene are called alleles."
+        },
+        {
+          "label": "Function",
+          "text": "Genes provide the instructions for building proteins, which shape traits such as blood type and affect how the body works. Mutations in genes alter these instructions, and they are also the raw material for variation between individuals."
+        },
+        {
+          "label": "How it works",
+          "text": "Mutations can arise from errors when DNA is copied or from damage caused by factors such as ultraviolet light or tobacco chemicals. Types include single-letter substitutions, small insertions or deletions, and larger changes to chromosomes."
+        },
+        {
+          "label": "Clinical relevance",
+          "text": "Some mutations cause genetic disorders such as cystic fibrosis or sickle cell disease. Mutations acquired during life in body cells can contribute to cancer, while mutations in egg or sperm cells can be passed to children."
+        },
+        {
+          "label": "Key facts",
+          "text": "Many mutations are harmless and have no noticeable effect on health. Genes and mutations are studied through genetic testing, which can detect inherited variants and help guide diagnosis, screening and family planning."
+        }
+      ],
+      "sample_questions": [
+        "What is a gene and what is a mutation?",
+        "What causes genetic mutations?",
+        "Are all gene mutations harmful?"
+      ]
+    },
+    {
+      "id": "brca1-and-brca2",
+      "title": "BRCA1 and BRCA2 Genes",
+      "category": "Genetics",
+      "type": "concept",
+      "aliases": [
+        "brca",
+        "brca1",
+        "brca2",
+        "breast cancer genes",
+        "tumour suppressor",
+        "hereditary breast and ovarian cancer"
+      ],
+      "summary": "BRCA1 and BRCA2 are genes that normally help repair damaged DNA and so protect against cancer. Harmful inherited changes in either gene greatly raise the lifetime risk of breast and ovarian cancer, among others.",
+      "sections": [
+        {
+          "label": "Structure & components",
+          "text": "BRCA1 and BRCA2 are human genes that code for proteins involved in DNA repair. They are classed as tumour suppressor genes, and everyone has two copies of each, one from each parent."
+        },
+        {
+          "label": "Function",
+          "text": "The proteins made from BRCA1 and BRCA2 help repair breaks in double-stranded DNA and maintain the stability of a cell's genetic material. This repair work helps prevent cells from becoming cancerous."
+        },
+        {
+          "label": "How it works",
+          "text": "When a person inherits a harmful (pathogenic) variant in one copy of BRCA1 or BRCA2, the remaining working copy can still do the job. If that second copy is later damaged in a cell, repair fails and cancer can develop."
+        },
+        {
+          "label": "Clinical relevance",
+          "text": "Pathogenic BRCA1 or BRCA2 variants raise the risk of breast and ovarian cancer, and also of prostate and pancreatic cancer in some cases. Genetic testing and counselling are offered to people with a suitable family history; options include closer screening, preventive surgery or targeted drugs."
+        },
+        {
+          "label": "Key facts",
+          "text": "A pathogenic BRCA1 or BRCA2 variant can be inherited from either parent, and each child of a carrier has a 50 percent chance of inheriting it. Carrying a variant raises risk but does not mean cancer is certain, and men can carry and pass on these variants too."
+        }
+      ],
+      "sample_questions": [
+        "What do the BRCA1 and BRCA2 genes do?",
+        "Does a BRCA1 or BRCA2 mutation mean I will get cancer?",
+        "How are BRCA1 and BRCA2 mutations inherited?"
+      ]
+    },
+    {
+      "id": "the-human-cell",
+      "title": "The Human Cell",
+      "category": "Cell biology",
+      "type": "concept",
+      "aliases": [
+        "cell",
+        "cells",
+        "organelles",
+        "mitochondria",
+        "nucleus",
+        "cell membrane",
+        "cell biology"
+      ],
+      "summary": "The cell is the basic structural and functional unit of the human body. The body contains many trillions of cells of different types, each containing specialised compartments called organelles that carry out particular tasks.",
+      "sections": [
+        {
+          "label": "Structure & components",
+          "text": "A human cell is enclosed by a cell membrane and filled with cytoplasm. Inside are organelles including the nucleus, which holds DNA, mitochondria, ribosomes, the endoplasmic reticulum, the Golgi apparatus and lysosomes."
+        },
+        {
+          "label": "Function",
+          "text": "The human cell takes in nutrients, produces energy, builds proteins, removes waste and responds to signals. Different cell types, such as nerve, muscle and red blood cells, are specialised for different jobs in the body."
+        },
+        {
+          "label": "How it works",
+          "text": "In the human cell, mitochondria release usable energy (as ATP) from food molecules, while ribosomes make proteins using instructions copied from DNA. Cells grow and multiply by dividing, and they communicate through chemical signals."
+        },
+        {
+          "label": "Clinical relevance",
+          "text": "Many diseases involve faulty human cells: cancer is uncontrolled cell division, and some inherited conditions affect organelles such as mitochondria or lysosomes. Cell samples are examined under the microscope to help diagnose illness."
+        },
+        {
+          "label": "Key facts",
+          "text": "Most human cells have a nucleus, but mature red blood cells do not. Cells are too small to see without a microscope, and the human cell is a eukaryotic cell, meaning its DNA is enclosed within a nucleus."
+        }
+      ],
+      "sample_questions": [
+        "What are the main parts of a human cell?",
+        "What do mitochondria do in the human cell?",
+        "How many types of cells are in the human body?"
+      ]
+    },
+    {
+      "id": "proteins-and-enzymes",
+      "title": "Proteins and Enzymes",
+      "category": "Molecular biology",
+      "type": "concept",
+      "aliases": [
+        "protein",
+        "enzyme",
+        "enzymes",
+        "amino acids",
+        "catalyst",
+        "protein folding",
+        "metabolism"
+      ],
+      "summary": "Proteins are large molecules made of chains of amino acids that do most of the work in the body. Enzymes are a special group of proteins that speed up chemical reactions in cells.",
+      "sections": [
+        {
+          "label": "Structure & components",
+          "text": "Proteins are built from chains of amino acids, of which 20 types are used in the human body. A protein chain folds into a specific three-dimensional shape, and that shape determines what the protein can do."
+        },
+        {
+          "label": "Function",
+          "text": "Proteins provide structure (such as collagen), carry substances (such as haemoglobin), act as hormones and antibodies, and enable movement. Enzymes are proteins that make reactions in the body happen fast enough to sustain life."
+        },
+        {
+          "label": "How it works",
+          "text": "Each enzyme has an active site that fits a specific molecule, called its substrate, like a lock and key. The enzyme lowers the energy needed for the reaction and is not used up, so it can work repeatedly."
+        },
+        {
+          "label": "Clinical relevance",
+          "text": "Faulty proteins or enzymes cause many diseases, such as lactose intolerance (low lactase enzyme) and sickle cell disease (altered haemoglobin). Blood tests for certain enzymes help diagnose problems in organs like the liver and heart, and many drugs work by blocking enzymes."
+        },
+        {
+          "label": "Key facts",
+          "text": "Enzyme activity depends on conditions such as temperature and pH, and extreme heat can permanently change a protein's shape (denaturation). Proteins in food are digested into amino acids, which the body reuses to build its own proteins."
+        }
+      ],
+      "sample_questions": [
+        "What are proteins made of?",
+        "How do enzymes speed up reactions in the body?",
+        "What happens when an enzyme or protein is denatured?"
+      ]
+    },
+    {
+      "id": "immune-system",
+      "title": "The Immune System",
+      "category": "Immunology",
+      "type": "concept",
+      "aliases": [
+        "immunity",
+        "antibodies",
+        "white blood cells",
+        "lymphocytes",
+        "innate immunity",
+        "adaptive immunity",
+        "immune response"
+      ],
+      "summary": "The immune system is the body's defence network of cells, tissues and organs that detects and fights germs and other harmful invaders. It also helps remove damaged cells and can remember past infections.",
+      "sections": [
+        {
+          "label": "Structure & components",
+          "text": "The immune system includes white blood cells (leukocytes), antibodies, the lymph nodes and lymphatic vessels, the spleen, the thymus and bone marrow. Skin and mucous membranes act as the first physical barrier within the immune system."
+        },
+        {
+          "label": "Function",
+          "text": "The immune system recognises and destroys pathogens such as bacteria, viruses, fungi and parasites. It must also tell the body's own healthy cells apart from foreign ones, so that it does not attack normal tissue."
+        },
+        {
+          "label": "How it works",
+          "text": "The innate immune system responds quickly and in a general way, using cells such as neutrophils and macrophages. The adaptive immune system, using B cells and T cells, responds more specifically and produces memory cells that give faster protection on later exposure."
+        },
+        {
+          "label": "Clinical relevance",
+          "text": "An overactive immune system can cause allergies and autoimmune diseases such as type 1 diabetes and rheumatoid arthritis. An underactive one, as in HIV infection or after some treatments, leaves people more prone to serious infections."
+        },
+        {
+          "label": "Key facts",
+          "text": "Antibodies are Y-shaped proteins made by B cells that bind to specific targets called antigens. The immune system is shaped by sleep, nutrition, age and vaccination, and its strength varies between individuals."
+        }
+      ],
+      "sample_questions": [
+        "What does the immune system do?",
+        "What is the difference between innate and adaptive immunity?",
+        "What are antibodies and how does the immune system use them?"
+      ]
+    },
+    {
+      "id": "how-vaccines-work",
+      "title": "How Vaccines Work",
+      "category": "Immunology",
+      "type": "concept",
+      "aliases": [
+        "vaccine",
+        "vaccination",
+        "immunization",
+        "herd immunity",
+        "booster",
+        "vaccines"
+      ],
+      "summary": "Vaccines train the immune system to recognise a germ without causing the disease. After vaccination the body can respond faster and more strongly if it later meets the real infection.",
+      "sections": [
+        {
+          "label": "Structure & components",
+          "text": "Vaccines contain a harmless form or part of a germ, such as a weakened or inactivated microbe, a protein piece or genetic instructions (mRNA) for making one. Some vaccines also contain adjuvants, which help strengthen the immune response."
+        },
+        {
+          "label": "Function",
+          "text": "The purpose of vaccines is to prevent infectious diseases or reduce their severity by giving the immune system a safe preview of the germ. Vaccines have helped control diseases such as smallpox, polio and measles."
+        },
+        {
+          "label": "How it works",
+          "text": "After a vaccine is given, immune cells recognise the germ's antigen and produce antibodies and memory B and T cells. If the real germ appears later, these memory cells allow a quicker and stronger defence."
+        },
+        {
+          "label": "Clinical relevance",
+          "text": "Vaccines are tested in clinical trials and monitored for safety after approval. Common side effects are usually mild, such as a sore arm or brief fever, and serious reactions are rare; national health services publish schedules and guidance."
+        },
+        {
+          "label": "Key facts",
+          "text": "When enough people in a community are vaccinated, it is harder for a disease to spread, which indirectly protects people who cannot be vaccinated (herd immunity). Some vaccines need booster doses because protection can fade over time."
+        }
+      ],
+      "sample_questions": [
+        "How do vaccines work in the body?",
+        "Why do some vaccines need booster doses?",
+        "What is herd immunity and how do vaccines create it?"
+      ]
+    },
+    {
+      "id": "gut-microbiome",
+      "title": "The Gut Microbiome",
+      "category": "Physiology",
+      "type": "concept",
+      "aliases": [
+        "microbiome",
+        "microbiota",
+        "gut bacteria",
+        "gut flora",
+        "intestinal flora",
+        "probiotics",
+        "prebiotics"
+      ],
+      "summary": "The gut microbiome is the community of trillions of microorganisms, mostly bacteria, that live in the human digestive tract. It plays a role in digestion, immunity and overall health.",
+      "sections": [
+        {
+          "label": "Structure & components",
+          "text": "The gut microbiome consists of bacteria, along with viruses, fungi and other microbes, mostly living in the large intestine. Each person has a distinct mix of species, shaped by genes, diet, environment and medicines."
+        },
+        {
+          "label": "Function",
+          "text": "The gut microbiome helps digest fibre that human enzymes cannot break down, producing short-chain fatty acids used by the gut lining. It also makes some vitamins, such as vitamin K, and helps train the immune system."
+        },
+        {
+          "label": "How it works",
+          "text": "Gut microbes feed on food components that reach the large intestine, and in return they release substances that influence the gut wall and immune cells. A varied community of microbes is generally considered to be more resilient."
+        },
+        {
+          "label": "Clinical relevance",
+          "text": "Antibiotics can disturb the gut microbiome and sometimes allow harmful bacteria such as Clostridioides difficile to overgrow. Research links the gut microbiome to conditions including inflammatory bowel disease and obesity, but many of these links are still being studied."
+        },
+        {
+          "label": "Key facts",
+          "text": "Probiotics are live microbes and prebiotics are food ingredients that feed beneficial bacteria; evidence for their benefits varies by product and condition. A diet rich in fibre from plants is widely associated with a healthier gut microbiome."
+        }
+      ],
+      "sample_questions": [
+        "What is the gut microbiome?",
+        "What does the gut microbiome do for digestion and immunity?",
+        "How can antibiotics affect the gut microbiome?"
+      ]
+    },
+    {
+      "id": "blood-and-circulation",
+      "title": "Blood and Circulation",
+      "category": "Physiology",
+      "type": "concept",
+      "aliases": [
+        "blood",
+        "circulatory system",
+        "cardiovascular system",
+        "red blood cells",
+        "platelets",
+        "plasma",
+        "heart and blood vessels"
+      ],
+      "summary": "Blood is the fluid that carries oxygen, nutrients, hormones and waste around the body, and the circulatory system is the network of heart and blood vessels that moves it. Together they supply every tissue.",
+      "sections": [
+        {
+          "label": "Structure & components",
+          "text": "Blood is made of plasma (the liquid part), red blood cells, white blood cells and platelets. The circulation includes the heart, arteries, veins and tiny capillaries, with arteries carrying blood away from the heart and veins returning it."
+        },
+        {
+          "label": "Function",
+          "text": "Blood and circulation deliver oxygen and nutrients to tissues and remove carbon dioxide and waste. Blood also carries hormones, helps regulate body temperature, fights infection through white cells and clots to stop bleeding."
+        },
+        {
+          "label": "How it works",
+          "text": "In circulation, the right side of the heart pumps blood to the lungs to pick up oxygen, and the left side pumps oxygen-rich blood to the rest of the body. Red blood cells carry oxygen using the protein haemoglobin."
+        },
+        {
+          "label": "Clinical relevance",
+          "text": "Problems of blood and circulation include anaemia, clotting disorders, high blood pressure, heart attack and stroke. A blood test such as a full blood count and blood pressure measurement are common ways to check health."
+        },
+        {
+          "label": "Key facts",
+          "text": "Blood is grouped by the ABO and Rh systems, which matter for transfusions. Red blood cells are made in the bone marrow, and an adult heart beats around 60 to 100 times per minute at rest."
+        }
+      ],
+      "sample_questions": [
+        "What is blood made of?",
+        "How does blood circulation work through the heart and lungs?",
+        "What do red blood cells and platelets do in the blood?"
+      ]
+    },
+    {
+      "id": "vitamin-d",
+      "title": "Vitamin D",
+      "category": "Nutrition",
+      "type": "lifestyle",
+      "aliases": [
+        "sunshine vitamin",
+        "cholecalciferol",
+        "vitamin d3",
+        "calciferol",
+        "rickets",
+        "osteomalacia"
+      ],
+      "summary": "Vitamin D is a fat-soluble vitamin that helps the body absorb calcium and phosphate for healthy bones, teeth and muscles. The skin makes it when exposed to sunlight, and small amounts come from food.",
+      "sections": [
+        {
+          "label": "Why it matters",
+          "text": "Vitamin D helps the gut absorb calcium and phosphate, which are needed to build and maintain strong bones and teeth. Vitamin D also supports normal muscle and immune function."
+        },
+        {
+          "label": "Sources & recommendations",
+          "text": "Vitamin D comes mainly from skin exposure to sunlight, with smaller amounts from oily fish, egg yolks, fortified foods and supplements. Recommended daily amounts vary by age and country, so check national guidance."
+        },
+        {
+          "label": "Deficiency or excess",
+          "text": "Severe vitamin D deficiency causes rickets in children and osteomalacia (soft bones) in adults. Taking too much vitamin D, usually from supplements, can raise blood calcium to harmful levels, so more is not better."
+        },
+        {
+          "label": "Who is at risk",
+          "text": "People at higher risk of low vitamin D include those with little sun exposure, those who cover most of their skin, people with darker skin living far from the equator, older adults, and people with some gut, liver or kidney conditions."
+        },
+        {
+          "label": "Practical tips",
+          "text": "To support vitamin D levels, include foods such as oily fish and fortified products, and get safe, sensible sun exposure without burning. Many health services advise supplements for certain groups, so follow national guidance or ask a health professional."
+        }
+      ],
+      "sample_questions": [
+        "Why is vitamin D important for the body?",
+        "Where does vitamin D come from?",
+        "Who is at risk of vitamin D deficiency?"
+      ]
+    },
+    {
+      "id": "vitamin-b12",
+      "title": "Vitamin B12",
+      "category": "Nutrition",
+      "type": "lifestyle",
+      "aliases": [
+        "cobalamin",
+        "b12",
+        "cyanocobalamin",
+        "pernicious anaemia",
+        "pernicious anemia",
+        "megaloblastic anaemia"
+      ],
+      "summary": "Vitamin B12 is a water-soluble vitamin needed to make red blood cells and DNA and to keep the nervous system working. It is found naturally almost only in animal foods.",
+      "sections": [
+        {
+          "label": "Why it matters",
+          "text": "Vitamin B12 is essential for forming healthy red blood cells, for making DNA and for maintaining nerve cells. Without enough vitamin B12, the body cannot carry out these functions properly."
+        },
+        {
+          "label": "Sources & recommendations",
+          "text": "Vitamin B12 is found in meat, fish, eggs and dairy products, and in fortified foods such as some cereals and plant milks. Recommended daily amounts vary by age; check national guidance."
+        },
+        {
+          "label": "Deficiency or excess",
+          "text": "Low vitamin B12 can cause tiredness, pale skin, sore mouth, memory problems and tingling in the hands and feet, and can lead to anaemia and nerve damage if untreated. Excess vitamin B12 from food is generally not considered harmful."
+        },
+        {
+          "label": "Who is at risk",
+          "text": "People at risk of low vitamin B12 include vegans and some vegetarians, older adults, and people with pernicious anaemia, stomach or bowel surgery, or conditions affecting absorption. Some long-term medicines, such as metformin, can also lower levels."
+        },
+        {
+          "label": "Practical tips",
+          "text": "People who eat no animal foods should use vitamin B12 fortified foods or supplements. If symptoms of low vitamin B12 appear, see a health professional for a blood test; treatment may be tablets or injections depending on the cause."
+        }
+      ],
+      "sample_questions": [
+        "What does vitamin B12 do in the body?",
+        "Which foods contain vitamin B12?",
+        "Who is at risk of vitamin B12 deficiency?"
+      ]
+    },
+    {
+      "id": "healthy-diet",
+      "title": "Healthy Diet",
+      "category": "Nutrition",
+      "type": "lifestyle",
+      "aliases": [
+        "nutrition",
+        "balanced diet",
+        "healthy eating",
+        "food groups",
+        "dietary fibre",
+        "macronutrients",
+        "micronutrients"
+      ],
+      "summary": "A healthy diet provides the right balance of energy and nutrients to support growth, health and daily activity while reducing the risk of chronic disease. It centres on a variety of mostly unprocessed foods.",
+      "sections": [
+        {
+          "label": "Why it matters",
+          "text": "A healthy diet supplies energy, protein, vitamins and minerals, and it helps lower the risk of obesity, type 2 diabetes, heart disease and some cancers. Eating well also supports growth, immunity and mood."
+        },
+        {
+          "label": "Sources & recommendations",
+          "text": "Health organisations advise a healthy diet based on vegetables, fruit, whole grains, legumes, nuts and lean protein, while limiting salt, added sugar, saturated fat and highly processed foods. Water is the best drink."
+        },
+        {
+          "label": "Deficiency or excess",
+          "text": "A poor diet can mean too little of some nutrients, causing problems such as iron-deficiency anaemia, or too much energy, salt and sugar, contributing to weight gain and high blood pressure. Both undernutrition and overnutrition are forms of malnutrition."
+        },
+        {
+          "label": "Who is at risk",
+          "text": "Needs for a healthy diet vary with age, pregnancy, health conditions and activity level. Children, older adults, pregnant women, people on restricted diets and people with limited access to fresh food are more likely to have gaps."
+        },
+        {
+          "label": "Practical tips",
+          "text": "For a healthy diet, aim for a variety of colours on the plate, choose whole grains, cook at home when possible, read food labels and watch portion sizes. For individual needs or medical conditions, ask a doctor or registered dietitian."
+        }
+      ],
+      "sample_questions": [
+        "What counts as a healthy diet?",
+        "Which foods should I limit in a healthy diet?",
+        "What are the risks of a poor diet?"
+      ]
+    },
+    {
+      "id": "physical-activity",
+      "title": "Physical Activity",
+      "category": "Healthy living",
+      "type": "lifestyle",
+      "aliases": [
+        "exercise",
+        "fitness",
+        "aerobic activity",
+        "strength training",
+        "sedentary lifestyle",
+        "workout",
+        "movement"
+      ],
+      "summary": "Physical activity is any bodily movement that uses energy, from walking and housework to organised sport. Regular activity lowers the risk of many long-term diseases and benefits both physical and mental health.",
+      "sections": [
+        {
+          "label": "Why it matters",
+          "text": "Regular physical activity strengthens the heart, muscles and bones, helps control weight and blood sugar, and lowers the risk of heart disease, type 2 diabetes and some cancers. Physical activity also improves mood, sleep and mental wellbeing."
+        },
+        {
+          "label": "Sources & recommendations",
+          "text": "Health authorities such as the WHO advise adults to do regular moderate aerobic physical activity each week, plus muscle-strengthening activities on some days. Children and older adults have their own guidance, so check national recommendations."
+        },
+        {
+          "label": "Deficiency or excess",
+          "text": "Too little physical activity, with long periods of sitting, is linked to higher risk of chronic disease and earlier death. Too much, especially with rapid increases or too little rest, can cause injuries and overtraining."
+        },
+        {
+          "label": "Who is at risk",
+          "text": "Low physical activity is common in people with desk-based jobs, older adults and those with limited access to safe places to move. People with heart disease, other long-term conditions or pregnancy should seek advice on suitable physical activity."
+        },
+        {
+          "label": "Practical tips",
+          "text": "To build physical activity into life, start small, choose enjoyable activities such as brisk walking, cycling or swimming, and increase gradually. Break up long sitting with short movement breaks, and see a health professional if unsure."
+        }
+      ],
+      "sample_questions": [
+        "How much physical activity do adults need each week?",
+        "What are the health benefits of physical activity?",
+        "How can I start doing more physical activity safely?"
+      ]
+    },
+    {
+      "id": "sleep-health",
+      "title": "Sleep Health",
+      "category": "Healthy living",
+      "type": "lifestyle",
+      "aliases": [
+        "sleep",
+        "sleep hygiene",
+        "circadian rhythm",
+        "sleep deprivation",
+        "rest"
+      ],
+      "summary": "Sleep health describes getting enough good-quality sleep at regular times to feel rested and function well. Sleep is essential for the brain, heart, immune system and mood.",
+      "sections": [
+        {
+          "label": "Why it matters",
+          "text": "Good sleep health supports memory, learning, mood, immune function and the repair of the body. Sleep is not just rest: the brain and body carry out important maintenance processes during it."
+        },
+        {
+          "label": "Sources & recommendations",
+          "text": "Most adults need about seven to nine hours of sleep a night, while children and teenagers need more. Sleep health is helped by regular sleep and wake times, a dark, quiet, cool bedroom and limited screen use before bed."
+        },
+        {
+          "label": "Deficiency or excess",
+          "text": "Poor sleep health, such as ongoing short sleep, is linked to tiredness, poor concentration, low mood and higher risks of obesity, high blood pressure and type 2 diabetes. Regularly sleeping far longer than usual can also signal an underlying problem."
+        },
+        {
+          "label": "Who is at risk",
+          "text": "Sleep health problems are more common in shift workers, people with stress or mental health conditions, those with sleep disorders such as insomnia or sleep apnoea, and people with young children. Some medicines and substances also disturb sleep."
+        },
+        {
+          "label": "Practical tips",
+          "text": "To improve sleep health, keep a consistent schedule, get daylight and exercise during the day, and avoid caffeine, heavy meals and alcohol close to bedtime. If sleep problems persist, speak to a doctor rather than relying on self-treatment."
+        }
+      ],
+      "sample_questions": [
+        "How much sleep do adults need for good sleep health?",
+        "What happens to the body if you do not get enough sleep?",
+        "What are some tips for better sleep health?"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+{% block title %}Batch evaluation{% endblock %}
+{% block page_title %}Batch evaluation{% endblock %}
+{% block content %}
+<div class="page-header">
+  <h1><i class="fas fa-file-upload text-pink me-2"></i>Batch evaluation</h1>
+  <p>Upload a CSV, Excel, TXT, or JSON file containing biomedical questions for batch processing.</p>
+</div>
+<div class="row g-4">
+  <div class="col-lg-7">
+    <div class="content-card">
+      <div class="card-header"><h5><i class="fas fa-cloud-upload-alt"></i> Upload Test File or Enter Question</h5></div>
+      <div class="card-body">
+        <form method="POST" action="{{ url_for('user.upload_test') }}" id="uploadForm" enctype="multipart/form-data">
+          <!-- Direct Question -->
+          <div class="form-group">
+            <label class="form-label"><i class="fas fa-keyboard text-pink me-1"></i> Direct Question (Optional)</label>
+            <input type="text" name="question" class="form-control" placeholder="Enter a biomedical question directly...">
+          </div>
+          <div style="text-align:center;color:var(--text-muted);font-size:13px;margin:16px 0;">— OR Upload a File —</div>
+          <!-- File Upload -->
+          <div class="form-group">
+            <div class="upload-zone" id="uploadZone">
+              <input type="file" name="test_file" id="testFile" accept=".csv,.xlsx,.xls,.json,.txt" style="display:none;">
+              <div class="upload-icon"><i class="fas fa-file-upload"></i></div>
+              <h5>Click to Upload or Drag & Drop</h5>
+              <p>CSV, Excel (.xlsx), JSON, TXT supported</p>
+              <p class="upload-filename mt-2">No file selected</p>
+            </div>
+          </div>
+          <div class="alert-pink">
+            <i class="fas fa-info-circle"></i>
+            Your file should have a column named <strong>question</strong> or <strong>query</strong>. The first question will be processed.
+          </div>
+          <button type="button" class="btn-pink w-100 justify-content-center" style="padding:13px;" onclick="submitQuestionWithAnimation('uploadForm')">
+            <i class="fas fa-play-circle"></i> Process with VerifAI
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-5">
+    <div class="content-card">
+      <div class="card-header"><h5><i class="fas fa-list-ol"></i> Processing Steps</h5></div>
+      <div class="card-body">
+        {% set steps = [
+          ('Upload document', 'fas fa-upload'),
+          ('Preprocess text', 'fas fa-cogs'),
+          ('Extract features', 'fas fa-project-diagram'),
+          ('Semantic indexing', 'fas fa-search'),
+          ('Baseline model (TF-IDF)', 'fas fa-brain'),
+          ('VerifAI Model (BM25+AI)', 'fas fa-atom'),
+          ('Extract evidence', 'fas fa-file-alt'),
+          ('Verify answer', 'fas fa-shield-check'),
+          ('Compute metrics', 'fas fa-chart-bar'),
+          ('Generate results', 'fas fa-check-double'),
+        ] %}
+        {% for label, icon in steps %}
+        <div class="d-flex align-items-center gap-3 mb-2 p-2" style="background:#F8FAFC;border-radius:8px;">
+          <div style="width:28px;height:28px;background:linear-gradient(135deg,#2563EB,#1D4ED8);border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:11px;font-weight:700;flex-shrink:0;">{{ loop.index }}</div>
+          <i class="{{ icon }} text-pink" style="font-size:13px;width:16px;"></i>
+          <span style="font-size:13px;font-weight:500;">{{ label }}</span>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="content-card mt-3">
+      <div class="card-header"><h5><i class="fas fa-download"></i> Sample File Format</h5></div>
+      <div class="card-body">
+        <p style="font-size:13px;color:var(--text-muted);margin-bottom:10px;">Your CSV/Excel file should look like:</p>
+        <div style="background:#0F172A;border-radius:8px;padding:14px;font-family:monospace;font-size:12px;color:#60A5FA;">
+          question,context<br>
+          "What are symptoms of Type 2 diabetes?",""<br>
+          "What is BRCA1 gene?",""<br>
+          "Define iron deficiency anemia",""
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PROCESSING MODAL -->
+<div class="processing-modal" id="processingModal" style="display:none;">
+  <div class="processing-modal-card">
+    <div class="processing-modal-header">
+      <div class="processing-icon"><i class="fas fa-dna"></i></div>
+      <h5 style="font-size:18px;font-weight:800;color:var(--text-dark);">VerifAI Processing</h5>
+      <p style="font-size:13px;color:var(--text-muted);" id="processingStatus">Initializing pipeline...</p>
+    </div>
+    <div class="progress-bar-pink"><div class="progress-fill" id="progressFill" style="width:0%;"></div></div>
+    <div style="text-align:right;font-size:12px;color:var(--text-muted);margin-bottom:16px;" id="progressLabel">0%</div>
+    <div id="stepList" class="step-indicator"></div>
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script>document.addEventListener('DOMContentLoaded', function() { initUploadZone('uploadZone', 'testFile'); });</script>
+{% endblock %}
